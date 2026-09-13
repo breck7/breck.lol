@@ -26,7 +26,7 @@ And I started having thoughts that many other programmers do: "why do we even ne
 I sort of became obsessed.
 
 I probably came to love text files more than anyone you know. I spent over a decade pushing them to the max. I took notes on every text file format ever created, in a novel text file database system I created from scratch.
- http://pldb.info/ notes
+ http://pldb.io/ notes
  scrollsets.html text file database system
 
 I envisioned a future where text file technologies got so useful we might see the dominant databases be ones that just used text files under the hood. There are obvious no-brainer inefficiencies with text files versus binary storage engines but in the past decade when SSDs got so fast I figured at some point the difference would be measured in nanoseconds so even if it wasted 100x the compute it wouldn't be noticeable to the user and so would be worth it.
