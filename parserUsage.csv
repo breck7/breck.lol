@@ -4,7 +4,7 @@ cssLineParser,16680
 blankLineParser,15698
 catchAllParagraphParser,6227
 scrollImportedParser,2356
-slashCommentParser,2300
+slashCommentParser,2299
 quickLinkParser,1559
 scrollBrParser,1071
 cssParser,1070
@@ -12,7 +12,7 @@ h1Parser,829
 scrollDinkusParser,800
 quickCssParser,694
 editButtonParser,686
-listAftertextParser,582
+listAftertextParser,579
 lineOfCodeParser,549
 chatLineParser,408
 scrollCenterParser,382
