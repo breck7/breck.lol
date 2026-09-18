@@ -21,10 +21,7 @@
     "node": ">=24.0.0"
   },
   "dependencies": {
-    "scroll-cli": "github:breck7/scroll#v180.0.1"
-  },
-  "overrides": {
-    "scrollsdk": "github:breck7/scrollsdk#v108.0.0"
+    "scroll": "github:breck7/scroll#v180.0.1"
   },
   "devDependencies": {
     "tap": "^15.0.1"
