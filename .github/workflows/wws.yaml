@@ -16,8 +16,9 @@ jobs:
           node-version: 24
       - name: Install and Build
         run: |
-          npm install -g github:breck7/scroll --omit=dev
+          npm install --omit=dev
           npm run build
+          rm -rf node_modules
           # The line below is needed if you have *.html in your gitignore file
           rm .gitignore
       - name: Deploy 🚀
