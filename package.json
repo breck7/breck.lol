@@ -11,14 +11,17 @@
     "build": "scroll list | scroll build",
     "test": "scroll list | scroll test",
     "open": "open index.html",
-    "up": "npm install scroll-cli@latest"
+    "up": "npm install github:breck7/scroll"
   },
   "bugs": {
     "url": "https://github.com/breck7/breck.lol/issues"
   },
   "homepage": "https://breck.lol",
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "dependencies": {
-    "scroll-cli": "^178.2.1"
+    "scroll-cli": "github:breck7/scroll"
   },
   "devDependencies": {
     "tap": "^15.0.1"
