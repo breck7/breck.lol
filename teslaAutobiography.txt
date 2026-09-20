@@ -2,40 +2,30 @@ My Inventions
 =============
 
 Nikola Tesla's Autobiography
-============================
-by Breck Yunits
- https://twitter.com/breckyunits Breck Yunits
+by Nikola Tesla
+ https://en.wikipedia.org/wiki/Nikola_Tesla Nikola Tesla
+
+At the age of 63 Tesla tells the story of his creative life.
+
+First published in 1919 in the Electrical Experimenter magazine
 
 Source
  http://www.tfcbooks.com/special/my_inventions_index.htm Source
-======================================================================
-
-At the age of 63 Tesla tells the story of his creative life.
-============================================================
-
-First published in 1919 in the Electrical Experimenter magazine
-===============================================================
 
 Table of Contents
 =================
-I. My Early Life
+- I. My Early Life
  https://breck.lol/#part1 I. My Early Life
-===========================================================
-II. My First Efforts At Invention
+- II. My First Efforts At Invention
  https://breck.lol/#part2 II. My First Efforts At Invention
-=============================================================================================
-III. My Later Endeavors
+- III. My Later Endeavors
  https://breck.lol/#part3 III. My Later Endeavors
-=========================================================================
-IV. The Discovery of the Tesla Coil and Transformer
+- IV. The Discovery of the Tesla Coil and Transformer
  https://breck.lol/#part4 IV. The Discovery of the Tesla Coil and Transformer
-=================================================================================================================================
-V. The Magnifying Transmitter
+- V. The Magnifying Transmitter
  https://breck.lol/#part5 V. The Magnifying Transmitter
-=====================================================================================
-VI. The Art of Telautomatics
+- VI. The Art of Telautomatics
  https://breck.lol/#part6 VI. The Art of Telautomatics
-===================================================================================
 
 I. My Early Life
 ================

@@ -1,5 +1,3 @@
-authors Nikola Tesla
- https://en.wikipedia.org/wiki/Nikola_Tesla Nikola Tesla
 buildHtml
 buildTxt
 openGraphImage tesla.jpeg
@@ -7,33 +5,60 @@ title My Inventions
 
 header.scroll
 
+authors Nikola Tesla
+ https://en.wikipedia.org/wiki/Nikola_Tesla Nikola Tesla
+
+// A quiet, single-column reading edition; all styling stays local to this post.
+css
+ body { max-width: 680px; margin: 0 auto; padding: 80px 24px 64px; font-family: Georgia, "Times New Roman", serif; }
+ p.scrollParagraph, ol { font-size: 19px; line-height: 1.75; margin: 0 0 1.3em; }
+ h1.printTitleParser { max-width: none; font-size: clamp(44px, 9vw, 76px); font-weight: 400; letter-spacing: -0.045em; line-height: 1.05; }
+ #subtitle { text-align: center; font-size: 22px; font-style: italic; margin: 16px 0 12px; }
+ .printAuthorsParser { font-family: var(--scrollFontUi); font-size: 14px; font-style: normal; margin-bottom: 32px; }
+ #introduction { text-align: center; font-size: 21px; max-width: 440px; margin: 0 auto 16px; }
+ #publication, #source { text-align: center; font-family: var(--scrollFontUi); font-size: 13px; line-height: 1.6; color: var(--scrollColorSubdued); margin-bottom: 8px; }
+ #contents { text-align: left; border-top: 1px solid #dedbd2; padding-top: 28px; margin: 44px 0 16px; font: 12px var(--scrollFontUi); letter-spacing: 0.15em; text-transform: uppercase; }
+ ul { list-style: none; padding: 0 0 28px; border-bottom: 1px solid #dedbd2; }
+ ul li { margin: 0; font-size: 17px; line-height: 1.5; }
+ ul li a { display: block; padding: 7px 0; }
+ .scrollSection h1[id^="part"] { font: 400 clamp(28px, 5vw, 36px)/1.2 Georgia, "Times New Roman", serif; text-align: left; text-wrap: balance; margin: 64px 0 24px; padding-top: 24px; border-top: 1px solid #dedbd2; scroll-margin-top: 32px; }
+ .scrollSection h1#part1 { border-top: 0; padding-top: 0; }
+ .scrollSection h2 { text-align: left; font-weight: 400; font-style: italic; font-size: 24px; margin: 0 0 24px; }
+ @media (max-width: 480px) {
+  body { padding: 64px 22px 40px; }
+  p.scrollParagraph, ol { font-size: 18px; line-height: 1.7; }
+ }
+
 printTitle
 
-# Nikola Tesla's Autobiography
+Nikola Tesla's Autobiography
+ id subtitle
 printAuthors
 
-## Source
+At the age of 63 Tesla tells the story of his creative life.
+ id introduction
+
+First published in 1919 in the Electrical Experimenter magazine
+ id publication
+
+Source
+ id source
  http://www.tfcbooks.com/special/my_inventions_index.htm
 
-## At the age of 63 Tesla tells the story of his creative life.
-
-## First published in 1919 in the Electrical Experimenter magazine
-
 # Table of Contents
-## I. My Early Life
+ id contents
+- I. My Early Life
  link #part1
-## II. My First Efforts At Invention
+- II. My First Efforts At Invention
  link #part2
-## III. My Later Endeavors
+- III. My Later Endeavors
  link #part3
-## IV. The Discovery of the Tesla Coil and Transformer
+- IV. The Discovery of the Tesla Coil and Transformer
  link #part4
-## V. The Magnifying Transmitter
+- V. The Magnifying Transmitter
  link #part5
-## VI. The Art of Telautomatics
+- VI. The Art of Telautomatics
  link #part6
-
-thinColumns 4
 
 # I. My Early Life
  id part1
@@ -343,6 +368,5 @@ As stated on a previous occasion, when I was a student at college I conceived a 
 
 At present many of the ablest minds are trying to devise expedients for preventing a repetition of the awful conflict which is only theoretically ended and the duration and main issues of which I have correctly predicted in an article printed in the Sun of December 20, 1914.  The proposed League is not a remedy but on the contrary, in the opinion of a number of competent men, may bring about results just the opposite.  It is particularly regrettable that a punitive policy was adopted in framing the terms of peace, because a few years hence it will be possible for nations to fight without armies, ships or guns, by weapons far more terrible, to the destructive action and range of which there is virtually no limit.  A city, at any distance whatsoever from the enemy, can be destroyed by him and no power on earth can stop him from doing so.  If we want to avert an impending calamity and a state of things which may transform this globe into an inferno, we should push the development of flying machines and wireless transmission of energy without an instant's delay and with all the power and resources of the nation.
 
-endColumns
 
 ****
