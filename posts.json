@@ -1,5 +1,15 @@
 [
   {
+    "date": "09/21/2026",
+    "year": 2026,
+    "title": "My Bash Profile",
+    "permalink": "terminal.html",
+    "authors": "Breck Yunits",
+    "tags": "All Programming",
+    "wordCount": 198,
+    "minutes": 1
+  },
+  {
     "date": "09/07/2026",
     "year": 2026,
     "title": "Hurricane Lowell Kaua'i Tracker",

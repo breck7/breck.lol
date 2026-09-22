@@ -3,90 +3,91 @@ Search Breck's Blog
 
 Breck's Blog - Writing Posts
 ============================
-09/21/2026
+09/22/2026
 https://breck.lol/writing.html
 
 Breck's Blog - Scroll Posts
 ===========================
-09/21/2026
+09/22/2026
 https://breck.lol/treeNotation.html
 
 Breck's Blog - Thinking Posts
 =============================
-09/21/2026
+09/22/2026
 https://breck.lol/thinking.html
 
 Breck's Blog - Startups Posts
 =============================
-09/21/2026
+09/22/2026
 https://breck.lol/startups.html
 
 Breck's Blog - Society Posts
 ============================
-09/21/2026
+09/22/2026
 https://breck.lol/society.html
 
 Breck's Blog - Concise Index
 ============================
-09/21/2026
+09/22/2026
 https://breck.lol/short.html
 
 Breck's Blog - Scroll Papers Posts
 ==================================
-09/21/2026
+09/22/2026
 https://breck.lol/scrollPapers.html
 
 Breck's Blog - Science Posts
 ============================
-09/21/2026
+09/22/2026
 https://breck.lol/sciencePage.html
 
 Breck's Blog - Programming Posts
 ================================
-09/21/2026
+09/22/2026
 https://breck.lol/programming.html
 
 Breck's Blog - Poetry Posts
 ===========================
-09/21/2026
+09/22/2026
 https://breck.lol/poetry.html
 
 Breck's Blog - Mitochondria Posts
 =================================
-09/21/2026
+09/22/2026
 https://breck.lol/mitochondria.html
 
 Breck's Blog - Life Posts
 =========================
-09/21/2026
+09/22/2026
 https://breck.lol/life.html
 
 Breck's Blog - All Posts
 ========================
-09/21/2026
+09/22/2026
 https://breck.lol/index.html
 
 Breck's Blog - Intellectual Freedom Posts
 =========================================
-09/21/2026
+09/22/2026
 https://breck.lol/freedom.html
 
 Breck's Blog - Ford Posts
 =========================
-09/21/2026
+09/22/2026
 https://breck.lol/fordCat.html
 
 Breck's Blog - Fiction Posts
 ============================
-09/21/2026
+09/22/2026
 https://breck.lol/fiction.html
 
 Breck's Blog - Data Posts
 =========================
-09/21/2026
+09/22/2026
 https://breck.lol/data.html
 
 title,titleLink,text,date,year,wordCount,minutes
+My Bash Profile,terminal.html,"My Bash Profile ===============  September 21, 2026  Here's most of my terminal/command line/bash/Zsh/z shell commands.  Some of these you may find useful:  ```.zprofile #Meta alias ezp=""s ~/.zprofile"" alias rzp='source ~/.zprofile' # reload this file (after making edits)  #Sublime alias s=""open -a /Applications/Sublime\ Text.app/"" alias m=""smerge""  # One time Setup: # ln -s ""/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge"" ~/bin/smerge  # Scroll alias sb=""scroll build"" alias so=""open index.html""  # Quick HTTP server: alias serve=""python3 -m http.server 8000""  # Instant scratch folders: alias sf='date_dir=$(date +%Y-%m-%d) && mkdir -p ~/sf/$date_dir && cd ~/sf/$date_dir'  #Git alias gs=""git status"" alias gp=""git push"" alias ga=""git add ."" alias gb=""git branch"" alias gc=""git commit --allow-empty-message -m ''"" alias gr=""git reset --soft HEAD~1"" # Reset one commit back alias gru=""git reset 'HEAD@{1}'"" # Undo reset  #ShowBigFiles alias big=""du -a . | sort -n -r | head -n 30""  export PATH=""$HOME/bin:$PATH""  # >>> Codex installer >>> export PATH=""/Users/breck/.local/bin:$PATH"" # &lt;&lt;&lt; Codex installer &lt;&lt;&lt;  # KnowBooks # source ~/knowbooks  ```  Follow me on X  https://twitter.com/breckyunits Follow me on X Built with Scroll v180.0.1 ",09/21/2026,2026,198,1
 Hurricane Lowell Kaua'i Tracker,lowellTracker.html,"Hurricane Lowell Kaua'i Tracker ===============================  September 7, 2026  Made a webpage to monitor Hurricane Lowell, using Astra.  https://knowbooks.com/s/stormTracker/lowell.html webpage  [Image Omitted]  https://knowbooks.com/s/stormTracker/lowell.html undefined  Follow me on X  https://twitter.com/breckyunits Follow me on X Built with Scroll v180.0.1 ",09/07/2026,2026,53,0.3
 The Black Hole,blackHoles.html,The Black Hole ============== by Breck Yunits  https://twitter.com/breckyunits Breck Yunits  Black hole Dominant term Spin round Always closer  *  Look Away Still There Pretend Gone Still There Ignore It Still There Always Closer  *  Launch Rockets Also Pulled Says Nothing Claims All  *  Resistance Futile Resist Anyway Not Today Face Someday  ⁂  Follow me on X  https://twitter.com/breckyunits Follow me on X Built with Scroll v180.0.1 ,08/16/2026,2026,68,0.3
 The Homepages of Programming Language Creators,plMakers-about.html,"The Homepages of Programming Language Creators ==============================================  [Image Omitted]  https://breck.lol/plMakers.html undefined  Try it yourself.   https://breck.lol/plMakers.html Try it yourself.  August 15, 2026  From working on PLDB, I discovered that people who make programming languages tend to have interesting, often quirky personal homepages.  https://github.com/breck7/pldb PLDB  I used Codex to make this fun little single page browser for browsing those.  https://breck.lol/plMakers.html single page browser  ⁂  Follow me on X  https://twitter.com/breckyunits Follow me on X Built with Scroll v180.0.1 ",08/15/2026,2026,94,0.5

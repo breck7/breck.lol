@@ -127,6 +127,110 @@ a:focus-visible {
 }</style>
 <style>img {border: 2px solid #e9e9e9; border-radius: 5px;}</style>
 <style>.scrollParagraph { text-align: left; }</style>
+<div class="scrollSection"><h1 id="particle42" class="printTitleParser"><a href="terminal.html">My Bash Profile</a></h1>
+</div>
+<div class="printDateParser">September 21, 2026</div>
+<p id="particle47" class="scrollParagraph">Here's most of my terminal/command line/bash/Zsh/z shell commands.</p>
+<p id="particle49" class="scrollParagraph">Some of these you may find useful:</p>
+<div class="codeWithHeader"><div class="codeHeader">.zprofile</div><code class="scrollCodeBlock">#Meta
+alias ezp="s ~/.zprofile"
+alias rzp='source ~/.zprofile' # reload this file (after making edits)
+
+#Sublime
+alias s="open -a /Applications/Sublime\ Text.app/"
+alias m="smerge"
+
+# One time Setup:
+# ln -s "/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge" ~/bin/smerge
+
+# Scroll
+alias sb="scroll build"
+alias so="open index.html"
+
+# Quick HTTP server:
+alias serve="python3 -m http.server 8000"
+
+# Instant scratch folders:
+alias sf='date_dir=$(date +%Y-%m-%d) && mkdir -p ~/sf/$date_dir && cd ~/sf/$date_dir'
+
+#Git
+alias gs="git status"
+alias gp="git push"
+alias ga="git add ."
+alias gb="git branch"
+alias gc="git commit --allow-empty-message -m ''"
+alias gr="git reset --soft HEAD~1" # Reset one commit back
+alias gru="git reset 'HEAD@{1}'" # Undo reset
+
+#ShowBigFiles
+alias big="du -a . | sort -n -r | head -n 30"
+
+export PATH="$HOME/bin:$PATH"
+
+# >>> Codex installer >>>
+export PATH="/Users/breck/.local/bin:$PATH"
+# &lt;&lt;&lt; Codex installer &lt;&lt;&lt;
+
+# KnowBooks
+# source ~/knowbooks
+</code></div>
+<br>
+<center><p id="particle65" class="scrollParagraph"></p>
+<br><br>
+<p id="particle70" class="abstractTextLinkParser" class="abstractTextLinkParser"><a href="https://twitter.com/breckyunits">Follow me on X</a></p>
+<br>
+</center><a href="https://github.com/breck7/breck.lol/blob/main/terminal.scroll" class="abstractTextLinkParser">Edit</a></div>
+
+<div class="scrollSnippetContainer"><style>html, body, h1,h2,h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}</style>
+<style>:root {
+ --scrollColorBackground: #faf8f3;
+ --scrollColorText: #242622;
+ --scrollColorLink: #245b68;
+ --scrollColorSubdued: #62665f;
+ --scrollSurfaceRgb: 210, 207, 197;
+ --scrollPrimaryRgb: 36, 91, 104;
+}
+h1.printTitleParser, .scrollSection h2, .scrollSection h3, .scrollSection h4 {
+ font-family: Georgia, "Times New Roman", serif;
+ line-height: 1.2;
+ text-wrap: pretty;
+}
+.scrollParagraph {
+ line-height: 1.5;
+}
+.scrollColumns {
+ column-rule: 1px solid #dedbd2;
+}
+.scrollSnippetContainer + .scrollSnippetContainer {
+ border-top: 1px solid #dedbd2;
+}
+nav.scrollNavParser {
+ border-top: 1px solid #dedbd2;
+ border-bottom: 1px solid #dedbd2;
+ padding: 5px 0;
+ line-height: 1.6;
+}
+.printDateParser, .printAuthorsParser, .scrollDateline {
+ color: var(--scrollColorSubdued);
+}
+.scrollParagraph a {
+ text-decoration-color: #94afb2;
+ text-underline-offset: 0.15em;
+}
+a:hover {
+ color: #163e48;
+ text-decoration-color: currentColor;
+}
+a:focus-visible {
+ outline: 2px solid #245b68;
+ outline-offset: 2px;
+}
+::selection {
+ background: #d9e6df;
+ color: #242622;
+}</style>
+<style>img {border: 2px solid #e9e9e9; border-radius: 5px;}</style>
+<style>.scrollParagraph { text-align: left; }</style>
 <div class="scrollSection"><h1 id="particle42" class="printTitleParser"><a href="lowellTracker.html">Hurricane Lowell Kaua'i Tracker</a></h1>
 </div>
 <div class="printDateParser">September 7, 2026</div>

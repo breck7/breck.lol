@@ -1,0 +1,16 @@
+date 2026-09-21
+tags All Programming
+title My Bash Profile
+
+singleHeader.scroll
+
+printDate
+
+Here's most of my terminal/command line/bash/Zsh/z shell commands.
+
+Some of these you may find useful:
+
+codeFromFile .zprofile
+
+
+footer.scroll

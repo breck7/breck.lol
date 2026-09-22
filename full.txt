@@ -1,6 +1,11 @@
 Breck's Blog
 ============
 
+My Bash Profile
+===============
+09/21/2026
+https://breck.lol/terminal.html
+
 Hurricane Lowell Kaua'i Tracker
 ===============================
 09/07/2026

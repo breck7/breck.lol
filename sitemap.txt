@@ -281,6 +281,7 @@ https://breck.lol/startupAdvice.html
 https://breck.lol/startups-and-planes.html
 https://breck.lol/startups.html
 https://breck.lol/synthesizingKnowledge.html
+https://breck.lol/terminal.html
 https://breck.lol/teslaAutobiography.html
 https://breck.lol/the-booster-design-pattern.html
 https://breck.lol/the-churn-rate-of-data.html
