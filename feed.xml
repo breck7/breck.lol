@@ -4,8 +4,13 @@
  <title>Breck's Blog</title>
  <link>https://breck.lol/</link>
  <description>Some writing about probability, programming, economics and life.</description>
- <lastBuildDate>Sat, 26 Sep 2026 18:49:03 +0000</lastBuildDate>
+ <lastBuildDate>Sun, 27 Sep 2026 00:50:30 +0000</lastBuildDate>
  <language>en-us</language>
+ <item>
+<title>A favorite infographic - Size of Everything by Olaf Frohn</title>
+<link>https://breck.lol/sizeOfEverything.html</link>
+<pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
+</item>
  <item>
 <title>My Bash Profile</title>
 <link>https://breck.lol/terminal.html</link>

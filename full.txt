@@ -1,6 +1,11 @@
 Breck's Blog
 ============
 
+A favorite infographic - Size of Everything by Olaf Frohn
+=========================================================
+09/26/2026
+https://breck.lol/sizeOfEverything.html
+
 My Bash Profile
 ===============
 09/21/2026
