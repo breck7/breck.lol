@@ -4,7 +4,7 @@
  <title>Source</title>
  <link>https://breck.lol/</link>
  <description></description>
- <lastBuildDate>Tue, 29 Sep 2026 15:34:34 +0000</lastBuildDate>
+ <lastBuildDate>Thu, 01 Oct 2026 13:48:20 +0000</lastBuildDate>
  <language>en-us</language>
  <item>
 <title>A favorite infographic - Size of Everything by Olaf Frohn</title>
