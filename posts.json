@@ -590,16 +590,6 @@
     "minutes": 1.1
   },
   {
-    "date": "12/02/2024",
-    "year": 2024,
-    "title": "Breckchain",
-    "permalink": "breckchain.html",
-    "authors": "Breck Yunits",
-    "tags": "All Scroll",
-    "wordCount": 71,
-    "minutes": 0.4
-  },
-  {
     "date": "11/24/2024",
     "year": 2024,
     "title": "Particle Thinking",
@@ -1166,7 +1156,7 @@
     "permalink": "treeNotationFinalReport.html",
     "authors": "Breck Yunits",
     "tags": "All Scroll Programming",
-    "wordCount": 2045,
+    "wordCount": 2036,
     "minutes": 10.2
   },
   {
@@ -1636,8 +1626,8 @@
     "permalink": "tree-notation-annual-report-2019.html",
     "authors": "Breck Yunits",
     "tags": "All Scroll Programming",
-    "wordCount": 4074,
-    "minutes": 20.4
+    "wordCount": 4065,
+    "minutes": 20.3
   },
   {
     "date": "03/02/2020",
@@ -1846,7 +1836,7 @@
     "permalink": "scrollnet.html",
     "authors": "Breck Yunits",
     "tags": "All Programming Scroll WWS",
-    "wordCount": 1299,
+    "wordCount": 1290,
     "minutes": 6.5
   },
   {

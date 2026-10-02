@@ -286,11 +286,6 @@ Why Define a New Language?
 12/10/2024
 https://breck.lol/whyDefineANewLanguage.html
 
-Breckchain
-==========
-12/02/2024
-https://breck.lol/breckchain.html
-
 Particle Thinking
 =================
 11/24/2024
