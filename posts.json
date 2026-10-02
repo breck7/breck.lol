@@ -1,5 +1,15 @@
 [
   {
+    "date": "10/02/2026",
+    "year": 2026,
+    "title": "Handeracy",
+    "permalink": "handeracy.html",
+    "authors": "Breck Yunits",
+    "tags": "All Thinking Society Hits Logeracy",
+    "wordCount": 174,
+    "minutes": 0.9
+  },
+  {
     "date": "09/26/2026",
     "year": 2026,
     "title": "A favorite infographic - Size of Everything by Olaf Frohn",
@@ -1026,7 +1036,7 @@
     "permalink": "hits.html",
     "authors": "Breck Yunits",
     "tags": "All Thinking Life Startups Hits Ford",
-    "wordCount": 1291,
+    "wordCount": 1300,
     "minutes": 6.5
   },
   {
@@ -1126,8 +1136,8 @@
     "permalink": "bigOsKitchen.html",
     "authors": "Breck Yunits",
     "tags": "All Programming Data HasDataset Logeracy",
-    "wordCount": 409,
-    "minutes": 2
+    "wordCount": 418,
+    "minutes": 2.1
   },
   {
     "date": "04/22/2024",
@@ -1446,7 +1456,7 @@
     "permalink": "ckmeans.html",
     "authors": "Breck Yunits",
     "tags": "All Programming Data HasDataset Logeracy",
-    "wordCount": 1017,
+    "wordCount": 1026,
     "minutes": 5.1
   },
   {
@@ -1556,8 +1566,8 @@
     "permalink": "logeracy.html",
     "authors": "Breck Yunits",
     "tags": "All Data Thinking Society Hits Logeracy",
-    "wordCount": 1608,
-    "minutes": 8
+    "wordCount": 1617,
+    "minutes": 8.1
   },
   {
     "date": "03/30/2021",
@@ -2036,7 +2046,7 @@
     "permalink": "planets-and-pebbles.html",
     "authors": "Breck Yunits",
     "tags": "All Thinking Logeracy Hits",
-    "wordCount": 233,
+    "wordCount": 242,
     "minutes": 1.2
   },
   {
@@ -2386,8 +2396,8 @@
     "permalink": "why-its-worth-it-to-buy-the-book.html",
     "authors": "Breck Yunits",
     "tags": "All Life Thinking Hits",
-    "wordCount": 467,
-    "minutes": 2.3
+    "wordCount": 476,
+    "minutes": 2.4
   },
   {
     "date": "02/02/2010",
@@ -2586,8 +2596,8 @@
     "permalink": "orders-of-magnitude.html",
     "authors": "Breck Yunits",
     "tags": "All Thinking Logeracy Hits",
-    "wordCount": 924,
-    "minutes": 4.6
+    "wordCount": 933,
+    "minutes": 4.7
   },
   {
     "date": "12/06/2009",
