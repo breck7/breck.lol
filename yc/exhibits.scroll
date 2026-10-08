@@ -1,0 +1,356 @@
+// The exhibits behind "Investigate YCombinator".
+// This compiles to exhibitsData.js (and .json), which readme.scroll iterates over.
+// Add a `context` URL to any exhibit to show a Context / commentary link on its card.
+buildConcepts exhibitsData.js exhibitsData.json
+
+id coffee
+title I'm Not Worth a Coffee
+year 2026
+source YC alum
+kind tweet
+image coffee.png
+
+id no-demo-day-scientology
+title No Demo Day Scientology
+year 2024
+source Y Combinator
+kind screenshot
+image noDemoDayScientology.jpeg
+
+id breck
+title Breck
+year 2022
+source Imad Akhund
+kind email
+image imMad.png
+
+id congrats-to-airbedandbreakfast
+title Congrats to AirBedAndBreakfast!
+year 2020
+source Breck Yunits
+kind email
+image reunion.png
+
+id garry-vs-breck
+title Garry vs Breck
+year 2019
+source Hacker News
+kind screenshot
+image garryVsBreck.png
+
+id hair-stand-on-end
+title Spend Slowly Because the World Is Unpredictable
+year 2015
+source Jessica Livingston
+kind email
+image hairStandOnEnd.png
+
+id democracy-the-conway
+title Ron Conway Wants Your Vote
+year 2015
+source Sam Altman
+kind email
+image democracyTheConway.jpeg
+context https://x.com/breckyunits/status/2099537384518103355
+
+id sama-for-president
+title Sama for President
+year 2014
+source Paul Graham
+kind email
+image samaForPresident.png
+
+id horrified
+title You Don't Have to Pay Back YC
+year 2014
+source Paul Graham
+kind email
+image horrified.png
+
+id has-to-be
+title YC Founders List Email Guidelines
+year 2014
+source Garry Tan
+kind email
+image hasToBe.png
+
+id crunchies
+title YC Alumni Nominated for Crunchies
+year 2014
+source Paul Graham
+kind email
+image crunchies.png
+
+id swanky
+title YC S09 4-Year Reunion
+year 2013
+source Suhail Doshi
+kind email
+image swanky.png
+
+id bookface-balls
+title H1 Lawyer Recommendations
+year 2013
+source John Collison
+kind email
+image bookfaceBalls.png
+
+id aaron-swartz
+title Aaron Swartz Commits Suicide
+year 2013
+source Hacker News
+kind screenshot
+image wowTheySolvedThatCaseFastBodyStillWarm.png
+
+id immigration-lawyer
+title Any Immigration Lawyer Suggestion?
+year 2012
+source Paul Biggar
+kind email
+image theImmigrationArchives.png
+
+id investor-updates
+title Investor Updates
+year 2012
+source Paul Graham
+kind email
+image investorUpdates.png
+
+id help-wanted-moderate-hacker-news
+title Help Wanted: Moderate Hacker News
+year 2012
+source Paul Graham
+kind email
+image 6kAMonth.png
+
+id black-clouds
+title Black Clouds on the Horizon
+year 2012
+source Paul Graham
+kind email
+image blackClouds1of2.png
+
+id black-clouds-2
+title Black Clouds on the Horizon (2 of 2)
+year 2012
+source Paul Graham
+kind email
+image blackClouds2of2.png
+
+id too-much-fraud
+title Why You Want Ron Conway as an Investor
+year 2011
+source Paul Graham
+kind email
+image tooMuchFraud.png
+
+id yuzu
+title Yuzu
+year 2011
+source Breck Yunits
+kind email
+image yuzu.png
+
+id dubious
+title Very Dubious Reputation
+year 2011
+source Paul Graham
+kind email
+image dubious.png
+context https://x.com/breckyunits/status/2095529950187327581
+
+id castes
+title Announcing ycstories
+year 2011
+source Paul Graham
+kind email
+image castes.jpeg
+context https://x.com/breckyunits/status/2097352293083701534
+
+id trust-only-y-companies
+title Fwd: Equity Split Survey
+year 2010
+source Paul Graham
+kind email
+image trustOnlyYCompanies.png
+
+id australia-humble-brag
+title Tom and Breck Turn 26
+year 2010
+source Drew Houston
+kind email
+image australiaHumbleBrag.png
+
+id stealing-gmail-passwords
+title Try Etacts
+year 2010
+source Howie Liu
+kind email
+image stealingGmailPasswords.png
+
+id should-we-fund-alex-andon
+title Should We Fund Alex Andon?
+year 2009
+source Paul Graham
+kind email
+image Al.jpeg
+
+id why-no-favicon
+title Why No Favicon?
+year 2009
+source Breck Yunits
+kind email
+image faviconWasTrueCauesOfAirbnbsSuccess.png
+
+id all-time-record-in-losing
+title All-Time Record in Losing
+year 2009
+source Paul Graham
+kind email
+image allTimeRecordInLosing.webp
+context https://x.com/breckyunits/status/2095529950187327581
+
+id looking-young
+title Anyone an Undergrad or Just Graduated?
+year 2009
+source Jessica Livingston
+kind email
+image lookingYoung.png
+
+id lunch-tomorrow
+title Lunch Tomorrow, 1pm
+year 2009
+source Paul Graham
+kind email
+image jessicaIsTrapped.png
+
+id nudgepad-3-percent-club
+title NudgePad 3 Percent Club
+year 2009
+source GIGGGS, Inc.
+kind pdf
+image nudgePad3PercentClub.pdf
+
+id probably-significant
+title Anyone Using Google App Engine?
+year 2009
+source Paul Graham
+kind email
+image probablySignificant.png
+
+id sketchy
+title Credit Card Processing and SSL
+year 2009
+source Daniel Kluesing
+kind email
+image sketchy.png
+
+id robot-room
+title Wireless Setup and the Robot Room
+year 2009
+source Trevor Blackwell
+kind email
+image robotRoom.png
+
+id didnt-bother
+title Next Week's Schedule
+year 2009
+source Kate Courteau
+kind email
+image didntBother.png
+
+id dinner-tomorrow
+title Dinner Tomorrow
+year 2009
+source Jessica Livingston
+kind email
+image bizBringsJack.png
+context https://x.com/breckyunits/status/2104957684516827352
+
+id airbooze-and-breakfast
+title AirBooze & Breakfast Pre-Inauguration Bash
+year 2009
+source Joe Gebbia
+kind email
+image airboozeAndBreakfast.png
+
+id forlorn-canadians
+title Forlorn Canadians Seek Ride Tomorrow
+year 2009
+source Daniel Gackle
+kind email
+image topSecretMountainLocation.png
+context https://x.com/breckyunits/status/2102795097599541290
+
+id airbnb-secret-weapon
+title The Airbnb Craigslist Secret Weapon
+year 2009
+kind screenshot
+image airbnbSecretWeapon.png
+
+id breck-chesky
+title Take Part in Workshop, $500 Compensation
+year 2008
+source Joe Gebbia
+kind email
+image breckChesky.webp
+
+id emails-with-goat
+title Open Library Project Help
+year 2008
+source Breck Yunits
+kind email
+image emailsWithGoat.png
+
+id failures
+title Delaying Talking to Us Predicts Failure
+year 2008
+source Paul Graham
+kind email
+image failures.jpeg
+context https://x.com/breckyunits/status/2096777641592573961
+
+id the-goat
+title Aaron Swartz Memorial Bust
+kind photo
+image theGoat.png
+
+id hot-girls-of-yc
+title Hot Girls of Y Combinator
+kind meme
+image hotGirlsOfYC.jpg
+
+id shark-tank
+title Do Not Go on the Shark Tank
+kind screenshot
+image sharkTank.png
+
+id whos-kevin-tom
+title So Far We Have: Attendee List
+kind screenshot
+image whosKevinTom.png
+
+// Measures (columns) used by the exhibits above.
+idParser
+ extends abstractIdParser
+
+titleParser
+ extends abstractStringMeasureParser
+
+yearParser
+ extends abstractIntegerMeasureParser
+
+sourceParser
+ extends abstractStringMeasureParser
+
+kindParser
+ extends abstractStringMeasureParser
+
+imageParser
+ extends abstractStringMeasureParser
+
+contextParser
+ extends abstractUrlMeasureParser
+
+contextLabelParser
+ extends abstractStringMeasureParser
