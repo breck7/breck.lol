@@ -22,6 +22,10 @@
 <div class="appShell">
  <aside class="sidebar" aria-label="Y Combinator emails">
   <div class="sidebarLabel">Emails</div>
+  <div class="sidebarFilter">
+   <input type="search" id="filterInput" placeholder="Filter emails…" autocomplete="off" spellcheck="false" aria-label="Filter emails" aria-controls="makerList">
+   <button type="button" id="filterClear" class="filterClear" aria-label="Clear filter" hidden>×</button>
+  </div>
   <nav class="makerList" id="makerList"></nav>
  </aside>
  <main class="mainPane">
@@ -72,6 +76,8 @@ button, a { font: inherit; }
 .sidebar {
  position: relative;
  z-index: 20;
+ display: flex;
+ flex-direction: column;
  min-width: 0;
  padding: 18px 0;
  overflow: hidden;
@@ -93,8 +99,52 @@ button, a { font: inherit; }
  letter-spacing: .16em;
  text-transform: uppercase;
 }
+.sidebarFilter {
+ position: relative;
+ display: flex;
+ flex: 0 0 auto;
+ align-items: center;
+ gap: 6px;
+ padding: 0 12px 10px;
+}
+.sidebarFilter input {
+ width: 100%;
+ min-width: 0;
+ padding: 8px 10px;
+ border: 1px solid rgba(205,244,234,.16);
+ border-radius: 8px;
+ color: var(--ink);
+ background: rgba(255,255,255,.045);
+ font-size: 11px;
+ letter-spacing: .01em;
+ outline: none;
+ transition: border-color .18s ease, background .18s ease, box-shadow .18s ease;
+}
+.sidebarFilter input::placeholder { color: #5e746e; }
+.sidebarFilter input:focus { border-color: var(--acid); background: rgba(185,242,40,.08); box-shadow: 0 0 0 2px rgba(185,242,40,.16); }
+.sidebarFilter input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+.filterClear {
+ flex: 0 0 auto;
+ display: grid;
+ place-items: center;
+ width: 26px;
+ height: 26px;
+ padding: 0;
+ border: 1px solid rgba(205,244,234,.16);
+ border-radius: 7px;
+ color: #9fb2ac;
+ background: rgba(255,255,255,.045);
+ font-size: 15px;
+ line-height: 1;
+ cursor: pointer;
+ transition: color .18s ease, background .18s ease, border-color .18s ease;
+}
+.filterClear:hover { color: #081012; border-color: var(--acid); background: var(--acid); }
+.filterClear[hidden] { display: none; }
+.tocEmpty { margin: 0; padding: 12px 18px; color: #5e746e; font-size: 11px; line-height: 1.4; }
 .makerList {
- height: calc(100% - 28px);
+ flex: 1;
+ min-height: 0;
  overflow: auto;
  padding: 2px 10px 60px;
  scrollbar-width: thin;
@@ -320,10 +370,11 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(237,246,242,.56); }
 }
 @media (max-width: 680px) {
  html, body { overflow-x: hidden; overflow-y: auto; }
- .appShell { grid-template-columns: 1fr; grid-template-rows: 98px minmax(650px, calc(100vh - 98px)); min-height: 748px; }
- .sidebar { display: grid; grid-template-rows: 24px 1fr; padding: 10px 0 7px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
+ .appShell { grid-template-columns: 1fr; grid-template-rows: 140px minmax(650px, calc(100vh - 140px)); min-height: 790px; }
+ .sidebar { display: grid; grid-template-rows: 24px auto 1fr; padding: 10px 0 7px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
  .sidebarLabel { grid-row: 1; padding: 1px 14px 0; }
- .makerList { grid-column: 1 / -1; display: flex; gap: 4px; width: 100%; height: 55px; padding: 6px 10px 9px; overflow-x: auto; overflow-y: hidden; mask-image: linear-gradient(90deg, transparent, black 12px, black calc(100% - 12px), transparent); }
+ .sidebarFilter { grid-row: 2; padding: 0 10px 8px; }
+ .makerList { grid-row: 3; grid-column: 1 / -1; display: flex; gap: 4px; width: 100%; height: 55px; padding: 6px 10px 9px; overflow-x: auto; overflow-y: hidden; mask-image: linear-gradient(90deg, transparent, black 12px, black calc(100% - 12px), transparent); }
  .makerList a { flex: 0 0 auto; display: block; width: auto; min-height: 34px; padding: 6px 11px; white-space: nowrap; }
  .makerList a[aria-current="true"] { box-shadow: inset 0 -2px var(--acid); }
  .tocRank { display: none; }
@@ -342,58 +393,38 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(237,246,242,.56); }
 }
 @media (prefers-reduced-motion: reduce) {
  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .001ms !important; animation-duration: .001ms !important; }
-}</style>
+}
+.contextLink {
+ flex: 0 0 auto;
+ display: inline-flex;
+ align-items: center;
+ gap: 5px;
+ padding: 4px 9px;
+ border: 1px solid rgba(255,118,87,.5);
+ border-radius: 999px;
+ color: #ffd7cb;
+ background: rgba(255,118,87,.15);
+ font-size: 9px;
+ font-weight: 700;
+ line-height: 1;
+ letter-spacing: .04em;
+ text-transform: uppercase;
+ text-decoration: none;
+ white-space: nowrap;
+ transition: color .18s ease, background .18s ease, border-color .18s ease;
+}
+.contextLink:hover { color: #200e08; border-color: var(--orange); background: var(--orange); }
+.contextLink svg { width: 10px; height: 10px; flex: 0 0 auto; fill: currentColor; }
+.tocContext { color: var(--orange); font-weight: 700; }</style>
+<script  src="exhibitsData.js"></script>
 <script>(() => {
  "use strict"
- const items = [
-  {slug: "coffee", title: "I'm Not Worth a Coffee", year: "2026", source: "YC alum", kind: "tweet", image: "coffee.png"},
-  {slug: "no-demo-day-scientology", title: "No Demo Day Scientology", year: "2024", source: "Y Combinator", kind: "screenshot", image: "noDemoDayScientology.jpeg"},
-  {slug: "breck", title: "Breck", year: "2022", source: "Imad Akhund", kind: "email", image: "imMad.png"},
-  {slug: "congrats-to-airbedandbreakfast", title: "Congrats to AirBedAndBreakfast!", year: "2020", source: "Breck Yunits", kind: "email", image: "reunion.png"},
-  {slug: "garry-vs-breck", title: "Garry vs Breck", year: "2019", source: "Hacker News", kind: "screenshot", image: "garryVsBreck.png"},
-  {slug: "hair-stand-on-end", title: "Spend Slowly Because the World Is Unpredictable", year: "2015", source: "Jessica Livingston", kind: "email", image: "hairStandOnEnd.png"},
-  {slug: "sama-for-president", title: "Sama for President", year: "2014", source: "Paul Graham", kind: "email", image: "samaForPresident.png"},
-  {slug: "horrified", title: "You Don't Have to Pay Back YC", year: "2014", source: "Paul Graham", kind: "email", image: "horrified.png"},
-  {slug: "has-to-be", title: "YC Founders List Email Guidelines", year: "2014", source: "Garry Tan", kind: "email", image: "hasToBe.png"},
-  {slug: "crunchies", title: "YC Alumni Nominated for Crunchies", year: "2014", source: "Paul Graham", kind: "email", image: "crunchies.png"},
-  {slug: "swanky", title: "YC S09 4-Year Reunion", year: "2013", source: "Suhail Doshi", kind: "email", image: "swanky.png"},
-  {slug: "bookface-balls", title: "H1 Lawyer Recommendations", year: "2013", source: "John Collison", kind: "email", image: "bookfaceBalls.png"},
-  {slug: "aaron-swartz", title: "Aaron Swartz Commits Suicide", year: "2013", source: "Hacker News", kind: "screenshot", image: "wowTheySolvedThatCaseFastBodyStillWarm.png"},
-  {slug: "immigration-lawyer", title: "Any Immigration Lawyer Suggestion?", year: "2012", source: "Paul Biggar", kind: "email", image: "theImmigrationArchives.png"},
-  {slug: "investor-updates", title: "Investor Updates", year: "2012", source: "Paul Graham", kind: "email", image: "investorUpdates.png"},
-  {slug: "help-wanted-moderate-hacker-news", title: "Help Wanted: Moderate Hacker News", year: "2012", source: "Paul Graham", kind: "email", image: "6kAMonth.png"},
-  {slug: "black-clouds", title: "Black Clouds on the Horizon", year: "2012", source: "Paul Graham", kind: "email", image: "blackClouds1of2.png"},
-  {slug: "black-clouds-2", title: "Black Clouds on the Horizon (2 of 2)", year: "2012", source: "Paul Graham", kind: "email", image: "blackClouds2of2.png"},
-  {slug: "too-much-fraud", title: "Why You Want Ron Conway as an Investor", year: "2011", source: "Paul Graham", kind: "email", image: "tooMuchFraud.png"},
-  {slug: "yuzu", title: "Yuzu", year: "2011", source: "Breck Yunits", kind: "email", image: "yuzu.png"},
-  {slug: "dubious", title: "Very Dubious Reputation", year: "2011", source: "Paul Graham", kind: "email", image: "dubious.png"},
-  {slug: "trust-only-y-companies", title: "Fwd: Equity Split Survey", year: "2010", source: "Paul Graham", kind: "email", image: "trustOnlyYCompanies.png"},
-  {slug: "australia-humble-brag", title: "Tom and Breck Turn 26", year: "2010", source: "Drew Houston", kind: "email", image: "australiaHumbleBrag.png"},
-  {slug: "stealing-gmail-passwords", title: "Try Etacts", year: "2010", source: "Howie Liu", kind: "email", image: "stealingGmailPasswords.png"},
-  {slug: "should-we-fund-alex-andon", title: "Should We Fund Alex Andon?", year: "2009", source: "Paul Graham", kind: "email", image: "Al.jpeg"},
-  {slug: "why-no-favicon", title: "Why No Favicon?", year: "2009", source: "Breck Yunits", kind: "email", image: "faviconWasTrueCauesOfAirbnbsSuccess.png"},
-  {slug: "all-time-record-in-losing", title: "All-Time Record in Losing", year: "2009", source: "Paul Graham", kind: "email", image: "allTimeRecordInLosing.webp"},
-  {slug: "looking-young", title: "Anyone an Undergrad or Just Graduated?", year: "2009", source: "Jessica Livingston", kind: "email", image: "lookingYoung.png"},
-  {slug: "lunch-tomorrow", title: "Lunch Tomorrow, 1pm", year: "2009", source: "Paul Graham", kind: "email", image: "jessicaIsTrapped.png"},
-  {slug: "nudgepad-3-percent-club", title: "NudgePad 3 Percent Club", year: "2009", source: "GIGGGS, Inc.", kind: "pdf", image: "nudgePad3PercentClub.pdf"},
-  {slug: "probably-significant", title: "Anyone Using Google App Engine?", year: "2009", source: "Paul Graham", kind: "email", image: "probablySignificant.png"},
-  {slug: "sketchy", title: "Credit Card Processing and SSL", year: "2009", source: "Daniel Kluesing", kind: "email", image: "sketchy.png"},
-  {slug: "robot-room", title: "Wireless Setup and the Robot Room", year: "2009", source: "Trevor Blackwell", kind: "email", image: "robotRoom.png"},
-  {slug: "didnt-bother", title: "Next Week's Schedule", year: "2009", source: "Kate Courteau", kind: "email", image: "didntBother.png"},
-  {slug: "dinner-tomorrow", title: "Dinner Tomorrow", year: "2009", source: "Jessica Livingston", kind: "email", image: "bizBringsJack.png"},
-  {slug: "airbooze-and-breakfast", title: "AirBooze & Breakfast Pre-Inauguration Bash", year: "2009", source: "Joe Gebbia", kind: "email", image: "airboozeAndBreakfast.png"},
-  {slug: "forlorn-canadians", title: "Forlorn Canadians Seek Ride Tomorrow", year: "2009", source: "Daniel Gackle", kind: "email", image: "topSecretMountainLocation.png"},
-  {slug: "airbnb-secret-weapon", title: "The Airbnb Craigslist Secret Weapon", year: "2009", source: "", kind: "screenshot", image: "airbnbSecretWeapon.png"},
-  {slug: "breck-chesky", title: "Take Part in Workshop, $500 Compensation", year: "2008", source: "Joe Gebbia", kind: "email", image: "breckChesky.webp"},
-  {slug: "emails-with-goat", title: "Open Library Project Help", year: "2008", source: "Breck Yunits", kind: "email", image: "emailsWithGoat.png"},
-  {slug: "the-goat", title: "Aaron Swartz Memorial Bust", year: "", source: "", kind: "photo", image: "theGoat.png"},
-  {slug: "hot-girls-of-yc", title: "Hot Girls of Y Combinator", year: "", source: "", kind: "meme", image: "hotGirlsOfYC.jpg"},
-  {slug: "shark-tank", title: "Do Not Go on the Shark Tank", year: "", source: "", kind: "screenshot", image: "sharkTank.png"},
-  {slug: "whos-kevin-tom", title: "So Far We Have: Attendee List", year: "", source: "", kind: "screenshot", image: "whosKevinTom.png"}
- ]
+ const items = exhibitsData.map(exhibit => ({...exhibit, slug: exhibit.id, context: exhibit.context || "", contextLabel: exhibit.contextLabel || ""}))
  const kindLabels = {email: "Email", tweet: "Tweet", photo: "Photo", meme: "Meme", screenshot: "Screenshot", pdf: "PDF"}
  const list = document.getElementById("makerList")
  const carousel = document.getElementById("carousel")
+ const filterInput = document.getElementById("filterInput")
+ const filterClear = document.getElementById("filterClear")
  const previous = document.getElementById("previous")
  const next = document.getElementById("next")
  const previousPreview = document.getElementById("previousPreview")
@@ -406,6 +437,8 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(237,246,242,.56); }
  let current = 0
  let wheelLocked = false
  let pointerStart = null
+ let query = ""
+ let order = items.map((item, index) => index)
  const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"})[character])
  const pad = value => String(value).padStart(2, "0")
  const isPdf = source => /\.pdf$/i.test(source)
@@ -415,6 +448,18 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(237,246,242,.56); }
   if (item.source) labels.push(item.source)
   if (!labels.length) labels.push(kindLabels[item.kind] || "Artifact")
   return labels
+ }
+ const matches = item => {
+  const q = query.trim().toLowerCase()
+  if (!q) return true
+  return [item.title, item.year, item.source, item.kind].filter(Boolean).join(" ").toLowerCase().includes(q)
+ }
+ const spotOf = index => order.indexOf(index)
+ const sideIndex = delta => {
+  const spot = spotOf(current)
+  const nextSpot = spot + delta
+  if (spot === -1 || nextSpot < 0 || nextSpot >= order.length) return undefined
+  return order[nextSpot]
  }
  const cardPosition = distance => {
   const direction = Math.sign(distance)
@@ -435,8 +480,11 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(237,246,242,.56); }
   const media = isPdf(item.image)
    ? `<iframe class="cardPdf" src="${escapeHtml(item.image)}" title="${escapeHtml(item.title)}" loading="eager"></iframe>`
    : `<a class="cardImgLink" href="${escapeHtml(item.image)}" target="_blank" rel="noopener noreferrer" title="Open full size in a new tab"><img class="cardImg" src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="eager"></a>`
+  const contextLink = item.context
+   ? `<a class="contextLink" href="${escapeHtml(item.context)}" target="_blank" rel="noopener noreferrer" title="Context &amp; commentary on this exhibit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.9 3 2.8 6.6 2.8 11c0 2.5 1.4 4.7 3.6 6.2V21l3.5-2.1c.7.1 1.4.2 2.1.2 5.1 0 9.2-3.6 9.2-8S17.1 3 12 3Zm-4 9.2a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Zm4 0a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Zm4 0a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Z"/></svg>${escapeHtml(item.contextLabel || "Context")}</a>`
+   : ""
   card.innerHTML = `
-   <div class="browserBar"><a class="makerName" href="${escapeHtml(item.image)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a><div class="barLanguages">${chips(item).map(label => `<span class="language">${escapeHtml(label)}</span>`).join("")}</div></div>
+   <div class="browserBar"><a class="makerName" href="${escapeHtml(item.image)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>${contextLink}<div class="barLanguages">${chips(item).map(label => `<span class="language">${escapeHtml(label)}</span>`).join("")}</div></div>
    <div class="viewport">
     ${media}
     <div class="cardTint"></div>
@@ -445,18 +493,32 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(237,246,242,.56); }
   visibleCards.set(index, card)
   return card
  }
+ const announce = item => {
+  liveRegion.textContent = `${item.title}, ${item.year || kindLabels[item.kind]}${item.source ? ", " + item.source : ""}${item.context ? ", has context or commentary" : ""}`
+ }
+ const updateChrome = () => {
+  const spot = spotOf(current)
+  previous.disabled = spot <= 0
+  next.disabled = spot === -1 || spot >= order.length - 1
+  previousPreview.disabled = previous.disabled
+  nextPreview.disabled = next.disabled
+  previousPreview.setAttribute("aria-label", spot > 0 ? `Center ${items[order[spot - 1]].title}` : "No previous email")
+  nextPreview.setAttribute("aria-label", spot >= 0 && spot < order.length - 1 ? `Center ${items[order[spot + 1]].title}` : "No next email")
+  positionCurrent.textContent = spot >= 0 ? pad(spot + 1) : "00"
+  positionTotal.textContent = pad(order.length)
+ }
  const renderCards = () => {
-  const wanted = new Set()
-  for (let index = Math.max(0, current - 3); index <= Math.min(items.length - 1, current + 3); index++) wanted.add(index)
+  const center = spotOf(current)
+  const wanted = new Map()
+  for (let spot = Math.max(0, center - 3); spot <= Math.min(order.length - 1, center + 3); spot++) wanted.set(order[spot], spot - center)
   visibleCards.forEach((card, index) => {
    if (!wanted.has(index)) {
     card.remove()
     visibleCards.delete(index)
    }
   })
-  wanted.forEach(index => {
+  wanted.forEach((distance, index) => {
    const card = visibleCards.get(index) || createCard(index)
-   const distance = index - current
    const [x, z, rotation, scale, opacity] = cardPosition(distance)
    card.style.setProperty("--x", x)
    card.style.setProperty("--z", z)
@@ -468,64 +530,98 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(237,246,242,.56); }
    card.classList.toggle("active", distance === 0)
   })
  }
- const updatePreviewTargets = () => {
-  previousPreview.disabled = current === 0
-  nextPreview.disabled = current === items.length - 1
-  previousPreview.setAttribute("aria-label", current > 0 ? `Center ${items[current - 1].title}` : "No previous email")
-  nextPreview.setAttribute("aria-label", current < items.length - 1 ? `Center ${items[current + 1].title}` : "No next email")
- }
  const setPreviewHover = (index, hovered) => visibleCards.get(index)?.classList.toggle("sideHovered", hovered)
  const updateList = shouldScroll => {
-  const links = list.querySelectorAll("a[data-index]")
-  links.forEach((link, index) => link.setAttribute("aria-current", index === current ? "true" : "false"))
-  if (shouldScroll) {
-   const link = links[current]
-   const mobile = matchMedia("(max-width: 680px)").matches
-   list.scrollTo(mobile
-    ? {left: link.offsetLeft - list.clientWidth / 2 + link.offsetWidth / 2, behavior: "smooth"}
-    : {top: link.offsetTop - list.clientHeight / 2 + link.offsetHeight / 2, behavior: "smooth"})
-  }
+  list.querySelectorAll("a[data-index]").forEach(link => link.setAttribute("aria-current", Number(link.dataset.index) === current ? "true" : "false"))
+  if (!shouldScroll) return
+  const link = list.querySelector(`a[data-index="${current}"]`)
+  if (!link) return
+  const mobile = matchMedia("(max-width: 680px)").matches
+  list.scrollTo(mobile
+   ? {left: link.offsetLeft - list.clientWidth / 2 + link.offsetWidth / 2, behavior: "smooth"}
+   : {top: link.offsetTop - list.clientHeight / 2 + link.offsetHeight / 2, behavior: "smooth"})
+ }
+ const renderList = () => {
+  list.innerHTML = order.length
+   ? order.map(index => {
+     const item = items[index]
+     return `<a href="${escapeHtml(item.image)}" data-index="${index}" aria-current="${index === current}"><span class="tocCopy"><span class="tocName">${escapeHtml(item.title)}</span><span class="tocLanguage">${escapeHtml(item.year || kindLabels[item.kind])}${item.source ? " · " + escapeHtml(item.source) : ""}${item.context ? ' · <span class="tocContext" title="Has context or commentary">context</span>' : ""}</span></span><span class="tocRank">#${pad(index + 1)}</span></a>`
+    }).join("")
+   : `<p class="tocEmpty">No emails match \u201c${escapeHtml(query)}\u201d.</p>`
  }
  const select = (index, shouldScroll = true) => {
-  const nextIndex = Math.max(0, Math.min(items.length - 1, index))
-  if (nextIndex === current && visibleCards.size) return
-  current = nextIndex
+  if (spotOf(index) === -1) return
+  if (index === current && visibleCards.size) return
+  current = index
   renderCards()
   updateList(shouldScroll)
-  previous.disabled = current === 0
-  next.disabled = current === items.length - 1
-  updatePreviewTargets()
-  positionCurrent.textContent = pad(current + 1)
-  const item = items[current]
-  liveRegion.textContent = `${item.title}, ${item.year || kindLabels[item.kind]}, ${item.source}`
-  history.replaceState(null, "", `#${encodeURIComponent(item.slug)}`)
+  updateChrome()
+  announce(items[current])
+  history.replaceState(null, "", `#${encodeURIComponent(items[current].slug)}`)
  }
- list.innerHTML = items.map((item, index) => `<a href="${escapeHtml(item.image)}" data-index="${index}" aria-current="${index === 0}"><span class="tocCopy"><span class="tocName">${escapeHtml(item.title)}</span><span class="tocLanguage">${escapeHtml(item.year || kindLabels[item.kind])}${item.source ? " · " + escapeHtml(item.source) : ""}</span></span><span class="tocRank">#${pad(index + 1)}</span></a>`).join("")
- positionTotal.textContent = pad(items.length)
+ const step = delta => {
+  const next = sideIndex(delta)
+  if (next !== undefined) select(next)
+ }
+ const applyFilter = () => {
+  query = filterInput.value
+  filterClear.hidden = !query
+  order = items.map((item, index) => index).filter(index => matches(items[index]))
+  if (!order.length) {
+   visibleCards.forEach(card => card.remove())
+   visibleCards.clear()
+   renderList()
+   current = -1
+   updateChrome()
+   liveRegion.textContent = "No emails match your filter"
+   return
+  }
+  if (spotOf(current) === -1) {
+   current = order[0]
+   history.replaceState(null, "", `#${encodeURIComponent(items[current].slug)}`)
+  }
+  renderList()
+  renderCards()
+  updateList(true)
+  updateChrome()
+  announce(items[current])
+ }
+ renderList()
  list.addEventListener("click", event => {
   const link = event.target.closest("a[data-index]")
   if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
   event.preventDefault()
   select(Number(link.dataset.index))
  })
- previous.addEventListener("click", () => select(current - 1))
- next.addEventListener("click", () => select(current + 1))
- previousPreview.addEventListener("click", () => select(current - 1))
- nextPreview.addEventListener("click", () => select(current + 1))
- previousPreview.addEventListener("pointerenter", () => setPreviewHover(current - 1, true))
- previousPreview.addEventListener("pointerleave", () => setPreviewHover(current - 1, false))
- nextPreview.addEventListener("pointerenter", () => setPreviewHover(current + 1, true))
- nextPreview.addEventListener("pointerleave", () => setPreviewHover(current + 1, false))
+ filterInput.addEventListener("input", applyFilter)
+ filterClear.addEventListener("click", () => {
+  filterInput.value = ""
+  applyFilter()
+  filterInput.focus()
+ })
+ previous.addEventListener("click", () => step(-1))
+ next.addEventListener("click", () => step(1))
+ previousPreview.addEventListener("click", () => step(-1))
+ nextPreview.addEventListener("click", () => step(1))
+ previousPreview.addEventListener("pointerenter", () => setPreviewHover(sideIndex(-1), true))
+ previousPreview.addEventListener("pointerleave", () => setPreviewHover(sideIndex(-1), false))
+ nextPreview.addEventListener("pointerenter", () => setPreviewHover(sideIndex(1), true))
+ nextPreview.addEventListener("pointerleave", () => setPreviewHover(sideIndex(1), false))
  document.addEventListener("keydown", event => {
-  if (event.key === "ArrowLeft") { event.preventDefault(); select(current - 1) }
-  if (event.key === "ArrowRight") { event.preventDefault(); select(current + 1) }
-  if (event.key === "Home") { event.preventDefault(); select(0) }
-  if (event.key === "End") { event.preventDefault(); select(items.length - 1) }
+  if (event.target === filterInput) {
+   if (event.key === "Escape") { filterInput.value = ""; applyFilter() }
+   return
+  }
+  if (event.key === "/") { event.preventDefault(); filterInput.focus(); return }
+  if (event.key === "ArrowLeft") { event.preventDefault(); step(-1) }
+  if (event.key === "ArrowRight") { event.preventDefault(); step(1) }
+  if (event.key === "Home") { event.preventDefault(); if (order.length) select(order[0]) }
+  if (event.key === "End") { event.preventDefault(); if (order.length) select(order[order.length - 1]) }
  })
  stage.addEventListener("wheel", event => {
   if (wheelLocked || Math.max(Math.abs(event.deltaX), Math.abs(event.deltaY)) < 18) return
   wheelLocked = true
-  select(current + (event.deltaX + event.deltaY > 0 ? 1 : -1))
+  step(event.deltaX + event.deltaY > 0 ? 1 : -1)
   window.setTimeout(() => { wheelLocked = false }, 280)
  }, {passive: true})
  stage.addEventListener("pointerdown", event => { pointerStart = event.clientX })
@@ -533,22 +629,28 @@ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(237,246,242,.56); }
   if (pointerStart === null) return
   const distance = event.clientX - pointerStart
   pointerStart = null
-  if (Math.abs(distance) > 55) select(current + (distance < 0 ? 1 : -1))
+  if (Math.abs(distance) > 55) step(distance < 0 ? 1 : -1)
  })
  window.addEventListener("hashchange", () => {
   const slug = decodeURIComponent(location.hash.slice(1))
   const index = items.findIndex(item => item.slug === slug)
-  if (index >= 0) select(index)
+  if (index < 0) return
+  if (spotOf(index) === -1) {
+   filterInput.value = ""
+   filterClear.hidden = true
+   query = ""
+   order = items.map((item, spot) => spot)
+   renderList()
+  }
+  select(index)
  })
  const hashSlug = decodeURIComponent(location.hash.slice(1))
  const hashIndex = items.findIndex(item => item.slug === hashSlug)
  current = hashIndex >= 0 ? hashIndex : 0
  renderCards()
  updateList(true)
- previous.disabled = current === 0
- next.disabled = current === items.length - 1
- updatePreviewTargets()
- positionCurrent.textContent = pad(current + 1)
+ updateChrome()
+ announce(items[current])
 })()</script>
 </body>
 </html>
