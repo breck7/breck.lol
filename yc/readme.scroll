@@ -1,0 +1,546 @@
+title The YC Emails
+description Flip through emails, screenshots, and artifacts from inside Y Combinator, newest first.
+baseUrl https://breck.lol/yc/
+permalink index.html
+openGraphImage 6kAMonth.png
+buildHtml
+metaTags
+
+html
+ <div class="appShell">
+  <aside class="sidebar" aria-label="Y Combinator emails">
+   <div class="sidebarLabel">Emails</div>
+   <nav class="makerList" id="makerList"></nav>
+  </aside>
+  <main class="mainPane">
+   <header class="masthead">
+    <div>
+     <h1>The YC Emails<br><span>From the founders list</span></h1>
+     <p>Emails, screenshots, and artifacts from inside Y Combinator, as collected by Breck Yunits</p>
+     <p class="credit">Made by <a href="https://twitter.com/breckyunits" target="_blank" rel="noopener noreferrer">Breck Yunits</a> · Sources: the ycfounders list, Hacker News, Twitter</p>
+    </div>
+    <a class="repoLink" href="https://github.com/breck7/breck.lol/blob/main/yc/readme.scroll" target="_blank" rel="noopener noreferrer" aria-label="Open readme.scroll on GitHub" title="readme.scroll on GitHub">
+     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.74-1.55-2.57-.29-5.27-1.29-5.27-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.75 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.4-2.71 5.38-5.29 5.67.42.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg>
+    </a>
+   </header>
+   <section class="stage" id="stage" aria-roledescription="carousel" aria-label="Y Combinator emails" tabindex="0">
+    <div class="atmosphere" aria-hidden="true"></div>
+    <div class="carousel" id="carousel"></div>
+    <button class="previewCenterTarget previewPrevious" id="previousPreview" type="button" aria-label="Center previous email"></button>
+    <button class="previewCenterTarget previewNext" id="nextPreview" type="button" aria-label="Center next email"></button>
+    <button class="navButton previous" id="previous" type="button" aria-label="Previous email" title="Previous email (Left arrow)"><span>‹</span></button>
+    <button class="navButton next" id="next" type="button" aria-label="Next email" title="Next email (Right arrow)"><span>›</span></button>
+    <div class="position" aria-hidden="true"><span id="positionCurrent">01</span><i></i><span id="positionTotal"></span></div>
+   </section>
+  </main>
+ </div>
+ <div class="srOnly" id="liveRegion" aria-live="polite"></div>
+
+css
+ :root {
+  color-scheme: dark;
+  --ink: #edf6f2;
+  --muted: #8ba39d;
+  --acid: #b9f228;
+  --orange: #ff7657;
+  --panel: rgba(12, 24, 27, .82);
+  --line: rgba(205, 244, 234, .13);
+  --sidebar: 244px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+ }
+ * { box-sizing: border-box; }
+ html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #061012; }
+ body {
+  color: var(--ink);
+  background:
+   radial-gradient(circle at 72% 28%, rgba(30, 101, 92, .28), transparent 34%),
+   radial-gradient(circle at 42% 105%, rgba(185, 242, 40, .09), transparent 35%),
+   #061012;
+ }
+ button, a { font: inherit; }
+ .appShell { display: grid; grid-template-columns: var(--sidebar) minmax(0, 1fr); width: 100%; height: 100%; }
+ .sidebar {
+  position: relative;
+  z-index: 20;
+  min-width: 0;
+  padding: 18px 0;
+  overflow: hidden;
+  border-right: 1px solid rgba(255,255,255,.13);
+  background:
+   linear-gradient(135deg, rgba(255,255,255,.055), transparent 36%),
+   rgba(8, 20, 22, .76);
+  box-shadow: 18px 0 60px rgba(0,0,0,.24);
+  backdrop-filter: blur(28px) saturate(135%);
+ }
+ .sidebarLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 18px 12px;
+  color: #a9bbb6;
+  font-size: 10px;
+  font-weight: 720;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+ }
+ .makerList {
+  height: calc(100% - 28px);
+  overflow: auto;
+  padding: 2px 10px 60px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,.16) transparent;
+  mask-image: linear-gradient(to bottom, transparent 0, black 13px, black calc(100% - 24px), transparent 100%);
+ }
+ .makerList a {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  width: 100%;
+  min-height: 45px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 8px;
+  color: #80938e;
+  background: transparent;
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+  transition: color .16s ease, background .16s ease, transform .16s ease;
+ }
+ .makerList a:hover { color: #dbe8e4; background: rgba(255,255,255,.055); transform: translateX(2px); }
+ .makerList a[aria-current="true"] {
+  color: #f4faf7;
+  background: linear-gradient(90deg, rgba(185,242,40,.18), rgba(185,242,40,.065));
+  box-shadow: inset 2px 0 var(--acid);
+ }
+ .tocCopy { display: grid; min-width: 0; gap: 3px; }
+ .tocRank { align-self: start; margin-top: 2px; color: #526762; font: 600 9px/1 ui-monospace, SFMono-Regular, Menlo, monospace; font-variant-numeric: tabular-nums; }
+ .makerList a[aria-current="true"] .tocRank { color: var(--acid); }
+ .tocName { overflow: hidden; font-size: 12px; font-weight: 560; letter-spacing: -.01em; text-overflow: ellipsis; white-space: nowrap; }
+ .tocLanguage { overflow: hidden; color: #566d67; font-size: 9px; font-weight: 600; letter-spacing: .02em; text-overflow: ellipsis; white-space: nowrap; }
+ .makerList a[aria-current="true"] .tocLanguage { color: #9fba57; }
+ .mainPane { min-width: 0; display: grid; grid-template-rows: auto minmax(0, 1fr); }
+ .masthead {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: clamp(24px, 4.1vh, 50px) clamp(28px, 4.5vw, 72px) 4px;
+ }
+ h1 { margin: 0; font-size: clamp(30px, 4.3vw, 68px); font-weight: 730; line-height: .86; letter-spacing: -.065em; }
+ h1 span { color: transparent; -webkit-text-stroke: 1px rgba(237,246,242,.56); }
+ .masthead p { max-width: 530px; margin: 16px 0 0; color: var(--muted); font-size: clamp(11px, 1.15vw, 15px); line-height: 1.45; letter-spacing: .01em; }
+ .masthead .credit { margin-top: 7px; color: #5e746e; font-size: clamp(9px, .85vw, 11px); }
+ .credit a { color: #9eb2ac; text-decoration: none; border-bottom: 1px solid rgba(185,242,40,.32); transition: color .18s ease, border-color .18s ease; }
+ .credit a:hover { color: var(--acid); border-color: var(--acid); }
+ .repoLink {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  color: var(--ink);
+  background: rgba(255,255,255,.035);
+  transition: transform .2s ease, color .2s ease, border-color .2s ease, background .2s ease;
+ }
+ .repoLink:hover { color: #071012; border-color: var(--acid); background: var(--acid); transform: translateY(-2px) rotate(-4deg); }
+ .repoLink svg { width: 20px; fill: currentColor; }
+ .stage {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+  perspective: 1500px;
+  perspective-origin: 50% 43%;
+  outline: none;
+  touch-action: pan-y;
+ }
+ .stage:focus-visible { box-shadow: inset 0 0 0 1px rgba(185,242,40,.5); }
+ .atmosphere {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+ }
+ .atmosphere::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -36%;
+  width: 125%;
+  height: 82%;
+  transform: translateX(-50%) perspective(700px) rotateX(67deg);
+  transform-origin: center bottom;
+  opacity: .23;
+  background-image:
+   linear-gradient(rgba(161,221,204,.15) 1px, transparent 1px),
+   linear-gradient(90deg, rgba(161,221,204,.15) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to top, black, transparent 76%);
+ }
+ .atmosphere::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  width: min(76vw, 980px);
+  height: 220px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(79, 219, 183, .13);
+  filter: blur(80px);
+ }
+ .carousel { position: absolute; inset: 0; transform-style: preserve-3d; }
+ .card {
+  --x: 0px;
+  --z: 0px;
+  --rot: 0deg;
+  --scale: 1;
+  --hover: 1;
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  width: clamp(360px, 58vw, 900px);
+  height: clamp(330px, 59vh, 650px);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: clamp(13px, 1.6vw, 21px);
+  background: #d7e0dd;
+  box-shadow: 0 45px 100px rgba(0,0,0,.54), 0 12px 28px rgba(0,0,0,.34), inset 0 1px rgba(255,255,255,.55);
+  transform: translate(-50%, -50%) translate3d(var(--x), 0, var(--z)) rotateY(var(--rot)) scale(calc(var(--scale) * var(--hover)));
+  transform-style: preserve-3d;
+  transition: transform .42s cubic-bezier(.2,.78,.18,1), opacity .3s ease, filter .24s ease, box-shadow .24s ease;
+  will-change: transform;
+ }
+ .card:not(.active):hover, .card.sideHovered { --hover: 1.13; filter: saturate(1.12) brightness(1.06); box-shadow: 0 55px 115px rgba(0,0,0,.64), 0 0 0 1px rgba(185,242,40,.42); }
+ .card.active { border-color: rgba(255,255,255,.34); }
+ .browserBar {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 14px;
+  color: #d9e6e1;
+  background: linear-gradient(#233439, #15262a);
+  border-bottom: 1px solid rgba(0,0,0,.38);
+ }
+ .makerName { flex: 0 1 auto; min-width: 0; max-width: 52%; overflow: hidden; color: inherit; font-size: 12px; font-weight: 650; letter-spacing: -.01em; text-decoration: none; text-overflow: ellipsis; white-space: nowrap; }
+ .makerName:hover { text-decoration: underline; text-underline-offset: 3px; }
+ .barLanguages { display: flex; flex: 1; min-width: 0; gap: 4px; overflow: hidden; justify-content: flex-end; }
+ .viewport { position: absolute; inset: 42px 0 0; overflow: hidden; background: #10171c; }
+ .cardImg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+ .cardPdf { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #fff; }
+ .cardImgLink { position: absolute; inset: 0; display: block; }
+ .card:not(.active) .cardImgLink { pointer-events: none; }
+ .card.active .viewport { cursor: zoom-in; }
+ .card.active .viewport::after { content: "Open full size ⤢"; position: absolute; right: 12px; bottom: 12px; z-index: 3; padding: 6px 10px; border-radius: 999px; background: rgba(7,19,21,.72); color: #e7f1ee; font-size: 10px; font-weight: 650; letter-spacing: .04em; text-transform: uppercase; pointer-events: none; border: 1px solid rgba(255,255,255,.16); }
+ .cardTint { position: absolute; inset: 0; z-index: 2; pointer-events: none; box-shadow: inset 0 0 70px rgba(3,14,16,.09); }
+ .language {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+  padding: 4px 7px;
+  overflow: hidden;
+  border: 1px solid rgba(205,244,234,.16);
+  border-radius: 999px;
+  color: #dce8e4;
+  background: rgba(255,255,255,.06);
+  font-size: 8px;
+  font-weight: 620;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ }
+ .language:first-child { color: #172109; border-color: var(--acid); background: var(--acid); }
+ .previewCenterTarget { position: absolute; z-index: 11; top: 43%; width: max(0px, calc((100% - clamp(360px, 58vw, 900px)) / 2)); height: clamp(330px, 59vh, 650px); padding: 0; border: 0; background: transparent; cursor: pointer; transform: translateY(-50%); }
+ .previewCenterTarget:focus-visible { outline: 2px solid var(--acid); outline-offset: -3px; }
+ .previewCenterTarget:disabled { pointer-events: none; }
+ .previewPrevious { left: 0; }
+ .previewNext { right: 0; }
+ .navButton {
+  position: absolute;
+  z-index: 12;
+  top: 43%;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 1px solid rgba(255,255,255,.17);
+  border-radius: 50%;
+  color: #dce9e5;
+  background: rgba(7,19,21,.72);
+  box-shadow: 0 10px 28px rgba(0,0,0,.24);
+  cursor: pointer;
+  transform: translateY(-50%);
+  backdrop-filter: blur(12px);
+  transition: color .18s ease, background .18s ease, border-color .18s ease, transform .18s ease, opacity .18s ease;
+ }
+ .navButton span { margin-top: -4px; font-size: 38px; font-weight: 220; line-height: 1; }
+ .navButton:hover { color: #081012; border-color: var(--acid); background: var(--acid); transform: translateY(-50%) scale(1.08); }
+ .navButton:disabled { opacity: .18; cursor: default; pointer-events: none; }
+ .previous { left: clamp(15px, 2.5vw, 40px); }
+ .next { right: clamp(15px, 2.5vw, 40px); }
+ .position {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: clamp(15px, 2.8vh, 30px);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #60746f;
+  font: 650 9px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  transform: translateX(-50%);
+ }
+ .position i { display: block; width: 48px; height: 1px; background: linear-gradient(90deg, var(--acid), rgba(185,242,40,.15)); }
+ .position span:first-child { color: #d6e3df; }
+ .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+ @media (max-width: 900px) {
+  :root { --sidebar: 202px; }
+  .masthead { padding-left: 28px; padding-right: 28px; }
+  .card { width: clamp(330px, 66vw, 720px); }
+  .previewCenterTarget { width: max(0px, calc((100% - clamp(330px, 66vw, 720px)) / 2)); }
+  .tocName { font-size: 11px; }
+ }
+ @media (max-width: 680px) {
+  html, body { overflow-x: hidden; overflow-y: auto; }
+  .appShell { grid-template-columns: 1fr; grid-template-rows: 98px minmax(650px, calc(100vh - 98px)); min-height: 748px; }
+  .sidebar { display: grid; grid-template-rows: 24px 1fr; padding: 10px 0 7px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
+  .sidebarLabel { grid-row: 1; padding: 1px 14px 0; }
+  .makerList { grid-column: 1 / -1; display: flex; gap: 4px; width: 100%; height: 55px; padding: 6px 10px 9px; overflow-x: auto; overflow-y: hidden; mask-image: linear-gradient(90deg, transparent, black 12px, black calc(100% - 12px), transparent); }
+  .makerList a { flex: 0 0 auto; display: block; width: auto; min-height: 34px; padding: 6px 11px; white-space: nowrap; }
+  .makerList a[aria-current="true"] { box-shadow: inset 0 -2px var(--acid); }
+  .tocRank { display: none; }
+  .tocName { font-size: 10px; }
+  .mainPane { min-height: 650px; }
+  .masthead { padding: 25px 20px 0; }
+  h1 { font-size: clamp(31px, 10.5vw, 48px); }
+  .masthead p { max-width: 310px; margin-top: 11px; font-size: 10px; }
+  .masthead .credit { margin-top: 5px; font-size: 8px; }
+  .repoLink { width: 38px; height: 38px; }
+  .card { top: 42%; width: min(86vw, 540px); height: min(53vh, 500px); }
+  .previewCenterTarget { top: 42%; width: max(0px, calc((100% - min(86vw, 540px)) / 2)); height: min(53vh, 500px); }
+  .navButton { top: 42%; width: 42px; height: 42px; }
+  .previous { left: 8px; }
+  .next { right: 8px; }
+ }
+ @media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .001ms !important; animation-duration: .001ms !important; }
+ }
+
+script
+ (() => {
+  "use strict"
+  const items = [
+   {slug: "coffee", title: "I'm Not Worth a Coffee", year: "2026", source: "YC alum", kind: "tweet", image: "coffee.png"},
+   {slug: "no-demo-day-scientology", title: "No Demo Day Scientology", year: "2024", source: "Y Combinator", kind: "screenshot", image: "noDemoDayScientology.jpeg"},
+   {slug: "breck", title: "Breck", year: "2022", source: "Imad Akhund", kind: "email", image: "imMad.png"},
+   {slug: "congrats-to-airbedandbreakfast", title: "Congrats to AirBedAndBreakfast!", year: "2020", source: "Breck Yunits", kind: "email", image: "reunion.png"},
+   {slug: "garry-vs-breck", title: "Garry vs Breck", year: "2019", source: "Hacker News", kind: "screenshot", image: "garryVsBreck.png"},
+   {slug: "how-dirty-is-y-combinator", title: "How Dirty Is Y Combinator", year: "2018", source: "Bookface Forum Digest", kind: "email", image: "howDirtyIsYCombinator.png"},
+   {slug: "naughty", title: "Do XYZ or I Will Publish Naughty Information", year: "2016", source: "Breck Yunits", kind: "screenshot", image: "naughty.png"},
+   {slug: "hair-stand-on-end", title: "Spend Slowly Because the World Is Unpredictable", year: "2015", source: "Jessica Livingston", kind: "email", image: "hairStandOnEnd.png"},
+   {slug: "sama-for-president", title: "Sama for President", year: "2014", source: "Paul Graham", kind: "email", image: "samaForPresident.png"},
+   {slug: "horrified", title: "You Don't Have to Pay Back YC", year: "2014", source: "Paul Graham", kind: "email", image: "horrified.png"},
+   {slug: "has-to-be", title: "YC Founders List Email Guidelines", year: "2014", source: "Garry Tan", kind: "email", image: "hasToBe.png"},
+   {slug: "crunchies", title: "YC Alumni Nominated for Crunchies", year: "2014", source: "Paul Graham", kind: "email", image: "crunchies.png"},
+   {slug: "swanky", title: "YC S09 4-Year Reunion", year: "2013", source: "Suhail Doshi", kind: "email", image: "swanky.png"},
+   {slug: "bookface-balls", title: "H1 Lawyer Recommendations", year: "2013", source: "John Collison", kind: "email", image: "bookfaceBalls.png"},
+   {slug: "aaron-swartz", title: "Aaron Swartz Commits Suicide", year: "2013", source: "Hacker News", kind: "screenshot", image: "wowTheySolvedThatCaseFastBodyStillWarm.png"},
+   {slug: "immigration-lawyer", title: "Any Immigration Lawyer Suggestion?", year: "2012", source: "Paul Biggar", kind: "email", image: "theImmigrationArchives.png"},
+   {slug: "investor-updates", title: "Investor Updates", year: "2012", source: "Paul Graham", kind: "email", image: "investorUpdates.png"},
+   {slug: "help-wanted-moderate-hacker-news", title: "Help Wanted: Moderate Hacker News", year: "2012", source: "Paul Graham", kind: "email", image: "6kAMonth.png"},
+   {slug: "black-clouds", title: "Black Clouds on the Horizon", year: "2012", source: "Paul Graham", kind: "email", image: "blackClouds1of2.png"},
+   {slug: "black-clouds-2", title: "Black Clouds on the Horizon (2 of 2)", year: "2012", source: "Paul Graham", kind: "email", image: "blackClouds2of2.png"},
+   {slug: "too-much-fraud", title: "Why You Want Ron Conway as an Investor", year: "2011", source: "Paul Graham", kind: "email", image: "tooMuchFraud.png"},
+   {slug: "yuzu", title: "Yuzu", year: "2011", source: "Breck Yunits", kind: "email", image: "yuzu.png"},
+   {slug: "dubious", title: "Very Dubious Reputation", year: "2011", source: "Paul Graham", kind: "email", image: "dubious.png"},
+   {slug: "trust-only-y-companies", title: "Fwd: Equity Split Survey", year: "2010", source: "Paul Graham", kind: "email", image: "trustOnlyYCompanies.png"},
+   {slug: "australia-humble-brag", title: "Tom and Breck Turn 26", year: "2010", source: "Drew Houston", kind: "email", image: "australiaHumbleBrag.png"},
+   {slug: "stealing-gmail-passwords", title: "Try Etacts", year: "2010", source: "Howie Liu", kind: "email", image: "stealingGmailPasswords.png"},
+   {slug: "should-we-fund-alex-andon", title: "Should We Fund Alex Andon?", year: "2009", source: "Paul Graham", kind: "email", image: "Al.jpeg"},
+   {slug: "why-no-favicon", title: "Why No Favicon?", year: "2009", source: "Breck Yunits", kind: "email", image: "faviconWasTrueCauesOfAirbnbsSuccess.png"},
+   {slug: "all-time-record-in-losing", title: "All-Time Record in Losing", year: "2009", source: "Paul Graham", kind: "email", image: "allTimeRecordInLosing.webp"},
+   {slug: "looking-young", title: "Anyone an Undergrad or Just Graduated?", year: "2009", source: "Jessica Livingston", kind: "email", image: "lookingYoung.png"},
+   {slug: "lunch-tomorrow", title: "Lunch Tomorrow, 1pm", year: "2009", source: "Paul Graham", kind: "email", image: "jessicaIsTrapped.png"},
+   {slug: "nudgepad-3-percent-club", title: "NudgePad 3 Percent Club", year: "2009", source: "GIGGGS, Inc.", kind: "pdf", image: "nudgePad3PercentClub.pdf"},
+   {slug: "probably-significant", title: "Anyone Using Google App Engine?", year: "2009", source: "Paul Graham", kind: "email", image: "probablySignificant.png"},
+   {slug: "sketchy", title: "Credit Card Processing and SSL", year: "2009", source: "Daniel Kluesing", kind: "email", image: "sketchy.png"},
+   {slug: "robot-room", title: "Wireless Setup and the Robot Room", year: "2009", source: "Trevor Blackwell", kind: "email", image: "robotRoom.png"},
+   {slug: "didnt-bother", title: "Next Week's Schedule", year: "2009", source: "Kate Courteau", kind: "email", image: "didntBother.png"},
+   {slug: "dinner-tomorrow", title: "Dinner Tomorrow", year: "2009", source: "Jessica Livingston", kind: "email", image: "bizBringsJack.png"},
+   {slug: "airbooze-and-breakfast", title: "AirBooze & Breakfast Pre-Inauguration Bash", year: "2009", source: "Joe Gebbia", kind: "email", image: "airboozeAndBreakfast.png"},
+   {slug: "forlorn-canadians", title: "Forlorn Canadians Seek Ride Tomorrow", year: "2009", source: "Daniel Gackle", kind: "email", image: "topSecretMountainLocation.png"},
+   {slug: "airbnb-secret-weapon", title: "The Airbnb Craigslist Secret Weapon", year: "2009", source: "", kind: "screenshot", image: "airbnbSecretWeapon.png"},
+   {slug: "breck-chesky", title: "Take Part in Workshop, $500 Compensation", year: "2008", source: "Joe Gebbia", kind: "email", image: "breckChesky.webp"},
+   {slug: "emails-with-goat", title: "Open Library Project Help", year: "2008", source: "Breck Yunits", kind: "email", image: "emailsWithGoat.png"},
+   {slug: "the-goat", title: "Aaron Swartz Memorial Bust", year: "", source: "", kind: "photo", image: "theGoat.png"},
+   {slug: "hot-girls-of-yc", title: "Hot Girls of Y Combinator", year: "", source: "", kind: "meme", image: "hotGirlsOfYC.jpg"},
+   {slug: "shark-tank", title: "Do Not Go on the Shark Tank", year: "", source: "", kind: "screenshot", image: "sharkTank.png"},
+   {slug: "whos-kevin-tom", title: "So Far We Have: Attendee List", year: "", source: "", kind: "screenshot", image: "whosKevinTom.png"}
+  ]
+  const kindLabels = {email: "Email", tweet: "Tweet", photo: "Photo", meme: "Meme", screenshot: "Screenshot", pdf: "PDF"}
+  const list = document.getElementById("makerList")
+  const carousel = document.getElementById("carousel")
+  const previous = document.getElementById("previous")
+  const next = document.getElementById("next")
+  const previousPreview = document.getElementById("previousPreview")
+  const nextPreview = document.getElementById("nextPreview")
+  const positionCurrent = document.getElementById("positionCurrent")
+  const positionTotal = document.getElementById("positionTotal")
+  const liveRegion = document.getElementById("liveRegion")
+  const stage = document.getElementById("stage")
+  const visibleCards = new Map()
+  let current = 0
+  let wheelLocked = false
+  let pointerStart = null
+  const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"})[character])
+  const pad = value => String(value).padStart(2, "0")
+  const isPdf = source => /\.pdf$/i.test(source)
+  const chips = item => {
+   const labels = []
+   if (item.year) labels.push(item.year)
+   if (item.source) labels.push(item.source)
+   if (!labels.length) labels.push(kindLabels[item.kind] || "Artifact")
+   return labels
+  }
+  const cardPosition = distance => {
+   const direction = Math.sign(distance)
+   const depth = Math.abs(distance)
+   const settings = [
+    ["0px", "0px", "0deg", 1, 1],
+    [`calc(${direction} * clamp(225px, 25vw, 400px))`, "-135px", `${direction * -38}deg`, .82, .9],
+    [`calc(${direction} * clamp(320px, 34vw, 545px))`, "-285px", `${direction * -52}deg`, .64, .6],
+    [`calc(${direction} * clamp(385px, 41vw, 660px))`, "-430px", `${direction * -60}deg`, .5, .28]
+   ]
+   return settings[Math.min(depth, 3)]
+  }
+  const createCard = index => {
+   const item = items[index]
+   const card = document.createElement("article")
+   card.className = "card"
+   card.dataset.index = index
+   const media = isPdf(item.image)
+    ? `<iframe class="cardPdf" src="${escapeHtml(item.image)}" title="${escapeHtml(item.title)}" loading="eager"></iframe>`
+    : `<a class="cardImgLink" href="${escapeHtml(item.image)}" target="_blank" rel="noopener noreferrer" title="Open full size in a new tab"><img class="cardImg" src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="eager"></a>`
+   card.innerHTML = `
+    <div class="browserBar"><a class="makerName" href="${escapeHtml(item.image)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a><div class="barLanguages">${chips(item).map(label => `<span class="language">${escapeHtml(label)}</span>`).join("")}</div></div>
+    <div class="viewport">
+     ${media}
+     <div class="cardTint"></div>
+    </div>`
+   carousel.appendChild(card)
+   visibleCards.set(index, card)
+   return card
+  }
+  const renderCards = () => {
+   const wanted = new Set()
+   for (let index = Math.max(0, current - 3); index <= Math.min(items.length - 1, current + 3); index++) wanted.add(index)
+   visibleCards.forEach((card, index) => {
+    if (!wanted.has(index)) {
+     card.remove()
+     visibleCards.delete(index)
+    }
+   })
+   wanted.forEach(index => {
+    const card = visibleCards.get(index) || createCard(index)
+    const distance = index - current
+    const [x, z, rotation, scale, opacity] = cardPosition(distance)
+    card.style.setProperty("--x", x)
+    card.style.setProperty("--z", z)
+    card.style.setProperty("--rot", rotation)
+    card.style.setProperty("--scale", scale)
+    card.style.opacity = opacity
+    card.style.zIndex = String(10 - Math.abs(distance))
+    card.classList.remove("sideHovered")
+    card.classList.toggle("active", distance === 0)
+   })
+  }
+  const updatePreviewTargets = () => {
+   previousPreview.disabled = current === 0
+   nextPreview.disabled = current === items.length - 1
+   previousPreview.setAttribute("aria-label", current > 0 ? `Center ${items[current - 1].title}` : "No previous email")
+   nextPreview.setAttribute("aria-label", current < items.length - 1 ? `Center ${items[current + 1].title}` : "No next email")
+  }
+  const setPreviewHover = (index, hovered) => visibleCards.get(index)?.classList.toggle("sideHovered", hovered)
+  const updateList = shouldScroll => {
+   const links = list.querySelectorAll("a[data-index]")
+   links.forEach((link, index) => link.setAttribute("aria-current", index === current ? "true" : "false"))
+   if (shouldScroll) {
+    const link = links[current]
+    const mobile = matchMedia("(max-width: 680px)").matches
+    list.scrollTo(mobile
+     ? {left: link.offsetLeft - list.clientWidth / 2 + link.offsetWidth / 2, behavior: "smooth"}
+     : {top: link.offsetTop - list.clientHeight / 2 + link.offsetHeight / 2, behavior: "smooth"})
+   }
+  }
+  const select = (index, shouldScroll = true) => {
+   const nextIndex = Math.max(0, Math.min(items.length - 1, index))
+   if (nextIndex === current && visibleCards.size) return
+   current = nextIndex
+   renderCards()
+   updateList(shouldScroll)
+   previous.disabled = current === 0
+   next.disabled = current === items.length - 1
+   updatePreviewTargets()
+   positionCurrent.textContent = pad(current + 1)
+   const item = items[current]
+   liveRegion.textContent = `${item.title}, ${item.year || kindLabels[item.kind]}, ${item.source}`
+   history.replaceState(null, "", `#${encodeURIComponent(item.slug)}`)
+  }
+  list.innerHTML = items.map((item, index) => `<a href="${escapeHtml(item.image)}" data-index="${index}" aria-current="${index === 0}"><span class="tocCopy"><span class="tocName">${escapeHtml(item.title)}</span><span class="tocLanguage">${escapeHtml(item.year || kindLabels[item.kind])}${item.source ? " · " + escapeHtml(item.source) : ""}</span></span><span class="tocRank">#${pad(index + 1)}</span></a>`).join("")
+  positionTotal.textContent = pad(items.length)
+  list.addEventListener("click", event => {
+   const link = event.target.closest("a[data-index]")
+   if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+   event.preventDefault()
+   select(Number(link.dataset.index))
+  })
+  previous.addEventListener("click", () => select(current - 1))
+  next.addEventListener("click", () => select(current + 1))
+  previousPreview.addEventListener("click", () => select(current - 1))
+  nextPreview.addEventListener("click", () => select(current + 1))
+  previousPreview.addEventListener("pointerenter", () => setPreviewHover(current - 1, true))
+  previousPreview.addEventListener("pointerleave", () => setPreviewHover(current - 1, false))
+  nextPreview.addEventListener("pointerenter", () => setPreviewHover(current + 1, true))
+  nextPreview.addEventListener("pointerleave", () => setPreviewHover(current + 1, false))
+  document.addEventListener("keydown", event => {
+   if (event.key === "ArrowLeft") { event.preventDefault(); select(current - 1) }
+   if (event.key === "ArrowRight") { event.preventDefault(); select(current + 1) }
+   if (event.key === "Home") { event.preventDefault(); select(0) }
+   if (event.key === "End") { event.preventDefault(); select(items.length - 1) }
+  })
+  stage.addEventListener("wheel", event => {
+   if (wheelLocked || Math.max(Math.abs(event.deltaX), Math.abs(event.deltaY)) < 18) return
+   wheelLocked = true
+   select(current + (event.deltaX + event.deltaY > 0 ? 1 : -1))
+   window.setTimeout(() => { wheelLocked = false }, 280)
+  }, {passive: true})
+  stage.addEventListener("pointerdown", event => { pointerStart = event.clientX })
+  stage.addEventListener("pointerup", event => {
+   if (pointerStart === null) return
+   const distance = event.clientX - pointerStart
+   pointerStart = null
+   if (Math.abs(distance) > 55) select(current + (distance < 0 ? 1 : -1))
+  })
+  window.addEventListener("hashchange", () => {
+   const slug = decodeURIComponent(location.hash.slice(1))
+   const index = items.findIndex(item => item.slug === slug)
+   if (index >= 0) select(index)
+  })
+  const hashSlug = decodeURIComponent(location.hash.slice(1))
+  const hashIndex = items.findIndex(item => item.slug === hashSlug)
+  current = hashIndex >= 0 ? hashIndex : 0
+  renderCards()
+  updateList(true)
+  previous.disabled = current === 0
+  next.disabled = current === items.length - 1
+  updatePreviewTargets()
+  positionCurrent.textContent = pad(current + 1)
+ })()
