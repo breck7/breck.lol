@@ -5,7 +5,8 @@ const exhibitsData = [
     "image": "coffee.png",
     "year": 2026,
     "source": "YC alum",
-    "kind": "tweet"
+    "kind": "tweet",
+    "context": "https://x.com/breckyunits/status/2094806762428015019"
   },
   {
     "id": "no-demo-day-scientology",
@@ -174,8 +175,7 @@ const exhibitsData = [
     "image": "dubious.png",
     "year": 2011,
     "source": "Paul Graham",
-    "kind": "email",
-    "context": "https://x.com/breckyunits/status/2095529950187327581"
+    "kind": "email"
   },
   {
     "id": "castes",
