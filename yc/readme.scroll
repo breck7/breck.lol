@@ -1,4 +1,4 @@
-title The YC Emails
+title Investigate YCombinator
 description Flip through emails, screenshots, and artifacts from inside Y Combinator, newest first.
 baseUrl https://breck.lol/yc/
 permalink index.html
@@ -15,7 +15,7 @@ html
   <main class="mainPane">
    <header class="masthead">
     <div>
-     <h1>The YC Emails<br><span>From the founders list</span></h1>
+     <h1>Investigate YCombinator<br><span>The YC Emails</span></h1>
      <p>Emails, screenshots, and artifacts from inside Y Combinator, as collected by Breck Yunits</p>
      <p class="credit">Made by <a href="https://twitter.com/breckyunits" target="_blank" rel="noopener noreferrer">Breck Yunits</a> · Sources: the ycfounders list, Hacker News, Twitter</p>
     </div>
@@ -343,8 +343,6 @@ script
    {slug: "breck", title: "Breck", year: "2022", source: "Imad Akhund", kind: "email", image: "imMad.png"},
    {slug: "congrats-to-airbedandbreakfast", title: "Congrats to AirBedAndBreakfast!", year: "2020", source: "Breck Yunits", kind: "email", image: "reunion.png"},
    {slug: "garry-vs-breck", title: "Garry vs Breck", year: "2019", source: "Hacker News", kind: "screenshot", image: "garryVsBreck.png"},
-   {slug: "how-dirty-is-y-combinator", title: "How Dirty Is Y Combinator", year: "2018", source: "Bookface Forum Digest", kind: "email", image: "howDirtyIsYCombinator.png"},
-   {slug: "naughty", title: "Do XYZ or I Will Publish Naughty Information", year: "2016", source: "Breck Yunits", kind: "screenshot", image: "naughty.png"},
    {slug: "hair-stand-on-end", title: "Spend Slowly Because the World Is Unpredictable", year: "2015", source: "Jessica Livingston", kind: "email", image: "hairStandOnEnd.png"},
    {slug: "sama-for-president", title: "Sama for President", year: "2014", source: "Paul Graham", kind: "email", image: "samaForPresident.png"},
    {slug: "horrified", title: "You Don't Have to Pay Back YC", year: "2014", source: "Paul Graham", kind: "email", image: "horrified.png"},
