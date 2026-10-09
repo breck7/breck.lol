@@ -14,7 +14,8 @@ const exhibitsData = [
     "image": "noDemoDayScientology.jpeg",
     "year": 2024,
     "source": "Y Combinator",
-    "kind": "screenshot"
+    "kind": "screenshot",
+    "context": "https://x.com/breckyunits/status/2095198278476599749"
   },
   {
     "id": "breck",
@@ -22,7 +23,8 @@ const exhibitsData = [
     "image": "imMad.png",
     "year": 2022,
     "source": "Imad Akhund",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2103150019314585747"
   },
   {
     "id": "congrats-to-airbedandbreakfast",
@@ -30,7 +32,8 @@ const exhibitsData = [
     "image": "reunion.png",
     "year": 2020,
     "source": "Breck Yunits",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2105655822357553387"
   },
   {
     "id": "garry-vs-breck",
@@ -38,7 +41,8 @@ const exhibitsData = [
     "image": "garryVsBreck.png",
     "year": 2019,
     "source": "Hacker News",
-    "kind": "screenshot"
+    "kind": "screenshot",
+    "context": "https://x.com/breckyunits/status/2108226919389073849"
   },
   {
     "id": "hair-stand-on-end",
@@ -63,7 +67,8 @@ const exhibitsData = [
     "image": "samaForPresident.png",
     "year": 2014,
     "source": "Paul Graham",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2108164201105776727"
   },
   {
     "id": "horrified",
@@ -71,7 +76,8 @@ const exhibitsData = [
     "image": "horrified.png",
     "year": 2014,
     "source": "Paul Graham",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2100923072320856526"
   },
   {
     "id": "has-to-be",
@@ -79,7 +85,8 @@ const exhibitsData = [
     "image": "hasToBe.png",
     "year": 2014,
     "source": "Garry Tan",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2107110477675557085"
   },
   {
     "id": "crunchies",
@@ -111,7 +118,8 @@ const exhibitsData = [
     "image": "wowTheySolvedThatCaseFastBodyStillWarm.png",
     "year": 2013,
     "source": "Hacker News",
-    "kind": "screenshot"
+    "kind": "screenshot",
+    "context": "https://x.com/breckyunits/status/2103150019314585747"
   },
   {
     "id": "immigration-lawyer",
@@ -127,7 +135,8 @@ const exhibitsData = [
     "image": "investorUpdates.png",
     "year": 2012,
     "source": "Paul Graham",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2107991892432650680"
   },
   {
     "id": "help-wanted-moderate-hacker-news",
@@ -135,7 +144,8 @@ const exhibitsData = [
     "image": "6kAMonth.png",
     "year": 2012,
     "source": "Paul Graham",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2107488813219995813"
   },
   {
     "id": "black-clouds",
@@ -143,7 +153,8 @@ const exhibitsData = [
     "image": "blackClouds1of2.png",
     "year": 2012,
     "source": "Paul Graham",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2103923808092733580"
   },
   {
     "id": "black-clouds-2",
@@ -151,7 +162,8 @@ const exhibitsData = [
     "image": "blackClouds2of2.png",
     "year": 2012,
     "source": "Paul Graham",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2103923808092733580"
   },
   {
     "id": "too-much-fraud",
@@ -159,7 +171,8 @@ const exhibitsData = [
     "image": "tooMuchFraud.png",
     "year": 2011,
     "source": "Paul Graham",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2107991892432650680"
   },
   {
     "id": "yuzu",
@@ -175,7 +188,8 @@ const exhibitsData = [
     "image": "dubious.png",
     "year": 2011,
     "source": "Paul Graham",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2106166241409077588"
   },
   {
     "id": "castes",
@@ -192,7 +206,8 @@ const exhibitsData = [
     "image": "trustOnlyYCompanies.png",
     "year": 2010,
     "source": "Paul Graham",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2106841033892139254"
   },
   {
     "id": "australia-humble-brag",
@@ -200,7 +215,8 @@ const exhibitsData = [
     "image": "australiaHumbleBrag.png",
     "year": 2010,
     "source": "Drew Houston",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2102413821247692815"
   },
   {
     "id": "stealing-gmail-passwords",
@@ -208,7 +224,8 @@ const exhibitsData = [
     "image": "stealingGmailPasswords.png",
     "year": 2010,
     "source": "Howie Liu",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2102413821247692815"
   },
   {
     "id": "should-we-fund-alex-andon",
@@ -216,7 +233,8 @@ const exhibitsData = [
     "image": "Al.jpeg",
     "year": 2009,
     "source": "Paul Graham",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2104271801945899213"
   },
   {
     "id": "why-no-favicon",
@@ -224,7 +242,8 @@ const exhibitsData = [
     "image": "faviconWasTrueCauesOfAirbnbsSuccess.png",
     "year": 2009,
     "source": "Breck Yunits",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2105655822357553387"
   },
   {
     "id": "all-time-record-in-losing",
@@ -257,7 +276,8 @@ const exhibitsData = [
     "image": "nudgePad3PercentClub.pdf",
     "year": 2009,
     "source": "GIGGGS, Inc.",
-    "kind": "pdf"
+    "kind": "pdf",
+    "context": "https://x.com/breckyunits/status/2103594155968737349"
   },
   {
     "id": "probably-significant",
@@ -306,7 +326,8 @@ const exhibitsData = [
     "image": "airboozeAndBreakfast.png",
     "year": 2009,
     "source": "Joe Gebbia",
-    "kind": "email"
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2102413821247692815"
   },
   {
     "id": "forlorn-canadians",
@@ -359,13 +380,15 @@ const exhibitsData = [
     "id": "hot-girls-of-yc",
     "title": "Hot Girls of Y Combinator",
     "image": "hotGirlsOfYC.jpg",
-    "kind": "meme"
+    "kind": "meme",
+    "context": "https://x.com/breckyunits/status/2097744409647628668"
   },
   {
     "id": "shark-tank",
     "title": "Do Not Go on the Shark Tank",
     "image": "sharkTank.png",
-    "kind": "screenshot"
+    "kind": "screenshot",
+    "context": "https://x.com/breckyunits/status/2094486349407744037"
   },
   {
     "id": "whos-kevin-tom",
