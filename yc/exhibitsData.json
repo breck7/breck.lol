@@ -27,6 +27,15 @@
     "context": "https://x.com/breckyunits/status/2103150019314585747"
   },
   {
+    "id": "all-your-investments-will-go-to-zero",
+    "title": "All Your Investments Will Go to $0",
+    "image": "allYourInvestmentsWillGoToZero.png",
+    "year": 2021,
+    "source": "Michael Seibel",
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2108672067734585825"
+  },
+  {
     "id": "congrats-to-airbedandbreakfast",
     "title": "Congrats to AirBedAndBreakfast!",
     "image": "reunion.png",
@@ -43,6 +52,15 @@
     "source": "Hacker News",
     "kind": "screenshot",
     "context": "https://x.com/breckyunits/status/2108226919389073849"
+  },
+  {
+    "id": "camp-yc",
+    "title": "Camp YC 2018",
+    "image": "campYC.png",
+    "year": 2018,
+    "source": "Michael Seibel",
+    "kind": "email",
+    "context": "https://x.com/breckyunits/status/2108672067734585825"
   },
   {
     "id": "hair-stand-on-end",
