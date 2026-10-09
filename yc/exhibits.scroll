@@ -27,6 +27,14 @@ kind email
 image imMad.png
 context https://x.com/breckyunits/status/2103150019314585747
 
+id all-your-investments-will-go-to-zero
+title All Your Investments Will Go to $0
+year 2021
+source Michael Seibel
+kind email
+image allYourInvestmentsWillGoToZero.png
+context https://x.com/breckyunits/status/2108672067734585825
+
 id congrats-to-airbedandbreakfast
 title Congrats to AirBedAndBreakfast!
 year 2020
@@ -42,6 +50,14 @@ source Hacker News
 kind screenshot
 image garryVsBreck.png
 context https://x.com/breckyunits/status/2108226919389073849
+
+id camp-yc
+title Camp YC 2018
+year 2018
+source Michael Seibel
+kind email
+image campYC.png
+context https://x.com/breckyunits/status/2108672067734585825
 
 id hair-stand-on-end
 title Spend Slowly Because the World Is Unpredictable
