@@ -207,7 +207,7 @@ const exhibitsData = [
     "year": 2010,
     "source": "Steve Huffman",
     "kind": "email",
-    "context": "https://x.com/breckyunits/status/2108568080141938817"
+    "context": "https://x.com/breckyunits/status/2108572210839597139"
   },
   {
     "id": "trust-only-y-companies",
@@ -319,7 +319,7 @@ const exhibitsData = [
     "year": 2009,
     "source": "Steve Huffman",
     "kind": "email",
-    "context": "https://x.com/breckyunits/status/2108568080141938817"
+    "context": "https://x.com/breckyunits/status/2108572210839597139"
   },
   {
     "id": "didnt-bother",
