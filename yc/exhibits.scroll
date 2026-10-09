@@ -181,6 +181,14 @@ kind email
 image castes.jpeg
 context https://x.com/breckyunits/status/2097352293083701534
 
+id unwashed-masses
+title Soliciting the Unwashed Masses
+year 2010
+source Steve Huffman
+kind email
+image unwashedMasses.png
+context https://x.com/breckyunits/status/2108568080141938817
+
 id trust-only-y-companies
 title Fwd: Equity Split Survey
 year 2010
@@ -271,6 +279,14 @@ year 2009
 source Trevor Blackwell
 kind email
 image robotRoom.png
+
+id bookface-balls-steve
+title Coloserve Sucks
+year 2009
+source Steve Huffman
+kind email
+image bookfaceBallsSteve.png
+context https://x.com/breckyunits/status/2108568080141938817
 
 id didnt-bother
 title Next Week's Schedule
