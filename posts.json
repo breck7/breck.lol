@@ -1,11 +1,21 @@
 [
   {
+    "date": "11/05/2026",
+    "year": 2026,
+    "title": "Launchation",
+    "permalink": "launchation.html",
+    "authors": "Breck Yunits",
+    "tags": "All Ford Startups",
+    "wordCount": 250,
+    "minutes": 1.3
+  },
+  {
     "date": "10/02/2026",
     "year": 2026,
     "title": "Handeracy",
     "permalink": "handeracy.html",
     "authors": "Breck Yunits",
-    "tags": "All Thinking Society Hits Logeracy",
+    "tags": "All Thinking Society Hits Logeracy Ford",
     "wordCount": 174,
     "minutes": 0.9
   },
@@ -186,8 +196,8 @@
     "permalink": "juggling.html",
     "authors": "Breck Yunits",
     "tags": "All Thinking Ford",
-    "wordCount": 974,
-    "minutes": 4.9
+    "wordCount": 992,
+    "minutes": 5
   },
   {
     "date": "06/04/2025",
@@ -216,8 +226,8 @@
     "permalink": "fordDream.html",
     "authors": "Breck Yunits",
     "tags": "All Thinking Ford",
-    "wordCount": 698,
-    "minutes": 3.5
+    "wordCount": 716,
+    "minutes": 3.6
   },
   {
     "date": "05/06/2025",
@@ -226,8 +236,8 @@
     "permalink": "3d.html",
     "authors": "Breck Yunits",
     "tags": "All Thinking Ford",
-    "wordCount": 459,
-    "minutes": 2.3
+    "wordCount": 477,
+    "minutes": 2.4
   },
   {
     "date": "04/28/2025",
@@ -286,8 +296,8 @@
     "permalink": "ford.html",
     "authors": "Breck Yunits",
     "tags": "All Thinking Writing Scroll Ford",
-    "wordCount": 466,
-    "minutes": 2.3
+    "wordCount": 484,
+    "minutes": 2.4
   },
   {
     "date": "04/19/2025",
