@@ -264,6 +264,15 @@ const exhibitsData = [
     "transcript": "If you raised money in an equity round at a high valuation, you may\\nfind that if you need money you can only get it at a lower one.\\nWhich is bad, because \"down rounds\" not only dilute you horribly,\\nbut make you seem and perhaps even feel like damaged goods.\\nThe best solution is not to need money. The less you need investor\\nmoney, (a) the more investors like you, in all markets, and (b) the\\nless you're harmed by bad markets.\\nI often tell startups after raising money that they should act as\\nif it's the last they're ever going to get. In the past that has\\nbeen a useful heuristic, because doing that is the best way to\\nensure it's easy to raise more. But if the funding market tanks,\\nit's going to be more than a heuristic.\\nThe startups that really get hosed are going to be the ones that\\nhave easy money built into the structure of their company: the ones\\nthat raise a lot on easy terms, and are then led thereby to spend\\na lot, and to pay little attention to profitability. That kind of\\nstartup gets destroyed when markets tighten up. So don't be that\\nstartup. If you've raised a lot, don't spend it; not merely for\\nthe obvious reason that you'll run out faster, but because it will\\nturn you into the wrong sort of company to thrive in bad times.\\n—-Pg\\n[After reading this, Sam wanted to add two points:\\nI'd add a suggestion to companies that if they're planning to raise\\nmoney in the next year, they consider doing it now (except for\\ncompanies in the current batch). Things haven't gotten way worse\\nyet but they could get a LOT worse quickly.\\nAlso, if companies are doing down rounds, they should talk to us.\\nI believe down rounds should generally be a big reset of the cap\\ntable--they cause a huge amount of pain either as a small down round\\nor a big down round, and you may as well use it to the company's\\nadvantage.J\\nYou received this message because you are subscribed to the Google Groups \"ycfounders\" group.\\nTo post to this group, send email to ycfounders@googlegroups.com.\\nTo unsubscribe from this group, send email to ycfounders+unsubscribe@googlegroups.com. k\\nFor more options, visit this group at http://groups.google.com/group/ycfounders?hl=en."
   },
   {
+    "id": "very-inconspicuous-spy-agency",
+    "title": "Very Inconspicuous Spy Agency",
+    "image": "veryInconspicuousSpyAgency.png",
+    "year": 2011,
+    "source": "Breck Yunits",
+    "kind": "email",
+    "transcript": "John Collison\\nHey Breck, Good chatting to you too. Let us know next time you're in PA and we should grab that coffee.\\nTue, Aug 23, 2011, 9:19 PM\\nBreck Yunits <breck7@gmail.com>\\nto founders, John\\nHey guys, just left visa and am in Palo alto for a few hours. Are you guys around?\\nThu, Sep 1, 2011, 2:57 PM"
+  },
+  {
     "id": "too-much-fraud",
     "title": "Why You Want Ron Conway as an Investor",
     "image": "tooMuchFraud.png",
