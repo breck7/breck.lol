@@ -1,11 +1,11 @@
 parserId,uses
 BlobParser,17161
 cssLineParser,16899
-blankLineParser,15838
-catchAllParagraphParser,6274
+blankLineParser,15839
+catchAllParagraphParser,6275
 scrollImportedParser,2384
 slashCommentParser,2326
-quickLinkParser,1570
+quickLinkParser,1571
 cssParser,1084
 scrollBrParser,1083
 h1Parser,829
@@ -52,7 +52,7 @@ homepageParser,154
 idParser,154
 endSnippetParser,143
 captionAftertextParser,124
-quoteLineParser,114
+quoteLineParser,113
 scrollQuestionParser,101
 printAuthorsParser,84
 footnoteDefinitionParser,81
@@ -75,7 +75,7 @@ quickParagraphParser,31
 openGraphParser,30
 scrollTableDelimiterParser,27
 replaceParser,26
-openGraphDescriptionParser,25
+openGraphDescriptionParser,26
 htmlInlineParser,24
 scrollNavParser,23
 scrollLinkTitleParser,22

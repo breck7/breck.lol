@@ -1,6 +1,9 @@
 Aaron's Amendment
 =================
 
+_Update, November 10, 2026: The amendment text has been simplified. The campaign now lives at 28.breck.lol._
+ https://28.breck.lol 28.breck.lol
+
 > New: let's get to work! Join the subreddit
  https://www.reddit.com/r/AaronsAmendment/ subreddit
 
@@ -19,10 +22,9 @@ A Proposal
 I suggest we organize around a simple long-term vision of passing a new Amendment to the U.S. Constitution ending patents and copyrights once and for all.
  https://github.com/JesseKPhillips/USA-Constitution/blob/master/Constitution.md U.S. Constitution
 
-The below proposal is 34 words.
+The below proposal is 12 words.
 
-Section 1. Article I, Section 8, Clause 8 of this Constitution is hereby repealed.
-Section 2. Congress shall make no law granting monopolies on ideas, knowledge, or inventions, or prohibiting the free use thereof.
+The right of the people to copy shall not be infringed.
 
 I have only passed a handful of Amendments to the U.S. Constitution in my lifetime 😉, so discussion welcome.
 
