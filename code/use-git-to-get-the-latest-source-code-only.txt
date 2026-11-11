@@ -10,4 +10,6 @@ git clone --depth 1 git://github.com/breck7/brecksblog.git
 
 Follow me on X
  https://twitter.com/breckyunits Follow me on X
+28
+ https://28.breck.lol 28
 Built with Scroll v180.0.1

@@ -6,4 +6,6 @@ If you are installing Ubuntu from USB and are getting stuck at the "SELINUX 3.82
 
 Follow me on X
  https://twitter.com/breckyunits Follow me on X
+28
+ https://28.breck.lol 28
 Built with Scroll v180.0.1

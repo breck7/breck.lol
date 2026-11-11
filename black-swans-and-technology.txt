@@ -37,4 +37,6 @@ _All that being said, Node.js kicks ass *today*(the Javascript thing, the commun
 
 Follow me on X
  https://twitter.com/breckyunits Follow me on X
+28
+ https://28.breck.lol 28
 Built with Scroll v180.0.1
