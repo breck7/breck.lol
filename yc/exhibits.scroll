@@ -1325,6 +1325,42 @@ transcript
  You received this message because you are subscribed to the Google Groups "ycfounders" group.
  To post to this group, send email to ycfounders@googlegroups.com.
 
+id why-do-people-use-wordpress-at-all
+title Why Do People Use Wordpress at All?
+year 2010
+source Paul Buchheit
+kind email
+image wordpress.jpeg
+context https://x.com/breckyunits/status/2122733913206579305
+transcript
+ Paul Buchheit paul.buchheit@gmail.com via googlegroups.com
+ to anson.e.tsai, dsiroker, matthew, timothyw, ycfounders
+ Sun, Dec 19, 2010, 12:45 PM
+ I'm skeptical that there ever was an SEO benefit to avoiding a subdomain. I wouldn't put Wordpress on the same host as a service where
+ security mattered at all. Even if it's on a separate server, it will still expose your main site to XSS attack if you use the same hostname.
+ I'm curious, why do people use Wordpress at all? It seems like a continual hassle to keep up with all of the security problems and bad-pr
+ caused by having your site hacked (not to mention getting dropped from Google due to being hacking).
+ [Message clipped] View entire message
+ Paul Buchheit paul.buchheit@gmail.com via googlegroups.com
+ to ray, briankrausz@gmail.com, anson.e.tsai@gmail.com, dsiroker@gmail.com, matthew@adgrok.com, timothyw@gmail.com, ycfounders@
+ Mon, Dec 20, 2010, 11:39 AM
+ Pagerank is computed for pages, not domains. Traditionally, pagerank flowed across on-domain and off-domain links in exactly the same
+ way, meaning that domains and hosts had zero effect on Pagerank. Obviously a lot has changed since I worked on ranking issues, and there
+ are very likely some domain-level factors in the overall ranking (especially if the domain is identified as spammy), but I happen to remember
+ that people believed this kind of thing back when I knew for a fact that it wasn't true.
+ Experimentally measuring this factor is surprisingly difficult because it's so difficult to control for all of the other factors, which makes me
+ skeptical of claims that Google is applying this big penalty for something which is not at all a good indicator of quality. It's a kind of "efficient
+ Google hypothesis" :)
+ [Message clipped] View entire message
+ Paul Buchheit paul.buchheit@gmail.com via googlegroups.com
+ to ray, briankrausz@gmail.com, anson.e.tsai@gmail.com, dsiroker@gmail.com, matthew@adgrok.com, timothyw@gmail.com, ycfounders@
+ Sun, Jan 9, 2011, 1:19 PM
+ BTW, I just pinged Matt Cutts about this, and he agrees that there should not be much SEO difference between blog.domain.com and
+ domain.com/blog. He pointed me to this post http://www.mattcutts.com/blog/subdomains-and-subdirectories/ and says that it's still true.
+ Also, to reiterate my other point, putting Wordpress on your main domain is a great way to eliminate security on your site my making yourself
+ vulnerable to every Wordpress bug out there. I tend to believe that the time required to deal with such unnecessary issues would yield
+ greater return if spent on product development.
+
 id unwashed-masses
 title Soliciting the Unwashed Masses
 year 2010
