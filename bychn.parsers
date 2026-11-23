@@ -1,0 +1,199 @@
+// bychn: a microlanguage for a Hacker News profile export.
+// version 0.2.0
+
+abstractBychnParser
+ extends abstractScrollParser
+ javascript
+  esc(s) {
+    return String(s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")
+  }
+  niceDate(iso) {
+    if (!iso) return ""
+    const d = new Date(iso)
+    if (Number.isNaN(d.getTime())) return this.esc(iso)
+    return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" })
+  }
+  commas(n) {
+    const x = Number(n)
+    return Number.isFinite(x) ? x.toLocaleString("en-US") : this.esc(n)
+  }
+  formatText(s) {
+    return this.esc(s).replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" rel="noopener">$1</a>').replace(/\n/g, "<br>\n")
+  }
+  particleText(p) {
+    if (!p) return ""
+    const lines = []
+    if (p.content) lines.push(p.content)
+    const walk = node => {
+      node.forEach(child => {
+        const line = child.getLine ? child.getLine() : ""
+        if (line) lines.push(line)
+        if (child.length) walk(child)
+      })
+    }
+    walk(p)
+    return lines.join("\n")
+  }
+  fields() {
+    const out = {}
+    for (const p of this.section) {
+      const cue = p.cue
+      if (!cue) continue
+      out[cue] = this.particleText(p)
+    }
+    return out
+  }
+  hnItem(id) {
+    return "https://news.ycombinator.com/item?id=" + encodeURIComponent(id)
+  }
+
+userParser
+ cue user
+ extends abstractBychnParser
+ catchAllAtomType stringAtom
+ description A Hacker News user. The remaining atom is the username.
+ example
+  user breck
+  created 2007-08-24T00:58:45Z
+  karma 16633
+ javascript
+  get css() {
+    return `:root{color-scheme:light}html,body{margin:0;background:#f6f0e4;color:#222;font:18px/1.5 Georgia,"Times New Roman",serif}body{max-width:42rem;margin:0 auto;padding:2.5rem 1.4rem 4rem}.hn-profile{margin:0 0 2.5rem;padding-bottom:1.6rem;border-bottom:1px solid #eadfcf}.hn-profile .eyebrow{margin:0 0 .6rem;font:700 11px/1 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#ff6600}.hn-profile h1{margin:0 0 .45rem;font-weight:400;font-size:clamp(36px,8vw,64px);letter-spacing:-.04em;line-height:1}.hn-profile .meta{margin:0 0 1rem;color:#6b6458;font:15px/1.4 Arial,sans-serif}.hn-profile .meta b{color:#222;font:400 18px/1 Georgia,serif}.hn-about{white-space:pre-wrap;color:#3d3a34;font-size:16px;line-height:1.55}.hn-profile .links{margin:1.1rem 0 0;font:13px/1.45 Arial,sans-serif;color:#6b6458}.hn-profile .links a{color:inherit}.hn-story,.hn-reply{padding:.95rem 0;border-bottom:1px solid #eadfcf}.hn-headline{font-size:1.15rem;line-height:1.3;color:inherit;text-decoration:none}.hn-headline:hover{text-decoration:underline;text-underline-offset:3px}.hn-meta{margin:.35rem 0 0;font:13px/1.45 Arial,sans-serif;color:#6b6458}.hn-meta a{color:inherit}.hn-score{color:#ff6600;font-weight:700}.hn-text{margin:.45rem 0 0;white-space:pre-wrap;font-size:16px;line-height:1.5}.hn-reply .hn-text{color:#3d3a34;font-size:15px}.hn-dead,.hn-deleted{opacity:.55}a{color:inherit;text-underline-offset:3px}`
+  }
+  buildHtml() {
+    const id = (this.content || "").trim()
+    const f = this.fields()
+    const joined = f.created ? this.niceDate(f.created) : ""
+    const karma = f.karma != null && f.karma !== "" ? `<b>${this.commas(f.karma)}</b> karma` : ""
+    const bits = [karma, joined ? "joined " + joined : ""].filter(Boolean).join(" · ")
+    const about = f.about ? `<div class="hn-about">${this.formatText(f.about)}</div>` : ""
+    const userUrl = "https://news.ycombinator.com/user?id=" + encodeURIComponent(id)
+    return `<style>${this.css}</style>` +
+      `<header class="hn-profile">` +
+      `<p class="eyebrow">Hacker News</p>` +
+      `<h1>${this.esc(id)}</h1>` +
+      (bits ? `<p class="meta">${bits}</p>` : "") +
+      about +
+      `<p class="links"><a href="${userUrl}">Profile on HN</a> · Exported with <a href="https://knowbooks.com/s/bychn">Bye YCombinator HackerNews</a></p>` +
+      `</header>`
+  }
+
+storyParser
+ cue story
+ extends abstractBychnParser
+ catchAllAtomType stringAtom
+ description A Hacker News story, job, or poll. The remaining atom is the item id.
+ javascript
+  buildHtml() {
+    const id = (this.content || "").trim()
+    const f = this.fields()
+    const headline = f.headline || f.title || "Untitled"
+    const href = f.url || this.hnItem(id)
+    const kind = f.type && f.type !== "story" ? this.esc(f.type) + " · " : ""
+    const points = f.score != null && f.score !== "" ? `<span class="hn-score">${this.commas(f.score)} point${String(f.score)==="1"?"":"s"}</span>` : ""
+    const when = f.time ? `<time datetime="${this.esc(f.time)}">${this.niceDate(f.time)}</time>` : ""
+    const comments = f.descendants != null && f.descendants !== "" ? `${this.commas(f.descendants)} comment${String(f.descendants)==="1"?"":"s"}` : "HN"
+    const flags = [f.deleted === "true" ? "deleted" : "", f.dead === "true" ? "dead" : ""].filter(Boolean)
+    const cls = ["hn-story"].concat(flags.map(x => "hn-" + x)).join(" ")
+    const text = f.text ? `<div class="hn-text">${this.formatText(f.text)}</div>` : ""
+    const meta = [kind + (points || ""), when, `<a href="${this.hnItem(id)}">${comments}</a>`].filter(Boolean).join(" · ")
+    return `<article class="${cls}" id="item-${this.esc(id)}">` +
+      `<a class="hn-headline" href="${this.esc(href)}">${this.esc(headline)}</a>` +
+      `<p class="hn-meta">${meta}</p>` +
+      text +
+      `</article>`
+  }
+
+replyParser
+ cue reply
+ extends abstractBychnParser
+ catchAllAtomType stringAtom
+ description A Hacker News comment or poll option. The remaining atom is the item id.
+ javascript
+  buildHtml() {
+    const id = (this.content || "").trim()
+    const f = this.fields()
+    const flags = [f.deleted === "true" ? "deleted" : "", f.dead === "true" ? "dead" : ""].filter(Boolean)
+    const cls = ["hn-reply"].concat(flags.map(x => "hn-" + x)).join(" ")
+    const body = f.deleted === "true" && !f.text ? "[deleted]" : (f.text || f.headline || f.title || "")
+    const when = f.time ? `<time datetime="${this.esc(f.time)}">${this.niceDate(f.time)}</time>` : ""
+    const parent = f.parent ? `<a href="${this.hnItem(f.parent)}">parent</a>` : ""
+    const thread = f.thread && String(f.thread) !== String(f.parent) ? `<a href="${this.hnItem(f.thread)}">thread</a>` : ""
+    const self = `<a href="${this.hnItem(id)}">HN</a>`
+    const meta = [when, parent, thread, self].filter(Boolean).join(" · ")
+    return `<article class="${cls}" id="item-${this.esc(id)}">` +
+      `<div class="hn-text">${this.formatText(body)}</div>` +
+      `<p class="hn-meta">${meta}</p>` +
+      `</article>`
+  }
+
+hnFieldParser
+ extends abstractStringMeasureParser
+ javascript
+  buildHtml() {
+    return ""
+  }
+
+createdParser
+ extends hnFieldParser
+ description Account creation time (ISO 8601).
+
+karmaParser
+ extends hnFieldParser
+ description User karma.
+
+aboutParser
+ cue about
+ extends abstractScrollParser
+ catchAllAtomType stringAtom
+ description The user's about text, one indented line per line of text.
+ javascript
+  buildHtml() {
+    return ""
+  }
+
+headlineParser
+ extends hnFieldParser
+ description Story title.
+
+urlParser
+ extends hnFieldParser
+
+scoreParser
+ extends hnFieldParser
+
+descendantsParser
+ extends hnFieldParser
+ description Comment count on a story.
+
+timeParser
+ extends hnFieldParser
+ description Item time (ISO 8601).
+
+parentParser
+ extends hnFieldParser
+ description Parent item id.
+
+threadParser
+ extends hnFieldParser
+ description Story id a comment was posted on.
+
+typeParser
+ extends hnFieldParser
+ description Item type when not the default story or comment (job, poll, pollopt).
+
+deletedParser
+ extends hnFieldParser
+
+deadParser
+ extends hnFieldParser
+
+textParser
+ cue text
+ extends abstractScrollParser
+ catchAllAtomType stringAtom
+ description Item text, one indented line per line of text.
+ javascript
+  buildHtml() {
+    return ""
+  }
