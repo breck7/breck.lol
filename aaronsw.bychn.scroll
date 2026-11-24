@@ -1,0 +1,1667 @@
+bychn.parsers
+title aaronsw's Hacker News
+description Full Hacker News export of aaronsw
+htmlLang en
+buildHtml
+metaTags
+
+user aaronsw
+created 2006-10-10T19:48:51Z
+karma 1609
+about
+ http://www.aaronsw.com/
+ http://twitter.com/aaronsw
+
+reply 4427130
+time 2012-08-24T11:45:30Z
+parent 4425931
+thread 4425677
+headline Why I am tired of writing pull requests
+url http://gist.io/3444052
+text https://github.com/Aaronius/Stupid-Table-Plugin/commit/fbf3dcab2ec8e4381529dc23b0e2727bbac1d18b?w=1 https://github.com/Aaronius/Stupid-Table-Plugin/commit/fbf3d... people.
+
+reply 4314596
+time 2012-07-30T20:47:43Z
+parent 4314298
+thread 4314124
+headline Jonah Lehrer Resigns From The New Yorker After Making Up Quotes
+url http://mediadecoder.blogs.nytimes.com/2012/07/30/jonah-lehrer-resigns-from-new-yorker-after-making-up-dylan-quotes-for-his-book/?hp
+text The details are here:http://www.tabletmag.com/jewish-news-and-politics/107779/jonah-lehrers-deceptions http://www.tabletmag.com/jewish-news-and-politics/107779/jon...
+
+reply 4234865
+time 2012-07-12T15:09:29Z
+parent 4234703
+headline Heroku Postmortem of June 29th Incident
+url https://status.heroku.com/incidents/386#update-1220
+text The "What we are doing" section seems pretty weak. The only substantive thing they say is "we have produced new tools which enable us to more expediently relocate database services from a failed availability zone."How exactly are they planning to deal with the larger Cedar difficulties? Are they going to eliminate their dependence on ELBs? Go multi-region? Developers need to know this to decide whether to continue with Heroku or build their own platform.
+
+reply 4183219
+time 2012-07-01T00:00:21Z
+parent 4183059
+headline How Google handle leap seconds
+url http://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html
+text The real solution is not to use broken NTP: http://cr.yp.to/proto/utctai.html http://cr.yp.to/proto/utctai.html
+
+story 4173339
+time 2012-06-28T19:02:02Z
+headline Google Compute Engine - Getting Started Guide
+url https://developers.google.com/compute/docs/hello_world
+score 10
+descendants 0
+
+reply 4173311
+time 2012-06-28T18:57:33Z
+parent 4172981
+headline Taking on Amazon, Google launches EC2 rival Compute Engine
+url http://gigaom.com/cloud/taking-on-amazon-google-launches-compute-on-demand-rival-to-ec2/
+text Hmm, looks like they're competing directly on price:1 virtual core, 1.7GB RAM, 160GB disk for $.055/hr (Google)1 virtual core, 1.7GB RAM, 160GB disk for $.08/hr (Amazon)Amazon is still much cheaper if you use reserved instances or spot pricing, though. And for these sorts of compute jobs, I'm not sure why you wouldn't use spot pricing.
+
+reply 4170144
+time 2012-06-28T02:31:51Z
+parent 4169934
+headline Letter to the FSF
+url http://newartisans.com/2011/04/letter-to-the-fsf/
+text Shorter johnw: I heart Ayn Rand.In particular, I'm pretty sure Stallman (like most Americans) is in favor of taking from the rich and giving to the poor, so trying to persuade him that free software is a bad idea because it's like that seems pretty clueless.
+
+reply 4094405
+time 2012-06-11T13:20:26Z
+parent 4094179
+headline Yelp accused of burying good customer reviews
+url http://www.cbc.ca/news/canada/british-columbia/story/2012/06/08/bc-yelpreviews.html
+text This is a pretty crummy article. If you read it carefully, you see:- a woman owns a shady company- she tries to get her friends to write five star reviews of her on Yelp- Yelp intentionally tries to filter out these reviews so the site isn't filled with spam opinions- the woman is upsetThe real question is why there's a news story taking her side in this.
+
+reply 4073238
+time 2012-06-06T11:33:20Z
+parent 4073232
+thread 4073162
+headline Fish: Finally, a command line shell for the 90s
+url http://ridiculousfish.com/shell/
+text Presumably because fish hasn't been updated since 2009 and they expect their fork to become the new standard version.http://ridiculousfish.com/shell/beta.html http://ridiculousfish.com/shell/beta.html"Welcome to our fork of the fish shell, a command line shell like bash. Its working name is fishfish, but I hope eventually it will just be fish!"
+
+reply 4042291
+time 2012-05-30T11:21:57Z
+parent 4042285
+thread 4041933
+headline Assange loses extradition appeal
+url http://www.bbc.co.uk/news/uk-18260914
+text Actually, Polanski was arrested and released in Switzerland, not Sweden.
+
+reply 4042279
+time 2012-05-30T11:15:48Z
+parent 4042276
+thread 4041933
+headline Assange loses extradition appeal
+url http://www.bbc.co.uk/news/uk-18260914
+text "Swedish law requires a person to be physically present before charges can be laid, so this can only happen once Mr Assange is on Swedish territory."http://www.fairtrials.net/documents/Sweden_QA.pdf http://www.fairtrials.net/documents/Sweden_QA.pdf
+
+reply 3997766
+time 2012-05-20T02:59:35Z
+parent 3997603
+headline Mark Zuckerberg married
+url https://www.facebook.com/zuck/timeline/story?ut=32&wstart=1335855600&wend=1338533999&hash=10100387011762121&pagefilter=3
+text Did they also hack this to autopost to Facebook?
+
+reply 3915051
+time 2012-05-01T16:15:58Z
+parent 3914831
+headline Apple to crush carriers, become direct service provider
+url http://www.bgr.com/2012/05/01/apple-mobile-carrier/
+text And where are they supposed to get all the towers? That's a multi-year construction project and, if they try it, they'll alienate their existing carrier partners.Now maybe Apple thinks they can afford to do that, but it seems risky.
+
+reply 3819365
+time 2012-04-09T21:36:05Z
+parent 3818957
+headline Netflix creates super-PAC
+url http://rt.com/usa/news/netflix-sopa-pac-lobby-618/
+text
+ This is much more likely to be about the VPPA, a law which Netflix believes makes it illegal to provide social
+ features in the US:http://www.hackingnetflix.com/2012/01/netflix-to-testify-tuesday-at-senate-committee-against-the-vppa.html http://www.hackingnetflix.com/2012/01/netflix-to-testify-tue...
+
+reply 3796926
+time 2012-04-04T10:30:48Z
+parent 3796795
+headline Google Scholar Metrics for Publications
+url http://googlescholar.blogspot.com/2012/04/google-scholar-metrics-for-publications.html
+text Is there any reason to believe this h-index method of ranking is a good idea? Why not use PageRank?
+
+reply 3780524
+time 2012-03-31T15:36:48Z
+parent 3780448
+headline Google maps 8bit quest mode.  A setup for 4/1 perhaps?
+url http://maps.google.com/maps?q=queens,+ny&hl=en&sll=37.0625,-95.677068&sspn=40.188298,71.630859&t=8&hnear=Queens,+New+York&z=11
+text Google offices are apparently marked with surprisingly-unpixelated propellerheads. There's also some custom art for SF landmarks.
+
+reply 3730219
+time 2012-03-20T16:47:19Z
+parent 3729367
+headline Fact based, data-oriented news
+url http://s0rce.com/issue-event/copyright-and-piracy-legislation
+text Can we see this in real dollars? Hard to understand the actual trends the industry is facing in nominal dollars.
+
+reply 3613663
+time 2012-02-20T20:09:54Z
+parent 3613579
+thread 3613482
+headline From the IE Team: Google Bypassing User Privacy Settings
+url http://blogs.msdn.com/b/ie/archive/2012/02/20/google-bypassing-user-privacy-settings.aspx
+text The dishonesty of this statement is stunning. IE is designed to only accept the cookie if Google promises not to use it for tracking. Google wants to use the cookie for tracking so they provide a dishonesty promise and then explain they're lying because IE didn't have them in mind -- when this is exactly what IE had in mind.
+
+story 3530262
+time 2012-01-30T19:32:27Z
+headline How Amazon's KDP Select Saved My Book
+url http://wahoocorner.blogspot.com/2012/01/how-kdp-select-saved-my-book.html
+score 13
+descendants 0
+
+reply 3487934
+time 2012-01-20T02:02:09Z
+parent 3487500
+thread 3487275
+headline Rand Paul promises to filibuster PIPA
+url http://dailycaller.com/2012/01/18/rand-paul-promises-to-filibuster-pipa/
+text And Rand has promised this before. But we need 41 to actually prevent a vote, since the Senate has already filed to override the filibuster.
+
+reply 3337736
+time 2011-12-10T15:51:09Z
+parent 3337573
+headline Congress Pushes Bills To Promote Cybersecurity
+url http://www.npr.org/2011/12/09/143462911/congress-pushes-bills-to-promote-cybersecurity
+text The actual audio piece doesn't mention SOPA/PIPA or pirates, best I could tell. It was about a cybersecurity data sharing bill and even gave the Tor Project the last word.
+
+reply 3217546
+time 2011-11-09T21:38:57Z
+parent 3217440
+headline Google search results for "askew"
+url https://www.google.com/#q=askew
+text Is anyone making a list of these?http://www.quora.com/What-other-easter-eggs-does-Google-search-have-like-do-a-barrel-roll http://www.quora.com/What-other-easter-eggs-does-Google-sear...
+
+reply 3171378
+time 2011-10-29T06:56:07Z
+parent 3171369
+thread 3171322
+headline Git is exploding
+url http://qa.debian.org/popcon-graph.php?packages=subversion+git+mercurial+bazaar&show_installed=on&show_vote=on&want_legend=on&want_ticks=on&from_date&to_date&hlght_date&date_fmt=%25Y-%25m&beenhere=1
+text I think it's partly an artifact: due to a naming conflict, the git package in Debian used to be named "git-core" and was renamed "git" around then.
+
+reply 3143449
+time 2011-10-22T12:58:28Z
+parent 3142978
+headline Richard Hamming: You and Your Research
+url http://www.paulgraham.com/hamming.html
+text I just discovered recently that Richard Hamming also has a book on this topic:http://www.amazon.com/D/dp/B000P2XFPA%3FSubscriptionId%3D14G329YWN5EHXRB8WRG2%26tag%3Dbooksinfo-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D9056995014 http://www.amazon.com/D/dp/B000P2XFPA%3FSubscriptionId%3D14G...
+
+reply 3140369
+time 2011-10-21T16:01:47Z
+parent 3139816
+headline On cryptography and dogmas
+url http://antirez.com/post/crypto-dogmas.html
+text This is moronic. Cryptography is very hard and one tiny mistake can ruin everything. In that kind of situation, do you want to do something clever and new that you just thought up or do you want to go with what's been tried and tested by many?Anyone can invent a cryptosystem that they themselves can't break. That's why you need a community, over a long period of time, searching for flaws. Going with the herd is exactly the right thing to do here.
+
+story 3120484
+time 2011-10-17T14:01:00Z
+headline How many slaves do you have working for you?
+url http://www.slaveryfootprint.org/
+score 11
+descendants 0
+
+reply 3080845
+time 2011-10-06T17:17:47Z
+parent 3080470
+headline Stephen Wolfram on Steve Jobs: A Few Memories
+url http://blog.stephenwolfram.com/2011/10/steve-jobs-a-few-memories/
+text The original (one-page) version of this is here: http://blog.stephenwolfram.com/2011/10/steve-jobs-a-few-memories/ http://blog.stephenwolfram.com/2011/10/steve-jobs-a-few-memo...https://news.ycombinator.com/item?id=3079799 https://news.ycombinator.com/item?id=3079799
+
+reply 3080700
+time 2011-10-06T16:39:50Z
+parent 3080657
+thread 3080437
+headline Law suit shuts down Olson TZ database servers.
+url http://article.gmane.org/gmane.comp.time.tz/4133
+text No, you can't -- the Supreme Court in 1991 ruled that even wholesale copying of a telephone book was legal, because you can't copyright facts:https://en.wikipedia.org/wiki/Feist_v._Rural https://en.wikipedia.org/wiki/Feist_v._Rural
+
+reply 2845649
+time 2011-08-04T12:29:59Z
+parent 2844722
+headline Google Threw A Punch, Microsoft Fires Back With A Missile
+url http://techcrunch.com/2011/08/03/microsoft-just-kicked-google-in-the-nuts/
+text One interesting possibility: Google planned to only use the patents defensively but the joint bid would have required them participating in offensive action, which they refuse to do.
+
+reply 2828368
+time 2011-07-31T14:21:56Z
+parent 2828347
+thread 2827882
+headline Foxconn to replace workers with 1 million robots in 3 years
+url http://news.xinhuanet.com/english2010/china/2011-07/30/c_131018764.htm
+text "I suppose some part of me assumed that by 2020+ machines would be making most of what I use, but when I look at the scale of jobless people as a result of it, it really makes me scratch my head to figure out where we fit in the future."This is a common economic misconception. If, by some lucky twist of fate, machines can make everything we may ever want, it'd be great! We can just all lie around and enjoy utopia.
+
+reply 2825698
+time 2011-07-30T13:20:18Z
+parent 2823983
+thread 2822041
+headline Poll: What should be done about the endless repetition of stories?
+text That story originally carried a title like "AirBnB scandal makes front page of the Financial Times". I thought it was interesting from the perspective of "How does bad press about a startup spread and what are the effects of various ways of responding?" rather than "Let's keep piling on AirBnB." This is the first big YC crisis management story I can recall; it's not surprising other founders would want to learn from it.
+
+reply 2711556
+time 2011-06-29T21:54:54Z
+parent 2710376
+headline Paul Buchheit at Startup School 08. This talk continues to inspire me
+url http://www.youtube.com/watch?v=EZxP0i9ah8E
+text Anyone know what the slides were?
+
+reply 2701058
+time 2011-06-27T12:32:23Z
+parent 2700955
+thread 2700791
+headline [dead]
+text The reason Branson keeps deferring is that he isn't the CEO; he "founded" the company but he hasn't really been involved with it for decades.
+
+reply 2534285
+time 2011-05-10T22:14:02Z
+parent 2534274
+thread 2533916
+headline "My team will be able to program circles around everyone else" (2002)
+url http://tech.groups.yahoo.com/group/feyerabend-project/message/252
+text http://lemonodor.com/archives/000246.html http://lemonodor.com/archives/000246.html
+
+reply 2409154
+time 2011-04-05T00:16:47Z
+parent 2409084
+thread 2409043
+headline Internet user arrested for linking to other websites 
+url http://www.fsf.org/blogs/community/mccarthy
+text
+ You leave out (B) and (C) of that paragraph:    (B) by the reproduction or distribution, including by
+         electronic means, during any 180-day period, of 1
+         or more copies or phonorecords of 1 or more
+         copyrighted works, which have a total retail value
+         of more than $1,000; or
+ 
+     (C) by the distribution of a work being prepared for
+         commercial distribution, by making it available on
+         a computer network accessible to members of the
+         public, if such person knew or should have known
+         that the work was intended for commercial
+         distribution.
+ 
+ Not the "or".
+
+reply 2349732
+time 2011-03-21T14:15:39Z
+parent 2349565
+thread 2349477
+headline Has YC ever funded a company with a Black founder?
+text Pretty sure Seibel joined after it got funding.
+
+story 2324737
+time 2011-03-14T22:11:20Z
+headline Truth or Consequences, New Mexico
+url http://en.wikipedia.org/wiki/Truth_or_Consequences,_New_Mexico
+score 4
+descendants 0
+
+reply 2303007
+time 2011-03-08T23:16:39Z
+parent 2292428
+thread 2291521
+headline A Non-Programmer’s Apology
+url http://www.aaronsw.com/weblog/nonapology
+text In my defense, it was written 5 years ago, when I was an even younger guy. Technically, I think I was still a teenager.
+
+reply 2293732
+time 2011-03-06T07:42:39Z
+parent 2291707
+thread 2291521
+headline A Non-Programmer’s Apology
+url http://www.aaronsw.com/weblog/nonapology
+text The political writing is going into a book, so I don't post it to the blog. That just leaves occasional side projects like the DNS stuff.
+
+reply 2232769
+time 2011-02-17T20:47:10Z
+parent 2232751
+thread 2232677
+headline W3.org Paid Links for only $2500-$10000 **edit Nofollowed**
+url http://www.w3.org/Consortium/sup-faq#fillappl
+text They have a nofollow meta in the head of the page, which according to http://www.seobook.com/robots-txt-vs-rel-nofollow-vs-meta-robots-nofollow http://www.seobook.com/robots-txt-vs-rel-nofollow-vs-meta-ro... is as good as rel="nofollow" when it comes to PageRank.
+
+reply 2229159
+time 2011-02-17T01:00:06Z
+parent 2228223
+headline NokiaPlanB was a hoax
+url http://www.engadget.com/2011/02/16/nokia-plan-b-was-just-a-hoax-all-along/
+text What would be really cool is if "NokiaPlanB was a hoax" was a hoax -- anybody could register a NokiaPlanB Twitter account and claim this.
+
+reply 2221337
+time 2011-02-15T14:42:41Z
+parent 2220903
+headline The Sweden Solar System
+url http://en.wikipedia.org/wiki/Sweden_Solar_System
+text There's a nice one around Boston (much smaller, obviously, but might be more accessible for HN readers): http://www.mos.org/sln/wtu/css.html http://www.mos.org/sln/wtu/css.html
+
+reply 2221218
+time 2011-02-15T14:11:45Z
+parent 2215963
+headline Skype's Crazy Regex Easter Egg
+url http://blog.nyaruka.com/skypes-crazy-regex-easter-egg
+text /topic works as well.
+
+reply 2168846
+time 2011-02-02T03:36:58Z
+parent 2168263
+headline What on earth are Google thinking? (re: Binggate)
+url http://www.puremango.co.uk/2011/02/what-on-earth-are-google-doing/
+text This piece is so bogus. If, as he suggests, Google's query data is accidentally getting caught up in some larger Bing project, then why doesn't Bing just say that in their numerous posts and tweets about the scandal? Instead, they've just thrown mud at Google.
+
+reply 2156737
+time 2011-01-29T23:15:32Z
+parent 2156441
+headline Is Yuri Milner A Threat To Silicon Valley?
+url http://techcrunch.com/2011/01/29/is-yuri-milner-is-a-threat-to-silicon-valley/
+text "I tell many people that Paul Graham is a genius. He saw the opportunity to start YC."This is a very sly insult and betrays a major misunderstanding of how the market works. Did Facebook succeed because Mark Zuckerberg saw the "opportunity" to start a social networking site? Did Dropbox take off because they saw the "opportunity" for file synchronization? The idea is nonsense. These things succeeded not because their creators were the only ones to see the need (they weren't), but because an incredible amount of time and talent was put into making them successful.When YC started, everyone said the idea was crazy. It still is. It's worked, like any startup, because of incredible execution -- not because it stumbled into a waiting opportunity.
+
+reply 2117951
+time 2011-01-18T23:56:13Z
+parent 2117563
+headline Make quick fixes quicker on Google Project Hosting
+url http://googlecode.blogspot.com/2011/01/make-quick-fixes-quicker-on-google.html
+text I hope Github adds this as well.
+
+reply 2068812
+time 2011-01-04T22:28:19Z
+parent 2068514
+headline "I never agreed to that. Here's what I signed."
+url http://www.reddit.com/r/YouShouldKnow/comments/ev9k8/10_tips_before_you_sign_a_housing_rental/c1b9973
+text [Since reddit is under severe load, here's the actual text...]ZorbaTHut 319 points 1 day ago&#62; A contract is a two-way agreement, so if you see terms in there that you're uncomfortable about, you can black them out.This isn't even a housing thing, this is just a global thing. I don't think I've ever signed an employment contract without modifying it. I've never had my employer mention it afterwards.Excessive non-compete clause? Bam, gone. Clause that conflicts with a verbal agreement I had with the producer? Bam, gone. Cross out some bits, write notes in the margin, make little arrows pointing at what you crossed out with your initials, sign it, photocopy it, turn it in with your employment paperwork, keep the photocopy."Your Honor, our ex-employee should go to ultrajail for breaching our horrifying non-compete clause, and also owes us a billion dollars for Section 7 of his employment paperwork.""I never agreed to that. Here's what I signed.""Well, fuck."[And then this reply seems very helpful...]OriginalStomper 157 points 6 hours agoI am a lawyer familiar with contract law, though not an employment lawyer. You and sporkus are both correct (at least under Texas law and most other US jurisdictions): it is not a binding contract until both parties agree to all the changes.Until the original agrees (by initialing the changes or at least signing the agreement after your changes are made), the marked-up document is merely a counter-offer. However, that means the employer has nothing to enforce against you. Texas is an "employment at will" state, and here 99% of the time an employment contract was the employer's idea, for the employer's purposes, with little or no actual benefit to the employee. The employee usually comes out ahead if the entire contract is unenforceable, or even if just the harshest clauses are deleted.Protip: while you are at it, also delete arbitration clauses. Completely and whenever possible. The individual/employee will almost never win in arbitration, unless the arbitration is conducted under a collective bargaining agreement negotiated by a union. If there's even the hint of an arbitration clause in your contract (ANY kind of contract, not just employment contracts), then it does not matter how well you edited the rest of the agreement, because arbitrators are free to be arbitrary. They are not legally required to follow the contract -- they can do whatever they think is "fair." Strangely enough, "fair" will almost always favor the employer or other repeat customer for the arbitrator. Because, see, the arbitrators are in the business of arbitrating disputes. If no one chooses them to arbitrate, then they have to find a real job.
+
+reply 2067726
+time 2011-01-04T17:33:29Z
+parent 2067532
+headline Rushkoff proposes we abandon the Internet, and create something better
+url http://www.shareable.net/blog/the-next-net
+text I support this project. I was hoping stuff like Meraki.net would be a good tool for this, but it doesn't seem to have taken off.
+
+reply 2045531
+time 2010-12-28T14:33:08Z
+parent 2045514
+thread 2045120
+headline Zed Shaw: Why I Don't Use Tor
+url http://sheddingbikes.com/posts/1293530004.html
+text What are you talking about?
+
+reply 2036188
+time 2010-12-23T23:32:16Z
+parent 2036174
+thread 2035933
+headline Who Writes Wikipedia?
+url http://www.aaronsw.com/weblog/whowriteswikipedia
+text Wales admitted he was wrong to me through a mutual friend. I don't think he ever publicly recanted, though.
+
+reply 2026353
+time 2010-12-21T00:16:32Z
+parent 2024576
+headline Who Can Name the Bigger Number?
+url http://www.scottaaronson.com/writings/bignumbers.html#
+text Previously posted:http://news.ycombinator.com/item?id=1539538 http://news.ycombinator.com/item?id=1539538 (68 comments)http://news.ycombinator.com/item?id=951095 http://news.ycombinator.com/item?id=951095 (1 comment)http://news.ycombinator.com/item?id=514955 http://news.ycombinator.com/item?id=514955 (1 comment)http://news.ycombinator.com/item?id=492615 http://news.ycombinator.com/item?id=492615 (0 comments)http://news.ycombinator.com/item?id=47408 http://news.ycombinator.com/item?id=47408 (0 comments)
+
+reply 2021092
+time 2010-12-19T04:27:54Z
+parent 2020804
+headline The Auto-Pilot iPad App
+url http://www.popularmechanics.com/technology/gadgets/reviews/the-auto-pilot-ipad-app
+text I prefer Otto:http://www.imdb.com/name/nm1290293/ http://www.imdb.com/name/nm1290293/
+
+reply 2018157
+time 2010-12-17T22:34:59Z
+parent 2017773
+headline Android 2.3 Gingerbread source code is being released right now
+url http://groups.google.com/group/android-building/browse_thread/thread/91172a81604c8a0
+text Why don't the Android people work in public like the Chrome team?
+
+reply 1973416
+time 2010-12-06T01:26:54Z
+parent 1973386
+thread 1972855
+headline HTML5 Speech Recognition (in Chrome)
+url http://slides.html5rocks.com/#slide24
+text And other browsers could just extract the key and ship it as well.
+
+reply 1971791
+time 2010-12-05T15:38:15Z
+parent 1971622
+headline Another appeal from Jimmy Wales
+url http://www.danwei.org/front_page_of_the_day/is_there_no_escape.php
+text Apparently he's an official sponsor (and they took that ridiculous photo for him):http://www.mauricelacroix.com/en/Brand/Ambassadors/Jimmy_Wales.html http://www.mauricelacroix.com/en/Brand/Ambassadors/Jimmy_Wal...How much is he getting paid and is he donating it to Wikimedia?
+
+reply 1934672
+time 2010-11-23T18:06:55Z
+parent 1934353
+headline Twitter IDs to roll past 53 bits in a couple days (may break javascript apps)
+url http://groups.google.com/group/twitter-development-talk/browse_thread/thread/6a16efa375532182?pli=1
+text JavaScript apps have been broken for a couple weeks now with links to things like:http://twitter.com/mattyglesias/statuses/7.1157195777E+15 http://twitter.com/mattyglesias/statuses/7.1157195777E+15
+
+reply 1730397
+time 2010-09-27T01:13:28Z
+parent 1730391
+thread 1730364
+headline AngelGate: Chris Sacca Responds To Ron Conway
+url http://techcrunch.com/2010/09/26/angelgate-chris-sacca-responds-to-ron-conway/
+text Do you really think these emails are being intercepted by third parties? Surely the recipients are leaking them and no encryption scheme can prevent that.
+
+story 1666777
+time 2010-09-06T14:55:52Z
+headline Stephen Fry: What I wish I'd known when I was 18
+url http://vimeo.com/11414505
+score 15
+descendants 0
+
+reply 1664605
+time 2010-09-05T14:54:59Z
+parent 1664560
+thread 1663967
+headline Why the iPhone will fail (2007)
+url http://suckbusters2.blogspot.com/2007/06/apple-iphone-debut-to-flop-product-to.html
+text Of course Apple does usability testing and has since the beginning. Here's a full guide on how they do it:http://developer.apple.com/mac/library/documentation/UserExperience/Conceptual/AppleHIGuidelines/XHIGDesignProcess/XHIGDesignProcess.html http://developer.apple.com/mac/library/documentation/UserExp...Obviously they use their own judgment and market feedback as well, but the notion that they launch products without testing them first is crazy.
+
+reply 1658705
+time 2010-09-03T05:28:30Z
+parent 1658117
+headline The megapixel myth
+url http://www.kenrockwell.com/tech/mpmyth.htm
+text Are Ken Rockwell and Lew Rockwell related? They seem to share a web designer.
+
+reply 1615813
+time 2010-08-18T22:19:47Z
+parent 1615707
+thread 1615524
+headline Skype Loses Engineering Chief (possibly due to TechCrunch commenters?)
+url http://bits.blogs.nytimes.com/2010/08/18/skype-loses-engineering-chief-ahead-of-offering/?src=twr
+text Sorry, but the NYT does not do fact checking for their articles or blog posts. The New York Times Magazine factchecks their long feature stories, but that's it.
+
+reply 1567825
+time 2010-08-02T15:10:15Z
+parent 1567403
+headline Richard Branson: In it for fun not just money
+url http://www.virgin.com/richard-branson/blog/in-it-for-fun-not-just-money
+text I'm curious if pg agrees. He sometimes presents startups as this extraordinarily painful chore, but my experience is more like Branson's.
+
+reply 1557579
+time 2010-07-29T14:06:03Z
+parent 1557364
+headline Google Philosophy
+url http://www.google.com/corporate/tenthings.html
+text I found the old version more amusing:"Google does search. Google does not do horoscopes, financial advice or chat. ... Google's entire staff is dedicated to creating the perfect search engine and work tirelessly toward that goal."http://web.archive.org/web/20040603020634/http://www.google.com/corporate/tenthings.html http://web.archive.org/web/20040603020634/http://www.google....Oops!
+
+reply 1532413
+time 2010-07-20T15:56:21Z
+parent 1529204
+thread 1529019
+headline Why Developers Should Run for Congress
+url http://infovegan.com/2010/07/19/why-developers-should-run-for-congress
+text If you don't care about getting reelected, being a member of Congress is more like running a small company. You're given a million dollar a year budget and allowed to basically do what you want with it. There are no real requirements, although obviously there's a lot of pressure to show up for key votes. You get special attention in the media because of your position and lots of people want to sell you stuff.Getting elected in the first place is more painful, though.
+
+reply 1513415
+time 2010-07-14T02:34:52Z
+parent 1511553
+thread 1511104
+headline Ask PG & other successful folks: how did your life change after FU money?
+text There's a lot of truth to this, but the worry about investing it wrong is definitely new. There wasn't anything I really worried about that way before the money. Maybe if I had a family to support, it'd be different, and I would have constantly worried about having to take care of them. pg talks about always being worried about being broke; I don't recall ever worrying about that. If anyone ever asked me, I guess I would have said that I could always just move back in with my parents.
+
+reply 1513406
+time 2010-07-14T02:32:32Z
+parent 1512739
+thread 1511104
+headline Ask PG & other successful folks: how did your life change after FU money?
+text Yeah, I'm exaggerating. I think that the term happiness really refers to two different things. The first (call it happiness0) is how good you feel on a moment-to-moment basis. This is what I was referring to above (pg is always grinning and bouncing; I'm huddled in the corner furiously typing--again, I'm exaggerating). But happiness1 is how you feel looking back on what you've done. And when it comes to that, I feel like the happiest1 person alive. I certainly wouldn't give that up to get more happiness0.I thought that money would allow me to increase my happiness1 by letting me choose what to work on. But it turns out all the things I've chosen to work on pay just fine, so in practice it hasn't really been a big deal. I think this ties in with something pg says above. Basically: if there's something you really want to do, just go do it -- don't wait for the money to roll in first.
+
+reply 1511204
+time 2010-07-13T13:12:08Z
+parent 1511104
+headline Ask PG & other successful folks: how did your life change after FU money?
+text In the short-term, my life was much worse. I spent a lot of really painful time struggling to come to grips with my situation.After that was over, things went pretty much back to normal. There's now a low-level fear all the time of losing all the money (something PG's written about recently) and I'm constantly worried I've invested it badly. I didn't make any dramatic life changes so people don't really treat me differently.The biggest thing is that it provides a sort of mental backup -- when I'm feeling bad about myself or about to do something risky, I can tell myself not to worry.My sense is that it bears out what the happiness research says: dispositional factors are much more important than situational ones. PG was an abnormally happy person before he got rich and he's still abnormally happy. I was pretty miserable before and I'm still miserable. (The reasons are more complicated but the result is I prefer my misery.)
+
+reply 1508642
+time 2010-07-12T17:29:18Z
+parent 1508547
+headline Higher-Order Perl is available for free as a PDF
+url http://hop.perl.plover.com/book/
+text Has anyone seen mjd lately? I haven't heard from him and he hasn't updated his blog since January. I'm starting to get worried. (This PDF was put up long before that.)
+
+reply 1468884
+time 2010-06-28T18:27:49Z
+parent 1468182
+headline Stealing Millions 25 Cents At A Time
+url http://spectrum.ieee.org/riskfactor/computing/it/stealing-millions-25-cents-at-a-time
+text Site is down, anyone have a copy? It seems to refer to this article, though:http://www.computerworld.com/s/article/9178560/FTC_says_scammers_stole_millions_using_virtual_companies?taxonomyId=17 http://www.computerworld.com/s/article/9178560/FTC_says_scam...
+
+story 1455569
+time 2010-06-23T17:41:46Z
+headline No Sleep 'Til Fusion
+url http://gizmodo.com/5570817/no-sleep-til-fusion
+score 7
+descendants 1
+
+story 1453130
+time 2010-06-22T20:50:03Z
+headline What, Me Exercise?: The Hacker Exercise Regime
+url http://www.fourmilab.ch/hackdiet/e4/exercise.html
+score 37
+descendants 68
+
+reply 1406103
+time 2010-06-05T01:10:29Z
+parent 1405903
+headline The HN tax?  FTC mulls taxing online news aggregators
+url http://www.washingtontimes.com/news/2010/jun/4/ftc-floats-drudge-tax/
+text If you read the actual report they're quoting (http://www.ftc.gov/opp/workshops/news/jun15/docs/new-staff-discussion.pdf http://www.ftc.gov/opp/workshops/news/jun15/docs/new-staff-d...) you'll see, as usual, that the _Washington Times_ is being totally dishonest.First, the report is simply a list of proposals news industry people have made about how to save their businesses, not new FTC proposals.Second, it isn't a tax -- it's simply talking about news providers providing licenses for their content to news aggregators.Third, the FTC isn't even talking about changing the law to create new legal rights against news aggregators. What they're actually talking about is removing antitrust barriers to news providers getting together and starting a joint licensing scheme.In short, this is less than nothing.
+
+reply 1403370
+time 2010-06-04T03:20:21Z
+parent 1403116
+headline Starting To Be Wrong
+url http://www.tbray.org/ongoing/When/201x/2010/06/01/Fixed-Format-Electronic-Publishing
+text What Tim doesn't note is that WIRED was one of the leaders of this pixel-for-pixel web design.
+
+reply 1401370
+time 2010-06-03T14:20:43Z
+parent 1400975
+headline Easiest path to $2000 a month?
+url http://discuss.joelonsoftware.com/default.asp?biz.5.820663.27
+text $2000 a month? Find a large quantity of text that isn't on the Web that people might search for, put it online, and put AdSense ads on it.
+
+reply 1391228
+time 2010-05-30T22:29:20Z
+parent 1389323
+thread 1388905
+headline Allan Odgaard's Latest Comments on TextMate 2
+url http://old.nabble.com/TM2-to28405435.html#a28707277
+text I posted it here: http://news.ycombinator.com/item?id=1034958 http://news.ycombinator.com/item?id=1034958
+
+reply 1372710
+time 2010-05-23T18:23:59Z
+parent 1372604
+thread 1372375
+headline Ask HN: What happened to the financial reform bill?
+text Currently the bill requires that the GAO do a study of whether it would be a good idea and report to Congress about it. (That would be the watered down to meaninglessness bit.)Sens. Merkley and Levin proposed an amendment to make it a hard rule. The Republicans repeatedly blocked a vote on it. To get around this, they added it as an amendment to a Republican amendment. The Republicans withdrew their amendment to prevent this vote. Now there's word that they'll try to pass instructions to the committee in charge of combining the House and Senate bills to try to add the amendment there. If you want to support something like that, please sign our petition:http://act.boldprogressives.org/act/petition_gambling/?source=hn http://act.boldprogressives.org/act/petition_gambling/?sourc...
+
+reply 1344258
+time 2010-05-13T14:05:42Z
+parent 1344226
+thread 1343916
+headline Adobe's ad : We Love Apple
+url http://arstechnica.com/
+text Currently exists. Has for quite a while now.
+
+reply 1339219
+time 2010-05-11T21:15:47Z
+parent 1339213
+thread 1339118
+headline Senate Votes for Audit of Fed (96-0)
+url http://www.nasdaq.com/aspx/stock-market-news-story.aspx?storyid=201005111408dowjonesdjonline000510&title=2nd-updateus-senate-passes-amendment-for-one-time-audit-of-fed
+text Surprised to see this on HN since I've actually been working on it. Basically, the original gave full, permanent audit authority to the Government Accountability Office. This one requires a one-time thorough audit of the bailout-type expenditures and not much else.
+
+reply 1105726
+time 2010-02-06T04:11:56Z
+parent 1105600
+headline IETF dress code
+url http://tools.ietf.org/rfcmarkup?doc=fyi17#section-4.4
+text For those wondering, "There are those in the IETF who refuse to wear anything other than suits. Fortunately, they are well known (for other reasons) so they are forgiven this particular idiosyncrasy." is a reference to Vint Cerf. Though I did see Vint in a tracksuit once...
+
+reply 1098465
+time 2010-02-03T18:39:25Z
+parent 1098149
+thread 1097864
+headline All? of YC investments--left sidebar
+url http://www.crunchbase.com/company/y-combinator
+text I sent him the missing Y Combinator startups from my round (Firecrawl, Memamp, and Simmery) -- anyone else have the others?
+
+reply 1048026
+time 2010-01-12T17:43:16Z
+parent 1048014
+thread 1047977
+headline Upload and store your files in the cloud with Google Docs
+url http://googledocs.blogspot.com/2010/01/upload-and-store-your-files-in-cloud.html
+text I think you can just use:http://code.google.com/apis/documents/docs/3.0/developers_guide_protocol.html#UploadingDocs http://code.google.com/apis/documents/docs/3.0/developers_gu...
+
+reply 1048009
+time 2010-01-12T17:39:10Z
+parent 1047977
+headline Upload and store your files in the cloud with Google Docs
+url http://googledocs.blogspot.com/2010/01/upload-and-store-your-files-in-cloud.html
+text $0.02 per GB-month is a lot better than S3 or Cloud Storage, which is $0.15. It looks like you can only purchase 14TB per account[1], but the cost savings are such that I wonder if we'll see people switching.[1]: https://www.google.com/accounts/purchasestorage https://www.google.com/accounts/purchasestorageBut, interestingly, for business customers it's $0.20:http://googleenterprise.blogspot.com/2010/01/store-and-share-files-in-cloud-with.html http://googleenterprise.blogspot.com/2010/01/store-and-share...
+
+reply 1034958
+time 2010-01-06T16:21:05Z
+parent 1034584
+headline Why Textmate 2.0 is not Developed in the Open
+url http://blog.macromates.com/2010/why-2-0-is-not-developed-in-the-open/
+text For the record, here's the letter I wrote to Allan that this post is responding to:Subject: what happened to TextMate?When TextMate came out, it was the most fun application I had ever used -- to this day, have ever used, in fact. I subscribed to the cutting edge updates and it seemed like every day I'd sit down to my computer to work and my editor would be filled with brilliant new features that I hadn't even considered were possible from a text editor. Indeed, who would have ever thought that one's text editor could be a source of joy or entertainment?But since TextMate 2 started, there hasn't been a single change. Why not let people use TextMate 2 the same way? Why not let them experience the joy of watching the day-to-day morphs of new features and changes and rethinking. You could declare it was only for those who wanted to live on the edge with breakage and the rest, that TextMate 1 was always available for those who just wanted to work. But don't we deserve the option?
+
+reply 1024305
+time 2009-12-31T14:28:00Z
+parent 1024293
+headline Tell HN: List of HN Subdivisions 
+text
+ /saved
+ 
+ Documentation on what they all mean would be helpful.
+
+reply 1023389
+time 2009-12-30T22:37:58Z
+parent 1022944
+headline Students Ace Textbook Physics While Struggling With Basic Understanding (video)
+url http://www.youtube.com/watch?v=WwslBPj8GgI
+text For people interested in this stuff, Howard Gardner's book _The Unschooled Mind_ collects similar results from every discipline, from computer science to history.http://books.google.com/books?id=DVB1n_KkYEQC http://books.google.com/books?id=DVB1n_KkYEQCFor more on CS, of course, you'll want to read http://www.cs.mdx.ac.uk/research/PhDArea/saeed/paper1.pdf http://www.cs.mdx.ac.uk/research/PhDArea/saeed/paper1.pdf
+
+reply 1022426
+time 2009-12-30T14:16:59Z
+parent 1022421
+thread 1021772
+headline Fraud U: Toppling a Bogus-Diploma Empire
+url http://www.wired.com/magazine/2009/12/ff_fake_physics/all/1
+text And apparently neither do the universities -- if so many people can do so many important jobs with nobody noticing they never went to a university, what's their "education" good for?I went to Stanford and while it's true, the students did take classes where they heard facts, I didn't see anyone coming away from them having learned much. Instead, it just seemed like a test of whether you could stand it long enough / pay enough money before getting a piece of paper.
+
+reply 1017108
+time 2009-12-27T14:54:56Z
+parent 1016946
+headline Has Hackers News Become Less About Hacking?
+text http://ycombinator.com/newswelcome.html http://ycombinator.com/newswelcome.html"Stories on HN don't have to be about hacking, because good hackers aren't only interested in hacking, but they do have to be deeply interesting."What does "deeply interesting" mean? It means stuff that teaches you about the world. A story about a robbery, for example, would probably not be deeply interesting. But if this robbery was a sign of some bigger, underlying trend, then perhaps it could be."
+
+reply 1016087
+time 2009-12-26T17:28:21Z
+parent 1015991
+thread 1015684
+headline Phil Greenspun debunks Malcolm Gladwell on airline safety
+url http://philip.greenspun.com/flying/foreign-airline-safety
+text I'm friends with Philip and I doubt he'd consider himself a libertarian. He's more of a _Slate_-style counterintuitivist, although he'd probably object to any kind of political label.
+
+reply 1014379
+time 2009-12-24T20:53:49Z
+parent 1014370
+thread 1014080
+headline CoffeeScript, a little language that compiles to JavaScript. Happy Holidays, HN
+url http://jashkenas.github.com/coffee-script/
+text No.
+
+reply 1005436
+time 2009-12-20T00:08:01Z
+parent 1005339
+headline [dead]
+text I trust Wikipedia more than the National Post. The author's thesis is that William Connolley "erase[d] the Little Ice Age [and] the Medieval Warm Period" from Wikipedia. Well, all you have to do is go to the "Medieval Warming Period" article click "view history" and you can see the last version William Connolley submitted to the site, which begins:"The Medieval Warm Period (MWP) or Medieval Climate Optimum was a time of warm climate in the North Atlantic region, lasting from about AD 800–1300. It was followed by a cooler period in the North Atlantic termed the Little Ice Age. "http://en.wikipedia.org/w/index.php?title=Medieval_Warm_Period&#38;oldid=332743644 http://en.wikipedia.org/w/index.php?title=Medieval_Warm_Peri...So these claims seem pretty ridiculous.
+
+reply 995391
+time 2009-12-14T23:17:08Z
+parent 995152
+thread 994952
+headline Googling for Sociopaths
+url http://www.aaronsw.com/weblog/googled
+text &#62; Microsoft didn't ban other office suite products from working on Windows.http://en.wikipedia.org/wiki/AARD_code http://en.wikipedia.org/wiki/AARD_code
+
+story 989761
+time 2009-12-11T14:56:16Z
+headline The Truth About the Drug Companies
+url http://www.nybooks.com/articles/17244
+score 1
+descendants 1
+
+reply 989760
+time 2009-12-11T14:56:02Z
+parent 989564
+headline The Truth About Tamiflu: Has the US wasted $1.5 billion on an ineffective drug?
+url http://www.theatlantic.com/doc/200912u/tamiflu
+text This is pretty much par for the course for new drugs and goes a long way toward explaining why we're such an overmedicalized society:http://www.nybooks.com/articles/17244 http://www.nybooks.com/articles/17244
+
+reply 986695
+time 2009-12-09T22:00:20Z
+parent 986417
+headline Increase Signups by Adding Video to Your Page
+url http://www.abtests.com/test/38004/landing-for-geomoto
+text The Obama people, in a much, much bigger test, found that having a video on their splash page decreased signups.
+
+reply 975380
+time 2009-12-03T22:42:01Z
+parent 975093
+headline 4.3.2.1 -- Another google DNS ip
+text They totally beat 4.2.2.2, which was my previous go-to server.
+
+reply 972658
+time 2009-12-02T19:16:42Z
+parent 972583
+headline [dead]
+text Can someone fix this link to point to the actual page:http://www.studiobriefing.net/studiobriefing.net/FILM_NEWS/Entries/2009/11/28_WE_HAVE_BEEN_DE-GOOGLED!.html http://www.studiobriefing.net/studiobriefing.net/FILM_NEWS/E...If it's so annoying that Hacker News won't link to it, why should we be surprised that Google won't?
+
+reply 967891
+time 2009-11-30T14:59:12Z
+parent 967848
+headline [dead]
+text It might be worth noting that Krugman won his prize "for his analysis of trade patterns and location of economic activity" while Becker got it for studying "a wide range of human behaviour and interaction, including nonmarket behaviour".In other words, Krugman is the one who actually studies the economy.
+
+reply 967253
+time 2009-11-30T03:01:54Z
+parent 967237
+thread 967218
+headline Check the Redesigned Google (With Always-Visible Sidebar) Yourself
+url http://blogoscoped.com/archive/2009-11-25-n78.html
+text In their print work, the artists remove the bevel and drop shadow from the logo and it looks 10x better:http://www.aaronsw.com/2002/flatgooglelogo http://www.aaronsw.com/2002/flatgooglelogo
+
+reply 966415
+time 2009-11-29T15:53:21Z
+parent 966332
+thread 965982
+headline Aaron Swartz: How I Hire Programmers
+url http://www.aaronsw.com/weblog/hiring
+text Why don't you think this technique will scale? It asks three questions: Are they smart? Have they done good stuff in the past? Do you think you can work with them? These seem like really simple questions anyone can answer and in my experience competent people almost always answer them the same way.
+
+reply 961168
+time 2009-11-25T14:56:23Z
+parent 961080
+thread 960838
+headline WikiLeaks publishing over half a million intercepted pages from 9/11/2001
+url http://911.wikileaks.org/
+text I've gotten almost that exact txt. Girls really do write like that.
+
+reply 958671
+time 2009-11-24T03:47:33Z
+parent 958606
+headline Interviewing with YC [2005]
+url http://www.aaronsw.com/weblog/001679?repost
+text Man, so much has changed since then.
+
+reply 934434
+time 2009-11-11T02:07:29Z
+parent 934226
+thread 933891
+headline Reddit decommissions its last Y Combinator funded server
+url http://blog.reddit.com/2009/11/moving-to-cloud.html
+text 1. My apartment was Reddit HQ before we got bought. Where else would we have put the backups?2. As best I can recall, the only thing on the web nodes was a source code checkout. I don't think that's particularly sensitive.3. As ig1 notes, back then we had unencrypted passwords in the database and database copies on our machines, which were our personal laptops, so a spare drive in the apartment was the least of our problems.
+
+reply 934074
+time 2009-11-10T22:16:43Z
+parent 934043
+thread 933891
+headline Reddit decommissions its last Y Combinator funded server
+url http://blog.reddit.com/2009/11/moving-to-cloud.html
+text I'll take aaron.reddit.com. :-)(Ran across a backup of paul in my apartment the other day... Memories.)
+
+reply 931870
+time 2009-11-09T22:19:08Z
+parent 931574
+headline Tell HN: PG's Trends List from BOS 2009
+text Presumably PG will the full text of his talk on his website in a couple days, as he has with all the others. Is there anything gained by reading this list of bullet points a couple days in advance? This doesn't seem particularly time sensitive.
+
+reply 927149
+time 2009-11-06T22:55:47Z
+parent 927074
+thread 926877
+headline I’m Paul Graham
+url http://www.southwaterfront.com/art_and_design/portland-actors-conservatory-i-am-paul-graham/
+text http://portlandactorsconservatory.blogspot.com/2009/10/25-reasons-to-see-stay-for-cake.html http://portlandactorsconservatory.blogspot.com/2009/10/25-re..."10. Paul Graham doesn’t know (yet) that he’s being portrayed on the stage."
+
+reply 927143
+time 2009-11-06T22:53:40Z
+parent 926877
+headline I’m Paul Graham
+url http://www.southwaterfront.com/art_and_design/portland-actors-conservatory-i-am-paul-graham/
+text I'm almost tempted to go to Portland to see this. Is there anyone there who can see it and report back?More: "Wrapping up the evening, a character based on philanthropist Paul Graham instructs the audience on constructive disagreement in How to Have an Argument. The existential crisis that interrupts him brings about an exploration of the creative process, gratuitous accents and cake for all." (http://portlandactorsconservatory.blogspot.com/2009/10/stay-for-cake-opens-oct-30.html http://portlandactorsconservatory.blogspot.com/2009/10/stay-...)
+
+reply 926851
+time 2009-11-06T20:32:27Z
+parent 926243
+headline Ganeti - Virtual Servers Management Tool from Google
+url http://code.google.com/p/ganeti/
+text Anyone know what Google uses this for?
+
+reply 914167
+time 2009-10-31T21:38:41Z
+parent 914153
+thread 914065
+headline Homepage of Berkshire Hathaway, 17th biggest company in the world
+url http://www.berkshirehathaway.com/
+text I didn't know this, but "GEICO is an indirect, wholly owned subsidiary of Berkshire Hathaway, Inc." As are a surprising number of others:http://www.geico.com/about/corporate/corporate-ownership/ http://www.geico.com/about/corporate/corporate-ownership/
+
+reply 911478
+time 2009-10-30T03:29:02Z
+parent 910754
+thread 910512
+headline XKCD Explained, One Strip at a Time
+url http://xkcdexplained.tumblr.com/
+text (Taking this comment seriously...) After spending time with Randall IRL, I'm convinced his feelings on the subject are genuinely empathetic.That said, I don't think the comics are a particularly good expression of this. The male is always being rational-logical and the female intuitive-wholistic, which seems a bit sexist, even if the rational-logical character is always the butt of the joke.
+
+reply 907538
+time 2009-10-28T10:34:30Z
+parent 906860
+thread 905372
+headline Alexis and Steve are leaving Reddit
+url http://blog.reddit.com/2009/10/fare-thee-well-reddit.html
+text I had a bad case of survivor's guilt that month. I got over it pretty soon afterward, though.
+
+reply 898999
+time 2009-10-23T16:00:55Z
+parent 898727
+headline Tim Berners-Lee joins Twitter, complains of "confusing" UI
+url http://www.xconomy.com/boston/2009/10/23/tim-berners-lee-joins-twitter/
+text This is ridiculous. TimBL has been using identi.ca instead of Twitter for a long time because he supports free network services. No mention of that in the article.http://identi.ca/timbl http://identi.ca/timbl
+
+reply 890753
+time 2009-10-19T19:22:34Z
+parent 890422
+thread 890034
+headline D. J. Bernstein
+url http://www.aaronsw.com/weblog/djb
+text It's hard to claim I'm new to programming. I did it for over a decade and then retired from it. Perhaps it's just nostalgia, then.
+
+reply 890752
+time 2009-10-19T19:21:23Z
+parent 890558
+thread 890034
+headline D. J. Bernstein
+url http://www.aaronsw.com/weblog/djb
+text Are you sure he wrote all of it in C? He often talks about higher-level languages he's written.
+
+reply 890744
+time 2009-10-19T19:20:09Z
+parent 890734
+thread 890034
+headline D. J. Bernstein
+url http://www.aaronsw.com/weblog/djb
+text Yes, that's true for most domains. All the other servers have to cache responses from those two servers. (For the record, the two yp.to servers are currently djb's machines dancer and forcewall.)
+
+reply 890483
+time 2009-10-19T17:28:26Z
+parent 890034
+headline D. J. Bernstein
+url http://www.aaronsw.com/weblog/djb
+text I much preferred the old title. Can a moderator put it back?
+
+reply 882591
+time 2009-10-15T02:05:46Z
+parent 882306
+headline The Lost Lesson Of Instant Typing
+url http://jens.mooseyard.com/2009/10/the-lost-lesson-of-instant-typing/
+text It's like none of these people have ever used Unix talk. You try that for about five minutes before you go back to using write.
+
+reply 880374
+time 2009-10-13T23:57:10Z
+parent 879754
+headline Grand Central Dispatch internals and FreeBSD port [pdf]
+url http://wiki.freebsd.org/200909DevSummit?action=AttachFile&do=get&target=20090918-devsummit-gcd-public.pdf
+text pg: the scribd link doesn't properly encode this URL and thus breaks. The correct URL is:http://www.scribd.com/vacuum?url=http://wiki.freebsd.org/200909DevSummit%3Faction%3DAttachFile%26do%3Dget%26target%3D20090918-devsummit-gcd-public.pdf http://www.scribd.com/vacuum?url=http://wiki.freebsd.org/200...
+
+reply 880259
+time 2009-10-13T22:39:05Z
+parent 879867
+headline Release Late, Release Rarely (2006)
+url http://www.aaronsw.com/weblog/rlrr
+text My 2008 thoughts on this are here: http://www.aaronsw.com/weblog/howtolaunch http://www.aaronsw.com/weblog/howtolaunch
+
+reply 864249
+time 2009-10-06T14:55:39Z
+parent 862933
+thread 862529
+headline Aaron Swartz shows his FBI file
+url http://www.aaronsw.com/weblog/fbifile
+text I didn't. But when PACER went down they announced they were launching an investigation into who did it.
+
+reply 862750
+time 2009-10-05T20:51:36Z
+parent 862635
+thread 862529
+headline Aaron Swartz shows his FBI file
+url http://www.aaronsw.com/weblog/fbifile
+text It looks to me like the FBI was wondering why exactly this was a crime.
+
+reply 862600
+time 2009-10-05T19:44:16Z
+parent 862581
+thread 862529
+headline Aaron Swartz shows his FBI file
+url http://www.aaronsw.com/weblog/fbifile
+text Congratulations, you're better at finding me than the FBI.
+
+reply 843754
+time 2009-09-25T16:26:01Z
+parent 843170
+thread 841287
+headline Keynes, Explained Briefly
+url http://www.aaronsw.com/weblog/keynes
+text This is a long post, mostly filled with things that are either irrelevant to what I said or obviously wrong. But the basic place where it disagrees with Keynes is that it adopts the old-time monetarist view that printing money always "debases" the currency. This seems intuitive, but it's been proven just wrong. During the period I mention when we kept interest rates low, the economy grew steadily. When monetarist targeting was tried (under Volcker), we got a huge recession. The recent problem wasn't caused by low interest rates but a housing bubble. If Greenspan had simply given a speech pointing out the bubble instead of repeatedly denying it, it could have been averted.
+
+reply 841735
+time 2009-09-24T18:01:08Z
+parent 841518
+thread 841287
+headline Keynes, Explained Briefly
+url http://www.aaronsw.com/weblog/keynes
+text Huh? Lower interest rates are the result of an increased supply of capital -- by the government printing money.
+
+reply 841724
+time 2009-09-24T17:52:58Z
+parent 841714
+thread 841287
+headline Keynes, Explained Briefly
+url http://www.aaronsw.com/weblog/keynes
+text It's a direct summary of Keynes' book _The General Theory_. Have you actually read it? Keynes has often been misconstrued by later writers.
+
+story 841287
+time 2009-09-24T14:59:07Z
+headline Keynes, Explained Briefly
+url http://www.aaronsw.com/weblog/keynes
+score 58
+descendants 64
+
+reply 823000
+time 2009-09-15T01:03:43Z
+parent 822985
+thread 822932
+headline A Short Course in Ethics
+url http://www.aaronsw.com/weblog/ethics
+text How does having less cows being born hurt actual cows? It might "hurt" the cow species, but that's a metaphorical point -- surely you don't consider the cow species actually capable of pain.The evidence (look up "demographic transition") shows that the only reliable way to decrease birth rates is to decrease death rates. In practice, people seem to have more kids when they expect some of their kids to die. That's how societies keep from dying out.I don't say people are just deluded, I say they're often confused.I never said people are only allowed to get equal things, so I have no idea what you're talking about.Nobody disputes that things are sometimes complicated. But that just means you need to work a little harder to find out the truth -- not just spout random ideas you have.
+
+reply 810803
+time 2009-09-08T12:44:40Z
+parent 810218
+thread 809952
+headline The trouble with non-profits
+url http://www.aaronsw.com/weblog/measurenonprofit
+text I'm not sure how any of this discredits their recommendations. E.g. it seems to me the Stop TB Foundation and Partners In Health probably still achieve measurable results.I certainly wouldn't recommend donating to GiveWell, though. The MIT Poverty Action Lab seems like a much better use of the money.
+
+reply 810797
+time 2009-09-08T12:41:37Z
+parent 810026
+thread 809952
+headline The trouble with non-profits
+url http://www.aaronsw.com/weblog/measurenonprofit
+text What does this even mean? Right now nonprofits do things in exchange for money from wealthy people. How would "running them like a business" be any different?
+
+reply 810748
+time 2009-09-08T12:05:17Z
+parent 810381
+thread 809952
+headline The trouble with non-profits
+url http://www.aaronsw.com/weblog/measurenonprofit
+text I'd like to hear you name the nonprofit and some of the metrics they use; it'd be great to be able to share good examples.
+
+reply 810151
+time 2009-09-08T02:28:17Z
+parent 810045
+thread 809952
+headline The trouble with non-profits
+url http://www.aaronsw.com/weblog/measurenonprofit
+text http://givewell.net/ http://givewell.net/ investigates charities to make sure they achieve demonstrable results, they have a list of those that do.There are also meta-charities like GiveWell and the MIT Poverty Action Lab that investigate other charitable attempts.
+
+reply 789807
+time 2009-08-27T19:09:36Z
+parent 789791
+thread 789671
+headline Why I Won't Use Rimuhosting
+url http://www.aaronsw.com/weblog/rimuhosting
+text Did you read the article? They edited my partition to add their key to my authorized_keys, logged in with it, and turned off my webserver. Whatever that is, it's not asking to assist me.
+
+reply 789775
+time 2009-08-27T18:56:26Z
+parent 789732
+thread 789671
+headline Why I Won't Use Rimuhosting
+url http://www.aaronsw.com/weblog/rimuhosting
+text As I note in the article, they already had placed a CPU cap on me. They could have lowered it to whatever my fair share is instead of breaking into my box and turning off my webserver.
+
+reply 789772
+time 2009-08-27T18:55:13Z
+parent 789765
+thread 789671
+headline Why I Won't Use Rimuhosting
+url http://www.aaronsw.com/weblog/rimuhosting
+text Technically the police can break down my door too, but that doesn't mean that I'm going to trust them with a key. There are both social reasons (a key is an invitation) and technical (it's much more noticeable if they break down the door).
+
+reply 787750
+time 2009-08-26T18:28:27Z
+parent 786439
+headline Review my Webapp: How to make ______? (food)
+url http://www.recipepuppy.com/how/
+text Load it down with ads _after_ it becomes popular.
+
+reply 784878
+time 2009-08-25T14:24:30Z
+parent 784848
+thread 784675
+headline The Newswipe Manifesto
+url http://www.aaronsw.com/weblog/newswipe
+text Alexander Cockburn once wrote a hilarious parody of Lehrer about this: http://www.counterpunch.org/cockburn06302005.html http://www.counterpunch.org/cockburn06302005.html
+
+reply 784814
+time 2009-08-25T13:56:56Z
+parent 783964
+thread 783918
+headline Poverty Kills
+url http://www.aaronsw.com/weblog/povertykills
+text How is this emotionalism? I'm writing about people who are trying to take a rationalist, cold-hearted look at death and do something about it.
+
+reply 784799
+time 2009-08-25T13:51:44Z
+parent 784775
+thread 783918
+headline Poverty Kills
+url http://www.aaronsw.com/weblog/povertykills
+text Trade policies: The traditional way developing countries industrialize is by picking something they import from other countries and learning to make it themselves. This requires a period of huge government subsidies and economic intervention to get that industry started. (Read _Bad Samaritans_ for numerous examples, including the story of how the US and Britain developed this way.) US-led global institutions like the WTO, IMF, and World Bank push countries to not intervene in their economy and prohibit subsidizing local industries as a violation of "free trade".Domestically, the same sort of "structural adjustment" policies require countries to dismantle social safety nets and privatize government and institute "austerity" measures which have disastrous effects on human capital.
+
+reply 784788
+time 2009-08-25T13:45:52Z
+parent 784477
+thread 783918
+headline Poverty Kills
+url http://www.aaronsw.com/weblog/povertykills
+text Why would more automation lead to more people out of work? Automation simply increases productivity; productivity gains have increased by numerous factors of 10 in the past few centuries and workforce participation rates have consistently _increased_.
+
+reply 784781
+time 2009-08-25T13:42:44Z
+parent 784771
+thread 783918
+headline Poverty Kills
+url http://www.aaronsw.com/weblog/povertykills
+text Humans need calories, it's true, but more than that we need nutrients. McDonald's food is carefully processed and stripped of its natural nutrients, so that you need to eat much more of it to get the nutrients you need. It's also packed full of calories, so that it tastes good, so eating enough of it not to be malnourished requires eating a lot of calories as well.I rarely see grad students eating at McDonald's.
+
+reply 784772
+time 2009-08-25T13:39:05Z
+parent 784122
+thread 783918
+headline Poverty Kills
+url http://www.aaronsw.com/weblog/povertykills
+text Look at what happens in cultures where they regularly eat crops which decrease fertility. The fuck like rabbits, having sex with anyone and everyone without any cultural inhibitions like shame or marriage, starting at puberty, so they can get their birth rates back up.The only proven way to get birth rates down is to get death rates down; cultures will do whatever it takes to reproduce themselves -- the solution is to make reproduction easier, so they no longer have to err on the side of caution.
+
+reply 784768
+time 2009-08-25T13:35:35Z
+parent 784081
+thread 783918
+headline Poverty Kills
+url http://www.aaronsw.com/weblog/povertykills
+text Does everyone here get their facts from political columnists and movie directors? Poor people have more kids because their kids are more likely to die. It's the same reason people before the industrial revolution had more kids: it's how you keep the species from dying out. Look up "the demographic transition": as the death rate in developing countries falls, birth rates also fall.I personally don't think we can help other countries develop by giving them charity and I don't think I said that. I think we can help them develop by stopping our policies of stealing from them. Right now we saddle them up with debt, have large companies steal their natural resources, force them to adopt trade policies that prevent industrialization, and domestic policies that prevent them from educating their people. Let's stop doing that.
+
+reply 784757
+time 2009-08-25T13:29:34Z
+parent 784346
+thread 783918
+headline Poverty Kills
+url http://www.aaronsw.com/weblog/povertykills
+text You can just email me, you know. I check my email. I argue for killing the king in my latest piece on this subject: http://www.aaronsw.com/weblog/savealife http://www.aaronsw.com/weblog/savealife
+
+reply 784754
+time 2009-08-25T13:27:42Z
+parent 784422
+thread 783918
+headline Poverty Kills
+url http://www.aaronsw.com/weblog/povertykills
+text The Latino infant mortality rate differs from the non-Hispanic white one by 0.1 per 1000. This is largely attributed to methodological issues around getting appropriate records and the selection bias of immigration.
+
+reply 784738
+time 2009-08-25T13:19:50Z
+parent 784166
+thread 783918
+headline Poverty Kills
+url http://www.aaronsw.com/weblog/povertykills
+text The main reason poor people tend to suffer from obesity is because it's much more expensive to buy organic vegetables than it is to buy some McDonald's. (Organic food stores don't even tend to open in poor neighborhoods.) Running around in circles burns very few additional calories; certainly not enough to deal with this fact.
+
+reply 781219
+time 2009-08-23T23:52:01Z
+parent 781129
+headline Tell HN: PG revises 3 essays
+text "Few people can experience now what Darwin's contemporaries did when The Origin of Species was first published, because everyone now is raised either to take evolution for granted, or to regard it as a heresy. No one encounters the idea of natural selection for the first time as an adult."It's interesting to read this in the context of _The Selfish Gene_. Mary Midgley (who wrote a scathing attack on the book[1]) once suggested that she probably found it hard to appreciate its virtues because she'd read the ideas in it so many times before -- by the time the book came out they hardly seemed novel to her.[1]: http://www.royalinstitutephilosophy.org/articles/article.php?id=14 http://www.royalinstitutephilosophy.org/articles/article.php..."So if you want to discover things that have been overlooked till now, one really good place to look is in our blind spot: in our natural, naive belief that it's all about us. And expect to encounter ferocious opposition if you do."Peter Singer is a good case study in this.
+
+reply 781215
+time 2009-08-23T23:46:45Z
+parent 781184
+thread 781129
+headline Tell HN: PG revises 3 essays
+text Yes. They were here: http://paulgraham.infogami.com/blog/ http://paulgraham.infogami.com/blog/
+
+reply 767158
+time 2009-08-17T01:38:00Z
+parent 766779
+headline   Y Combinator Starts Seeding Ideas To Startups 
+url http://www.techcrunch.com/2009/08/16/y-combinator-starts-seeding-ideas-to-startups/
+text Can someone ban TechCrunch? AFAICT, it's nothing but linkjacking.
+
+reply 757165
+time 2009-08-12T03:07:45Z
+parent 757148
+thread 756880
+headline Basic income
+url http://en.wikipedia.org/wiki/Basic_income
+text Because the basic income money isn't given to purchase any particular good. People can spend it on what they like. If the person gets to choose between spending their $5000 on a laptop or plane tickets, supply-and-demand says laptops will stay at their marginal cost.
+
+reply 723426
+time 2009-07-25T16:50:21Z
+parent 721934
+thread 721552
+headline My Life Offline
+url http://www.aaronsw.com/weblog/offline2
+text Sounds like you need to find bigger libraries. I read 50-150 books a year and my to-read list keeps growing longer.
+
+reply 723188
+time 2009-07-25T11:41:42Z
+parent 722239
+headline Warren Buffet's Kid Show [video] 
+url http://online.wsj.com/video/clip-warren-buffett-secret-millionaire-club/31F28D12-5EA4-4515-9CB2-62F9C0CF64CE.html
+text More at http://www.youtube.com/watch?v=kVvyVVoLH8U http://www.youtube.com/watch?v=kVvyVVoLH8U for those who just can't look away.
+
+reply 721707
+time 2009-07-24T16:03:03Z
+parent 721628
+thread 721552
+headline My Life Offline
+url http://www.aaronsw.com/weblog/offline2
+text I didn't spend the month with my "offline life" community. I agree, they're far less intellectually stimulating than the people I find online. I spent the month reading books, which I found even _more_ intellectually stimulating than the people I find online.
+
+reply 689807
+time 2009-07-06T15:40:26Z
+parent 689183
+headline Mathematica vs. Matlab vs. Python
+url http://www.larssono.com/musings/matmatpy/index.html
+text I'm not Mathematica's biggest fan, but this is just a smear job. He goes way out of his way to write code to do things that Mathematica does automatically. For example, his 32 lines of bar chart display code can be replaced with:    BarChart[numbers]
+
+reply 629396
+time 2009-05-27T23:12:14Z
+parent 629343
+thread 629248
+headline How Washington Can Support Entrepreneurs
+url http://www.washingtonmonthly.com/features/2009/0905.spc-sec.html
+text You can tax land. Land isn't going to go away:http://en.wikipedia.org/wiki/Geoism http://en.wikipedia.org/wiki/Geoism
+
+story 629248
+time 2009-05-27T21:43:11Z
+headline How Washington Can Support Entrepreneurs
+url http://www.washingtonmonthly.com/features/2009/0905.spc-sec.html
+score 6
+descendants 17
+
+reply 620874
+time 2009-05-21T18:31:46Z
+parent 620785
+headline Amazon WS Crypto Sigs v2 Broken (Even Amazon Can't Get Crypto Right)
+url http://rdist.root.org/2009/05/20/amazon-web-services-signature-vulnerability/
+text I'm amazed Amazon did this. Even casually reading the spec, this jumped out as a red flag. Another example of Rule 5, I guess:http://cr.yp.to/qmail/guarantee.html http://cr.yp.to/qmail/guarantee.html
+
+reply 620774
+time 2009-05-21T17:27:19Z
+parent 620603
+headline Why Free Software usability tends to suck
+url http://web.archive.org/web/20051125183807/http://mpt.phrasewise.com/discuss/msgReader$173
+text I mirrored the old mpt site here:http://mpt.mirror.theinfo.org/discuss/msgReader$173 http://mpt.mirror.theinfo.org/discuss/msgReader$173in hopes that Google will index it.
+
+reply 615146
+time 2009-05-18T15:45:23Z
+parent 615106
+headline Wolfram Alpha Isn't Google, So Stop Comparing Them
+url http://www.fastcompany.com/blog/kit-eaton/technomix/wolfram-alpha-isnt-google-so-stop-comparing-them
+text Nor Wikipedia. If you need to compare Wolfram Alpha to something, compare it to Freebase.
+
+reply 613009
+time 2009-05-17T05:23:25Z
+parent 612990
+headline [dead]
+text Do you seriously Wolfram Alpha is trying to compete with Google? They'd much rather get integrated into Google, ala Google Calculator.
+
+reply 612960
+time 2009-05-17T04:34:03Z
+parent 612905
+headline Ask HN: Why is WolframAlpha serving rendered text images instead of plain text?
+text I asked Stephen Wolfram about this and he explained that it was because sometimes the answers contain complex mathematical formulae that are difficult to render in HTML and that since he wanted a consistent display, his preferred solution was to just use images all the time.
+
+reply 608874
+time 2009-05-14T15:15:44Z
+parent 608733
+thread 608642
+headline Successful Site in 12 Months with Google Alone
+url http://www.webmasterworld.com/forum3/2010.htm
+text This is precisely the problem with /classic -- even old (classic?) users use the main home page, so they're going to vote up stuff they see there. The front page is so path-dependent that taking out certain votes after-the-fact is never going to make big changes.
+
+reply 601684
+time 2009-05-10T01:02:59Z
+parent 601573
+headline Infrequently Asked Questions about Perl
+url http://perl.plover.com/IAQ/IAQlist.html
+text "How can I find the creation date of a file?" is my favorite. So evil!
+
+reply 601320
+time 2009-05-09T19:43:50Z
+parent 601273
+headline [dead]
+text This poll question is bogus. How is an Ann Coulter interview like a Noam Chomsky interview?
+
+reply 600477
+time 2009-05-08T23:43:13Z
+parent 600472
+thread 600281
+headline Tell HN: Wolfram Alpha preview goes live
+text You can't do computation with those results. At the first level, this means you have to click a link and load a page. But it also means that you can't ask compound questions ("What films did Orson Welles make that star Ruth Warrick?"). And you can't use the answers in other programs thru an API.
+
+reply 591404
+time 2009-05-03T21:58:58Z
+parent 590993
+headline VPS Comparison between Slicehost and Prgmr: is an $8 instance as good as a $20 one?
+url http://journal.uggedal.com/vps-comparison-between-slicehost-and-prgmr
+text http://prgmr.com/status.html http://prgmr.com/status.html doesn't inspire confidence. Sample quote:&#62; The cutover from Cogent to Rippleweb was messy, and resulted in nearly a full day's down time This was completely my fault, (That is, Luke Crawford's) as I set the cut off date for the old service to early. Rippleweb moved quickly to help me recover; the rest of the down time was due to a faulty cross-connect. All customers get one month of credit for this, as this has been a rough month (and we are not entirely out of the woods yet.) On the upside, we have avoided renumbering. Neal has survived the baptism by fire, and we can expect prgmr.com services to improve in reliability now that I have help again.
+
+reply 575455
+time 2009-04-23T12:46:20Z
+parent 575401
+headline Explaining the OAuth Session Fixation Attack
+url http://www.hueniverse.com/hueniverse/2009/04/explaining-the-oauth-session-fixation-attack.html
+text The most amazing thing about this is that it took them so long to think of this attack. It's a pretty simple idea. Is it really possible that so many major companies implemented this spec without even thinking it through?
+
+reply 560086
+time 2009-04-13T17:36:17Z
+parent 560013
+thread 559953
+headline The Logic of Loss
+url http://www.aaronsw.com/weblog/logicofloss
+text If "repeating the game ... changes the utility equation" from negative to positive, how can you possibly say "it has nothing to do with how many times you get to play"?
+
+reply 556596
+time 2009-04-10T19:05:05Z
+parent 556570
+headline Ask HN: .net vs .com 
+text I purchased watchdog.net, which I thought was a great name, but almost no one ever remembers it correctly.
+
+reply 548876
+time 2009-04-06T14:29:43Z
+parent 548387
+headline Pixar’s Latest Film Has Wall Street on Edge
+url http://www.nytimes.com/2009/04/06/business/media/06pixar.html
+text This is another example of how if you go public people will try to kill anything that makes you original. How long before we start seeing stories about how Google needs to end luxuries like 20% time?
+
+reply 548311
+time 2009-04-06T04:13:52Z
+parent 547938
+headline Ask HN: Choosing a college
+text I'm not sure this directly applies to you, but the one thing I wish people had told me when I was applying to college was that if you want to be a Master of the Universe, there's still a significant advantage to going to an east coast Ivy League school. My friends at Harvard and Yale and so on have a valuable network of powerful people looking out for them, making sure they get cushy jobs and lecture gigs and book deals. Stanford, by contrast, was all about pushing you into Silicon Valley, either as a startup grunt or a VC pawn.
+
+story 511142
+time 2009-03-11T02:19:09Z
+headline Tor2web: secure anonymous Web publishing
+url http://tor2web.com/
+score 2
+descendants 0
+
+reply 511138
+time 2009-03-11T02:17:19Z
+parent 397184
+thread 397145
+headline Tor2web: Tor anonymized content available to all
+url http://blog.wired.com/27bstroke6/2008/12/tor-anonymized.html
+text I assume you mean "sue" for "sure". They can try, but what we're doing is legal, so they won't succeed any more than they would by suing MAE East for routing packets to some bad site.
+
+reply 507236
+time 2009-03-08T15:18:23Z
+parent 507172
+headline Wolfram Alpha is Coming -- and It Could be as Important as Google
+url http://www.twine.com/item/122mz8lz9-4c/wolfram-alpha-is-coming-and-it-could-be-as-important-as-google
+text Wolfram Alpha is coming -- and It Could be as Imporant as WolframTones!http://tones.wolfram.com/ http://tones.wolfram.com/
+
+story 502819
+time 2009-03-04T12:33:17Z
+headline DNSCurve: DJB's proposal for securing DNS
+url http://dnscurve.org/
+score 3
+descendants 1
+
+reply 466415
+time 2009-02-04T20:17:02Z
+parent 466336
+thread 466110
+headline How Depressions Work
+url http://www.aaronsw.com/weblog/depressions
+text Oops, I meant to add footnotes. Sweeney and Sweeney is here:http://cda.morris.umn.edu/~kildegac/Courses/M&#38;B/Sweeney%20&#38;%20Sweeney.pdf http://cda.morris.umn.edu/~kildegac/Courses/M&#38;B/Sweeney%...It's an awesome paper.
+
+reply 423015
+time 2009-01-07T04:45:23Z
+parent 422961
+headline Did Google Just Expose Semantic Data in Search Results?
+url http://www.readwriteweb.com/archives/google_semantic_data.php
+text If by new, you mean three years old, then sure.http://www.pcworld.com/article/120362/google_intros_qanda_service.html http://www.pcworld.com/article/120362/google_intros_qanda_se...
+
+reply 422881
+time 2009-01-07T02:55:50Z
+parent 422848
+thread 422813
+headline Data Analysts Captivated by Power of R
+url http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html
+text Must be a slow news day.In other news: Programmers Captivated by Power of C
+
+reply 418542
+time 2009-01-03T18:38:40Z
+parent 418290
+headline [dead]
+text Wow, this piece is actually just a quote from my article, which goes on to disprove the statement.http://www.aaronsw.com/weblog/whowriteswikipedia http://www.aaronsw.com/weblog/whowriteswikipediaWhy are people voting this up?
+
+reply 418492
+time 2009-01-03T17:39:55Z
+parent 417542
+headline Philip Greenspun's Economy Recovery Plan
+url http://philip.greenspun.com/politics/economic-recovery
+text Wow, this article is so wildly ignorant of the basic economics.Let's start at the beginning. Depressions are caused by a slight increase in people's preference to hold onto cash, which causes a downward spiral where the economy slows and then people want to hold onto cash more.The first thing you try to do in this instance is increase the money supply, but we've gone as far as we can go on that -- the Fed has sent the interest rate to zero and it can't go any lower.So, as Keynes said, the second thing you try to do in that scenario is let government spending pick up the slack and take advantage of the productive capacity that isn't being used on anything to get the economy moving again.Greenspun claims this won't work because "a lot more globalized today and there is much more competition among countries." First, we've only recently caught up to the levels of international integration we had during the first wave of globalization, starting in 1870. Second, countries don't compete with each other. The fundamental well-being of a country is determined by simply its domestic productivity. What would we be competing for?He seems to suggest that we're competing for international investment dollars. But then why do you think government investment won't work? Why is international investment this magical thing we must attract to start businesses?He claims that Japan's huge fiscal stimulus proves stimulus doesn't work. But in Japan, stimulus did work -- when it was tried. As the leading scholar wrote: "the 1995 stimulus package ... did result in solid growth in 1996, demonstrating that fiscal policy does work when it is tried. As on earlier occasions in the 1990s, however, the positive response to fiscal stimulus was undercut by fiscal contraction in 1996 and 1997."See http://mediamatters.org/items/200812220005 http://mediamatters.org/items/200812220005 for more.
+
+reply 409704
+time 2008-12-25T19:17:08Z
+parent 409547
+thread 409509
+headline Pg @ nhk
+url http://jp.youtube.com/watch?v=HnG5uQId_Ks&feature=channel_page
+text No, PG is always like that.
+
+reply 409692
+time 2008-12-25T18:48:57Z
+parent 406434
+thread 405946
+headline Ask HN: slicehost-like providers outside the US?
+text Kragen was referring to my nasty experience with them, which I haven't published yet since I wanted to get all my data off before criticizing them.
+
+reply 407594
+time 2008-12-23T15:13:28Z
+parent 407526
+headline Oh My God, It's 1993 Again! Historical data defuses "Depression" talk
+url http://research.stlouisfed.org/fred2/data/UNRATE.txt
+text I don't think anyone is worrying about a depression based on the _current_ unemployment number. The concern is that things are going to get much worse because of frozen credit markets, nationalized banks, globalized finance, trade deficits, a worldwide demand slump, a weirdly-behaving dollar, and, most importantly, the fact that interest rates are at zero so we don't have any normal macroeconomic tools left.
+
+reply 400103
+time 2008-12-16T21:33:57Z
+parent 399863
+headline After Credentials
+url http://www.paulgraham.com/credentials.html
+text The left likes credentials? The right doesn't like intergenerational transmission of income?These aren't any left or right I recognize. Who is PG thinking of?
+
+reply 379150
+time 2008-11-28T06:26:48Z
+parent 375410
+headline Ask HN: Who's Hiring?
+text watchdog.net is looking for good people:http://transparencyjobs.com/jobs/49/ http://transparencyjobs.com/jobs/49/
+
+reply 373202
+time 2008-11-22T21:11:39Z
+parent 373117
+thread 372593
+headline Poll: Turn off News.YC a few hours a day?
+text What if instead of an override link it made you answer a Mechanical Turk question? Then at least you'd be accomplishing something useful with your procrastination.
+
+reply 373198
+time 2008-11-22T21:07:52Z
+parent 372639
+thread 372593
+headline Poll: Turn off News.YC a few hours a day?
+text How is voting for a binding commitment a vote against personal responsibility? As Jon Elster shows, if we take hyperbolic utility discounting seriously binding commitments like these are a key part of personal responsibility.
+
+reply 358757
+time 2008-11-10T02:09:21Z
+parent 358490
+headline Ask HN: What's a good book to learn electronics?
+text For the hardcore Feynman fans, there's the Feynman Lectures on Computation: http://books.theinfo.org/go/0738202967 http://books.theinfo.org/go/0738202967
+
+reply 351006
+time 2008-11-02T00:11:56Z
+parent 350924
+headline What Caused the Loan Crisis
+url http://thinkingobjectively.blogspot.com/2008/10/what-caused-loan-crisis.html
+text For a more reality-based answer, try http://howdidthishappen.org/ http://howdidthishappen.org/
+
+reply 351002
+time 2008-11-01T23:57:01Z
+parent 350978
+thread 350926
+headline Ask HN: Email handler
+text I assume you mean procmail, not procmon. Decent MTAs (like qmail) make it pretty easy to have mail delivered to a script.
+
+reply 351001
+time 2008-11-01T23:56:13Z
+parent 350926
+headline Ask HN: Email handler
+text
+ Do what ezmlm does with bounce messages: use a different envelope sender for each outgoing mail and encode the message ID in that address. If you get a mail to the envelope sender you can typically assume it's a non-delivery report of some kind.For finer-grained information, you can search the resulting message for HCMSSCs: http://cr.yp.to/proto/hcmssc.txt http://cr.yp.to/proto/hcmssc.txtFurther reading:
+ http://cr.yp.to/proto/verp.txt http://cr.yp.to/proto/verp.txt
+ http://support.kavi.com/khelp/kmlm/user_help/html/bounces.html#automated_bounce_handling http://support.kavi.com/khelp/kmlm/user_help/html/bounces.ht...
+
+reply 334477
+time 2008-10-16T14:37:34Z
+parent 334355
+headline Why to Start a Startup in a Bad Economy
+url http://www.paulgraham.com/badeconomy.html
+text This article seems to ignore the main argument I've heard: exit strategies are fewer in a recession. IPOs are out of the question and few companies are in an acquisition mood. So instead of growing fast and selling out before you hit your plateau, you have keep your traffic climbing until the market picks back up. That's really hard, esp. since founders have a tendency to get bored. I expect many will start something new at that point anyway, so I can see why it'd be tempting to skip the step in between. (That said, it's hard to think of a better way to spend the time -- even a failed startup's more educational than grad school.)
+
+reply 331416
+time 2008-10-13T19:38:31Z
+parent 330863
+thread 330402
+headline [dead]
+text That's the horror of UTF-8.
+
+reply 330438
+time 2008-10-12T19:02:09Z
+parent 330437
+thread 330402
+headline [dead]
+text That's the beauty of UTF-8.
+
+reply 324902
+time 2008-10-06T13:59:01Z
+parent 324637
+headline Even DJB's code is buggy. (And some others too.)
+url http://www.google.com/codesearch?hl=en&lr=&q=%22if+%28errno+%3D+%22&sbtn=Search
+text This was caught here:http://www.nabble.com/Bug-in-fetch.c:doit--td1143190.html http://www.nabble.com/Bug-in-fetch.c:doit--td1143190.html
+
+reply 284136
+time 2008-08-22T20:16:52Z
+parent 283961
+thread 283908
+headline Aaron Swartz: How To Launch Software
+url http://www.aaronsw.com/weblog/howtolaunch
+text Geez, that's a lot of ad hominem. Did I accidentally murder your dog or something?I wasn't saying anything about what 37signals does, I was criticizing what they recommended. You know, in their book. That I link to in my first paragraph.
+
+reply 277928
+time 2008-08-16T20:04:05Z
+parent 225799
+thread 225764
+headline Guido on the fate of Lambda, map() and filter(), and reduce() in Python 3000
+url http://www.artima.com/weblogs/viewpost.jsp?thread=98196
+text I've often wished that the "x for" could be optional, but yes.It's like bar charts and tables. Tables communicate more information, but we're visual creatures and thus prefer bar charts.
+
+reply 269216
+time 2008-08-07T00:48:17Z
+parent 268710
+headline Old Masters and Young Geniuses
+url http://www.kottke.org/08/08/old-masters-and-young-geniuses
+text Tufte debunked this book in Beautiful Evidence. It even led him to coin the term economisting (emphasis on con and mist).Draft: http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001Zl http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0...When I first read it I remarked that he was going after too easy a target -- surely nobody would take this stuff seriously. And yet, since then, all sorts of people have.
+
+reply 267956
+time 2008-08-05T22:16:32Z
+parent 267692
+headline Ask PG: Did you start YC with your own money?
+text I assumed http://news.ycombinator.com/item?id=267809 http://news.ycombinator.com/item?id=267809 was a parody of the inevitable "what? I could build that myself" comment made about all YC startups.A site where you vote on links? Why I could build that myself. An SMS interface to PayPal? Why I could build that myself. A website that gives away money to startup founders? Why I could build that myself!
+
+reply 267953
+time 2008-08-05T22:14:10Z
+parent 267767
+thread 267692
+headline Ask PG: Did you start YC with your own money?
+text I think the real factor is control. Does Paul Graham really seem like the guy who would want a boss if he could avoid it?
+
+reply 214340
+time 2008-06-10T21:58:17Z
+parent 213409
+thread 212853
+headline How to Promote Startups
+url http://www.aaronsw.com/weblog/prostartup
+text I didn't get into this, but Brook argues that allowing people to become billionaires has led to increasing costs of living in major cities, pushing out the kinds of people who start startups in favor of trustafarians, i-bankers, corporate lawyers, and the other kinds of boring people that billionaires breed. He's more focused on stories than economic analysis, but the argument seems plausible.
+
+reply 212871
+time 2008-06-09T16:12:54Z
+parent 212858
+thread 212853
+headline How to Promote Startups
+url http://www.aaronsw.com/weblog/prostartup
+text I'm not sure I understand this argument. When startup founders bail out, they typically go and find a normal job instead. Why would a social safety net make this any easier?
+
+reply 197397
+time 2008-05-22T18:39:02Z
+parent 197228
+headline Ask YC:  Nonprofit funding
+text Do something big. My experience has been that funders are pretty persuaded by the impressive cost-to-impact ratio. But the trick is to go after funders for the particular field you're in, not general technology funding. So for a book-related project I did, we went after funding from library groups. They're much more excited by the power of tech than tech groups.
+
+reply 197387
+time 2008-05-22T18:30:11Z
+parent 197284
+thread 197228
+headline Ask YC:  Nonprofit funding
+text Craiglist isn't a nonprofit and never really has been to my knowledge, so I don't know what you're talking about.
+
+reply 197385
+time 2008-05-22T18:27:51Z
+parent 196473
+thread 195959
+headline Ask Eliezer Yudkowsky: How did you convince the Gatekeeper to release the potentially genocidal AI?
+text That's the monthly singularity discussion chat; not the Gatekeeper chat.
+
+reply 194397
+time 2008-05-19T20:16:38Z
+parent 192680
+thread 192654
+headline PG: Disconnecting Distraction
+url http://www.paulgraham.com/distraction.html
+text Maybe because he doesn't want to make the Fundamental Attribution Error?http://en.wikipedia.org/wiki/Fundamental_attribution_error http://en.wikipedia.org/wiki/Fundamental_attribution_error
+
+reply 189154
+time 2008-05-14T00:19:48Z
+parent 189138
+thread 189123
+headline How to Fix the News
+url http://www.aaronsw.com/weblog/deadnews
+text I clearly say I'm talking about their episode "The Giant Pool of Money" which was very clearly a news show, co-produced with NPR News.
+
+reply 189150
+time 2008-05-14T00:11:26Z
+parent 188688
+thread 188489
+headline Lies We Tell Kids
+url http://www.paulgraham.com/lies.html
+text I suspect a black scientist was included not because of powerful groups but because of guilt on the part of teachers who wanted to appear racially-sensitive.I remember that as a kid, between PBS and the racial sensitivity of my all-white suburban school, I lived in complete terror of doing or saying something that could be seen as racist.
+
+reply 189147
+time 2008-05-14T00:06:04Z
+parent 189037
+thread 188489
+headline Lies We Tell Kids
+url http://www.paulgraham.com/lies.html
+text Because understanding the notion of suburbia at that level of detail can't possibly be useful or relevant.
+
+reply 170094
+time 2008-04-21T23:55:47Z
+parent 170060
+thread 170000
+headline Ask PG:  What makes the Wufoos such animals?
+text Did they ever respond to your email? When I sent them nitpicks their reply was all snippy about it.
+
+reply 169568
+time 2008-04-21T16:43:12Z
+parent 168683
+thread 168587
+headline Ask YC: Anyone working on applications for Craigslist?
+text So the issue is: 1) they were putting ads on top of Craigslist, and 2) they were using up too much bandwidth. I expect if you actually wanted to build something useful you could just email Craig and he'd get you a dump.
+
+reply 169564
+time 2008-04-21T16:42:13Z
+parent 165136
+thread 164322
+headline Aaron Swartz's newest project: watchdog.net
+url http://www.aaronsw.com/weblog/watchdog
+text I typically just put them on the Web myself; if they make money I discuss with my partners what to do with it. If any of them were to make a lot of money, I'd probably start an S-corp or something to reduce the tax liability, but it's never gotten to that point yet.
+
+reply 168883
+time 2008-04-20T23:43:41Z
+parent 168636
+headline Be Good
+url http://paulgraham.com/good.html
+text When I was a kid I was firmly in the camp of bad. The way adults used the word good, it seemed to be synonymous with quiet, so I grew up very suspicious of it. You know how there are some people whose names come up in conversation and everyone says "He's such a great guy?" People never say that about me. The best I get is "he means well." I am not claiming to be good. At best I speak good as a second language.There are a lot of people out there who spend an enormous amount of time coming up with rationalizations to justify doing bad things. What I realized after spending a lot of time around Paul Graham is that he's actually the opposite: He spends an enormous amount of time coming up with rationalizations to justify doing good things. However bad he may want to be, his fundamental good nature always seems to win out in the end.
+
+reply 168633
+time 2008-04-20T19:32:18Z
+parent 168600
+thread 168587
+headline Ask YC: Anyone working on applications for Craigslist?
+text That's a pretty serious claim; any pointers? If you've got some I'll be sure to nag Craig about it next time I see him.
+
+reply 164490
+time 2008-04-15T20:10:01Z
+parent 164358
+thread 164322
+headline Aaron Swartz's newest project: watchdog.net
+url http://www.aaronsw.com/weblog/watchdog
+text Open Library, the other main thing I've been working on, is set to go 1.0 this week. So I guess that could be a qualified success. I did a more detailed review of projects on my blog: http://www.aaronsw.com/weblog/projects2007 http://www.aaronsw.com/weblog/projects2007Jobbook was a project I was doing with Seth Roberts; it got abandoned largely because Seth's publisher demanded that he stop working on it and focus on finishing his real book. If someone else wants to pick it that would be cool; I agree it addresses a real need.
+
+reply 164482
+time 2008-04-15T20:08:00Z
+parent 164336
+thread 164322
+headline Aaron Swartz's newest project: watchdog.net
+url http://www.aaronsw.com/weblog/watchdog
+text Yeah, this was the bit that held me up on the data site for a long time. It didn't seem like succeeding could do anything but depress people. But talking to others in this sphere, there are some legitimate things you can do with the data: for example, Dennis Hastert (R-IL) recently had to resign in part because of some earmark data that someone uncovered; he was replaced by a pro-reform Dem particle physicist a month ago. So I think connecting it up to the media and building voter scorecards and stuff out of it could be effective.
+
+reply 133993
+time 2008-03-11T06:35:09Z
+parent 133633
+headline How Google keeps your information secure
+url http://googleblog.blogspot.com/2008/03/how-google-keeps-your-information.html
+text And after all that, we turn it over the Government...
+
+reply 58576
+time 2007-09-23T18:15:14Z
+parent 58238
+thread 58025
+headline How to Do Philosophy
+url http://www.paulgraham.com/philosophy.html
+text Saying that evolutionary psychology is more true than Ayn Rand is damning with awfully faint praise.
+
+reply 49771
+time 2007-09-03T21:01:13Z
+parent 48890
+thread 48770
+headline Aaron Swartz:  Perfectionism (and his new startup, Jottit)
+url http://www.aaronsw.com/weblog/perfectionism
+text FWIW, this wasn't an actual beta. I'd mapped *.jottit.com to the test server so we could test picking particular domains and forgot to password-protect it.
+
+reply 49769
+time 2007-09-03T20:58:45Z
+parent 49101
+thread 48770
+headline Aaron Swartz:  Perfectionism (and his new startup, Jottit)
+url http://www.aaronsw.com/weblog/perfectionism
+text Wait until you hear who the Reddit mascot has been sleeping with!
+
+reply 49768
+time 2007-09-03T20:57:03Z
+parent 49027
+thread 48770
+headline Aaron Swartz:  Perfectionism (and his new startup, Jottit)
+url http://www.aaronsw.com/weblog/perfectionism
+text You know, if that were true, I'd hate myself even more than I do already!
+
+reply 49767
+time 2007-09-03T20:56:07Z
+parent 49117
+thread 48770
+headline Aaron Swartz:  Perfectionism (and his new startup, Jottit)
+url http://www.aaronsw.com/weblog/perfectionism
+text Sorry, but how does that involve me?
+
+story 1669245
+time 2010-09-07T16:24:02Z
+headline Ask HN: Why is this story dead?
+url http://news.ycombinator.com/item?id=1668942
+score 1
+descendants -1
+dead true
+
+reply 1014356
+time 2009-12-24T20:40:57Z
+parent 1014254
+deleted true
+
+reply 934062
+time 2009-11-10T22:09:22Z
+parent 934043
+deleted true
+
